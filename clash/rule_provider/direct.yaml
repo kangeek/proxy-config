@@ -1,0 +1,60 @@
+payload:
+  # private IPs
+  - IP-CIDR,0.0.0.0/8
+  - IP-CIDR,10.0.0.0/8
+  - IP-CIDR,100.64.0.0/10
+  - IP-CIDR,127.0.0.0/8
+  - IP-CIDR,172.16.0.0/12
+  - IP-CIDR,192.168.0.0/16
+  - IP-CIDR,198.18.0.0/15
+  - IP-CIDR,169.254.0.0/16
+  - IP-CIDR,255.255.255.255/32
+  - IP-CIDR6,::/128
+  - IP-CIDR6,::1/128
+  - IP-CIDR6,100::/64
+  - IP-CIDR6,64:ff9b::/96
+  - IP-CIDR6,2001::/32
+  - IP-CIDR6,2001:10::/28
+  - IP-CIDR6,2001:20::/28
+  - IP-CIDR6,2001:db8::/32
+  - IP-CIDR6,2002::/16
+  - IP-CIDR6,fc00::/7
+  - IP-CIDR6,fe80::/10
+  - IP-CIDR6,ff00::/8
+  - IP-CIDR,1.1.1.1/32
+
+  - DOMAIN-SUFFIX,kang.zone
+
+  # GeoSites
+  - GEOSITE,private
+  - GEOSITE,onedrive
+  - GEOSITE,microsoft@cn
+  - GEOSITE,apple@cn
+  - GEOSITE,steam@cn
+  - GEOSITE,category-games@cn
+  - GEOSITE,cn
+  - GEOIP,PH
+  - GEOSITE,ph
+  - GEOIP,CN
+  
+  # My domains
+  - DOMAIN-SUFFIX,kang.zone
+  - DOMAIN-SUFFIX,gitlab.cool
+  - DOMAIN-SUFFIX,srelab.io
+
+# CDN, mirrors
+  - DOMAIN,download-cf.jetbrains.com # JetBrains download
+  - DOMAIN,download.jetbrains.com # JetBrains download
+  - DOMAIN-SUFFIX,archive.ubuntu.com # ubuntu mirror
+  - DOMAIN-SUFFIX,delivery.mp.microsoft.com # parallels download win
+  - DOMAIN-SUFFIX,hf-mirror.com # huggingface mirror
+  - DOMAIN-SUFFIX,mediafire.com # mediafire file
+  - DOMAIN-SUFFIX,ports.ubuntu.com # ubuntu mirror
+  - DOMAIN-SUFFIX,steamcontent.com # Steam download
+  - DOMAIN-SUFFIX,queniuak.com # 夸克网盘
+  - DOMAIN-KEYWORD,drive.quark.cn # 夸克网盘
+  - DOMAIN,files.pythonhosted.org # python hosted
+  
+  # Other sites
+  - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
+

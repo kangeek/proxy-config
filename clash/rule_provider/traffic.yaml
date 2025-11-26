@@ -1,0 +1,54 @@
+payload:
+  - DOMAIN-KEYWORD,release
+  - DOMAIN-KEYWORD,download
+  
+  # GeoSites
+  - GEOSITE,netflix
+  - GEOSITE,disney
+
+  # General sites
+  - DOMAIN-SUFFIX,apt.releases.hashicorp.com # HashiCorp releases
+  - DOMAIN-SUFFIX,apt.releases.teleport.dev # Teleport releases
+  - DOMAIN,cdn-images.orbstack.dev # orbstack download images
+  - DOMAIN,storage.googleapis.com # Google storage
+  - DOMAIN-SUFFIX,cloud-images.ubuntu.com # Ubuntu cloud images
+  - DOMAIN-SUFFIX,cloudfront.net # Amazon CloudFront
+  - DOMAIN-SUFFIX,debian.map.fastlydns.net # Debian CDN
+  - DOMAIN-SUFFIX,dl.google.com # Google download
+  - DOMAIN-SUFFIX,dl.k8s.io # K8s download
+  - DOMAIN,release-assets.githubusercontent.com # Github releases
+  - DOMAIN-SUFFIX,get.gravitational.com # teleport download
+  - DOMAIN-SUFFIX,maven.org # Maven
+  - DOMAIN-SUFFIX,registry.gitlab.com # GitLab registry
+  - DOMAIN-SUFFIX,repo.clickhouse.com # ClickHouse repo
+  - DOMAIN-SUFFIX,s3-accelerate.amazonaws.com # Amazon S3 accelerate
+  - DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3
+  - DOMAIN-SUFFIX,vagrantcloud.com # Vagrant boxes
+  - DOMAIN-SUFFIX,photos.google.com # Google photo
+  - DOMAIN-SUFFIX,drive.google.com # Google drive
+  - DOMAIN-SUFFIX,xvideos.com
+  - DOMAIN,emby.cn2gias.uk # 守候影院
+  - DOMAIN,level3.blizzard.com # Blizzard CDN
+  - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
+
+  # Apple TV
+  - DOMAIN,apple-tv-plus-press.apple.com
+  - DOMAIN,hls-amt.itunes.apple.com
+  - DOMAIN,hls.itunes.apple.com
+  - DOMAIN,np-edge.itunes.apple.com
+  - DOMAIN,play-edge.itunes.apple.com
+  - DOMAIN,tv.applemusic.com
+  - DOMAIN,uts-api.itunes.apple.com
+  - DOMAIN-SUFFIX,tv.apple.com
+
+  # Docker registries
+  - DOMAIN,registry-1.docker.io
+  - DOMAIN,production.cloudflare.docker.com
+  - DOMAIN-KEYWORD,registry
+  - DOMAIN-KEYWORD,docker
+  - DOMAIN-SUFFIX,ecr.io
+  - DOMAIN-SUFFIX,gcr.io
+  - DOMAIN-SUFFIX,ghcr.io
+  - DOMAIN-SUFFIX,quay.io
+  - DOMAIN-SUFFIX,public.ecr.aws
+

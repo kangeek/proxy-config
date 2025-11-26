@@ -1,0 +1,194 @@
+#---------------------------------------------------#
+# Docs: https://wiki.metacubex.one/
+#---------------------------------------------------#
+
+### Global
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7890
+tproxy-port: 7895
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+keep-alive-interval: 15
+keep-alive-idle: 600
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+geodata-mode: true
+geodata-auto-update: true
+geo-update-interval: 24 # hours
+# https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+
+### DNS
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  cache-algorithm: arc
+  use-system-hosts: true
+  respect-rules: false
+  listen: 0.0.0.0:1053
+  ipv6: false
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.kang.zone"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - "*.goskope.com"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - stun.*.*
+  - stun.*.*.*
+  - geosite:cn
+  default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
+  - 223.5.5.5  # 阿里 DNS
+  - 119.29.29.29  # DNSPod
+  nameserver: # 处理国内域名和直连流量的解析，通常选择低延迟的本土 DNS
+  - 223.5.5.5  # 阿里 DNS
+  - 119.29.29.29  # DNSPod
+  - https://dns.alidns.com/dns-query # 阿里 DoH
+  - https://doh.pub/dns-query # 腾讯 DoH
+  fallback: # 处理国外域名和代理流量的解析，通常选择稳定的 DoH/DoT
+  - 8.8.8.8
+  - 1.1.1.1
+  - tls://8.8.8.8
+  - tls://1.1.1.1
+  fallback-filter: # 使用 fallback 解析
+    geoip: true
+    geoip-code: CN # 非中国 IP 采用 fallback 解析结果
+    geosite: # 列表的内容被视为已污染，使用 fallback 解析
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4 # “未来使用”的保留地址
+      - 127.0.0.1/32
+      - 0.0.0.0/32
+      - 192.168.192.0/24 # kang.zone
+    domain:
+      - '+.google.com'
+      - '+.youtube.com'
+
+proxy-providers:
+  amy: # https://www.amytele.net/
+    type: http
+    url: <update-me>
+    interval: 3600
+    path: "./proxy_provider/amy.yaml"
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  sntp: # https://u.xn--hwqp2zit2amna.com/dashboards/modern
+    type: http
+    url: <update-me>
+    interval: 3600
+    path: "./proxy_provider/sntp.yaml"
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  vless: # https://dash.cloudflare.com/f561579510552568c0af12c7fae6ebe3/pages/view/vless
+    type: http
+    url: <update-me>
+    interval: 3600
+    path: "./proxy_provider/vless.yaml"
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+proxy-groups:
+- name: WESTERN
+  type: select
+  use:
+  - amy
+- name: EASTERN
+  type: select
+  use:
+  - amy
+- name: TRAFFIC
+  type: select
+  use:
+  - sntp
+- name: FREE_CF
+  type: url-test
+  use:
+  - vless
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+
+# https://github.com/Loyalsoldier/clash-rules
+rule-providers:
+  traffic:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/traffic.yaml"
+    path: "./rule_provider/traffic.yaml"
+    behavior: classical
+    interval: 86400
+  eastern:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/eastern.yaml"
+    path: "./rule_provider/eastern.yaml"
+    behavior: classical
+    interval: 86400
+  western:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/western.yaml"
+    path: "./rule_provider/western.yaml"
+    behavior: classical
+    interval: 86400
+  direct:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/direct.yaml"
+    path: "./rule_provider/direct.yaml"
+    behavior: classical
+    interval: 86400
+
+# https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo-lite/geosite
+# geosites: https://github.com/v2fly/domain-list-community/tree/master/data
+rules:
+- GEOSITE,category-ads-all,REJECT
+- RULE-SET,traffic,TRAFFIC
+- RULE-SET,western,WESTERN
+- RULE-SET,eastern,EASTERN
+- RULE-SET,direct,DIRECT
+- GEOIP,US,WESTERN
+- MATCH,EASTERN

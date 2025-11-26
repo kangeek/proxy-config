@@ -1,0 +1,38 @@
+payload:
+  # GeoSites
+  - GEOSITE,atlassian
+  - GEOSITE,slack
+  - GEOSITE,godaddy
+  - GEOSITE,discord
+  - GEOSITE,bing
+  - GEOSITE,bing@cn
+  - GEOSITE,amazon
+  - GEOSITE,aws
+  - GEOSITE,microsoft
+  - GEOSITE,youtube
+  - GEOSITE,tiktok
+  
+  # General sites
+  - DOMAIN-SUFFIX,aws.dev # AWS
+  - DOMAIN-SUFFIX,api.ipify.org # IPify
+  - DOMAIN-SUFFIX,contentful.com # Contentful
+  - DOMAIN-SUFFIX,discourse-cdn.com # Discourse
+  - DOMAIN-SUFFIX,facebook.com # Facebook
+  - DOMAIN-SUFFIX,gravatar.com # Gravatar
+  - DOMAIN-SUFFIX,gravatar.io # Gravatar
+  - DOMAIN-SUFFIX,hypothes.is # Hypothesis
+  - DOMAIN-SUFFIX,inoreader.com # Inoreader
+  - DOMAIN-SUFFIX,jsfiddle.net # JSFiddle
+  - DOMAIN-SUFFIX,jwt.io # JWT
+  - DOMAIN-SUFFIX,linuxfoundation.org # Linux Foundation
+  - DOMAIN-SUFFIX,medium.com # Medium
+  - DOMAIN-SUFFIX,objectpath.org # ObjectPath
+  - DOMAIN-SUFFIX,obsidian.md # Obsidian
+  - DOMAIN-SUFFIX,pagerduty.com # PagerDuty
+  - DOMAIN-SUFFIX,stackexchange.com # StackExchange
+  - DOMAIN-SUFFIX,vimeo.com # Vimeo, AI video
+  - DOMAIN-SUFFIX,zerotier.com # Zerotier
+  
+  # Work
+  - DOMAIN,mayaph.atlassian.net # Maya Jira
+
