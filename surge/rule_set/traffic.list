@@ -1,7 +1,7 @@
 DOMAIN-KEYWORD,release
 DOMAIN-KEYWORD,download
-GEOSITE,netflix
-GEOSITE,disney
+RULE-SET,https://surge.bojin.co/geosite/netflix
+RULE-SET,https://surge.bojin.co/geosite/disney
 DOMAIN-SUFFIX,apt.releases.hashicorp.com
 DOMAIN-SUFFIX,apt.releases.teleport.dev
 DOMAIN,cdn-images.orbstack.dev

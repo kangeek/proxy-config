@@ -28,13 +28,11 @@ payload:
   # GeoSites
   - GEOSITE,private
   - GEOSITE,onedrive
+  - GEOSITE,category-bank-cn
   - GEOSITE,microsoft@cn
   - GEOSITE,apple@cn
   - GEOSITE,steam@cn
   - GEOSITE,category-games@cn
-  - GEOSITE,cn
-  - GEOIP,PH
-  - GEOSITE,ph
   - GEOIP,CN
   
   # My domains

@@ -1,8 +1,8 @@
-GEOSITE,google
-GEOSITE,github
-GEOSITE,telegram
-GEOSITE,paypal
-GEOSITE,twitter
+RULE-SET,https://surge.bojin.co/geosite/google
+RULE-SET,https://surge.bojin.co/geosite/github
+RULE-SET,https://surge.bojin.co/geosite/telegram
+RULE-SET,https://surge.bojin.co/geosite/paypal
+RULE-SET,https://surge.bojin.co/geosite/twitter
 DOMAIN-SUFFIX,1password.com
 DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,battle.net

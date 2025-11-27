@@ -125,6 +125,15 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+  neo: # https://neoladder.org/services
+    type: http
+    url: <update-me>
+    interval: 3600
+    path: "./proxy_provider/neo.yaml"
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
   vless: # https://dash.cloudflare.com/f561579510552568c0af12c7fae6ebe3/pages/view/vless
     type: http
     url: <update-me>
@@ -148,6 +157,10 @@ proxy-groups:
   type: select
   use:
   - sntp
+- name: NETSKOPE
+  type: select
+  use:
+  - neo
 - name: FREE_CF
   type: url-test
   use:
@@ -175,6 +188,12 @@ rule-providers:
     path: "./rule_provider/western.yaml"
     behavior: classical
     interval: 86400
+  netskope:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/netskope.yaml"
+    path: "./rule_provider/netskope.yaml"
+    behavior: classical
+    interval: 86400
   direct:
     type: http
     url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/direct.yaml"
@@ -185,6 +204,7 @@ rule-providers:
 # https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo-lite/geosite
 # geosites: https://github.com/v2fly/domain-list-community/tree/master/data
 rules:
+- RULE-SET,netskope,NETSKOPE
 - GEOSITE,category-ads-all,REJECT
 - RULE-SET,traffic,TRAFFIC
 - RULE-SET,western,WESTERN

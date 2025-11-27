@@ -1,0 +1,6 @@
+DOMAIN-SUFFIX,goskope.com
+DOMAIN-SUFFIX,paymaya.com
+DOMAIN-SUFFIX,splunk.corp.mayabank.com
+DOMAIN-SUFFIX,sonarqube.corp.maya.ph
+IP-CIDR,10.31.129.150/32
+GEOIP,PH
