@@ -32,6 +32,7 @@ payload:
   - DOMAIN-SUFFIX,stackexchange.com # StackExchange
   - DOMAIN-SUFFIX,vimeo.com # Vimeo, AI video
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
+  - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
   
   # Work
   - DOMAIN,mayaph.atlassian.net # Maya Jira

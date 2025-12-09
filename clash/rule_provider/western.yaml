@@ -10,9 +10,7 @@ payload:
   - DOMAIN-SUFFIX,1password.com # 1Password
   - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
   - DOMAIN-SUFFIX,battle.net # Battle.net
-  - DOMAIN-SUFFIX,bing.net # Bing
-  - DOMAIN-SUFFIX,bing.com # Bing
-  - DOMAIN-SUFFIX,linkedin.com # Bing
+  - DOMAIN-SUFFIX,linkedin.com # LinkedIn
   - DOMAIN,logon.turtle-wow.org # Turtle WoW (EU)
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
 
