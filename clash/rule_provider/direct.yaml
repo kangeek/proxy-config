@@ -29,8 +29,8 @@ payload:
   - GEOSITE,private
   - GEOSITE,onedrive
   - GEOSITE,category-bank-cn
-  - GEOSITE,microsoft@cn
-  - GEOSITE,apple@cn
+  # - GEOSITE,microsoft@cn
+  # - GEOSITE,apple@cn
   - GEOSITE,steam@cn
   - GEOSITE,category-games@cn
   - GEOIP,CN
@@ -55,4 +55,7 @@ payload:
   
   # Other sites
   - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
+
+  # Maya domains that needs Netskope VPN
+  - DOMAIN,splunk-stg.corp.paymaya.com
 

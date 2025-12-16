@@ -24,8 +24,6 @@ DOMAIN-SUFFIX,kang.zone
 RULE-SET,https://surge.bojin.co/geosite/private
 RULE-SET,https://surge.bojin.co/geosite/onedrive
 RULE-SET,https://surge.bojin.co/geosite/category-bank-cn
-RULE-SET,https://surge.bojin.co/geosite/microsoft@cn
-RULE-SET,https://surge.bojin.co/geosite/apple@cn
 RULE-SET,https://surge.bojin.co/geosite/steam@cn
 RULE-SET,https://surge.bojin.co/geosite/category-games@cn
 GEOIP,CN
@@ -44,3 +42,4 @@ DOMAIN-SUFFIX,queniuak.com
 DOMAIN-KEYWORD,drive.quark.cn
 DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,tuoyouyun.com
+DOMAIN,splunk-stg.corp.paymaya.com
