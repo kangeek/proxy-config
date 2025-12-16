@@ -1,6 +1,16 @@
 payload:
-  # Netskope
+  # Netskope IP ranges (https://networksdb.io/ip-addresses-of/netskope-inc)
+  - IP-CIDR,163.116.128.0/17       # 全球网络
+  - IP-CIDR,158.95.0.0/16          # 主要网络段 1
+  - IP-CIDR,162.10.0.0/16          # 主要网络段 2
+  - IP-CIDR,24.206.64.0/18         # 主要网络段 3
+  - IP-CIDR,24.239.128.0/18        # 主要网络段 4
+  - IP-CIDR,199.127.72.0/21        # 主要网络段 5
+  - IP-CIDR,76.223.160.0/21        # AWS 网络
+  - IP-CIDR,45.250.160.0/22        # 亚太区域
   - DOMAIN-SUFFIX,goskope.com
+
+  # Maya domains that needs Netskope VPN
   - DOMAIN-SUFFIX,paymaya.com
   - DOMAIN-SUFFIX,splunk.corp.mayabank.com
   - DOMAIN-SUFFIX,sonarqube.corp.maya.ph
