@@ -52,6 +52,7 @@ payload:
   - DOMAIN-SUFFIX,queniuak.com # 夸克网盘
   - DOMAIN-KEYWORD,drive.quark.cn # 夸克网盘
   - DOMAIN,files.pythonhosted.org # python hosted
+  - DOMAIN-SUFFIX,kimi.com # Kimi
   
   # Other sites
   - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
