@@ -1,10 +1,6 @@
 payload:
   - DOMAIN-KEYWORD,release
   - DOMAIN-KEYWORD,download
-  
-  # GeoSites
-  - GEOSITE,netflix
-  - GEOSITE,disney
 
   # General sites
   - DOMAIN-SUFFIX,apt.releases.hashicorp.com # HashiCorp releases
@@ -51,3 +47,6 @@ payload:
   - DOMAIN-SUFFIX,quay.io
   - DOMAIN-SUFFIX,public.ecr.aws
 
+  # GeoSites
+  - GEOSITE,netflix
+  - GEOSITE,disney

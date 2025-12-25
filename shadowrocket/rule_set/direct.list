@@ -21,12 +21,6 @@ IP-CIDR6,fe80::/10
 IP-CIDR6,ff00::/8
 IP-CIDR,1.1.1.1/32
 DOMAIN-SUFFIX,kang.zone
-GEOSITE,private
-GEOSITE,onedrive
-GEOSITE,category-bank-cn
-GEOSITE,steam@cn
-GEOSITE,category-games@cn
-GEOIP,CN
 DOMAIN-SUFFIX,kang.zone
 DOMAIN-SUFFIX,gitlab.cool
 DOMAIN-SUFFIX,srelab.io
@@ -44,3 +38,9 @@ DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,tuoyouyun.com
 DOMAIN,splunk-stg.corp.paymaya.com
+GEOSITE,private
+GEOSITE,onedrive
+GEOSITE,category-bank-cn
+GEOSITE,steam@cn
+GEOSITE,category-games@cn
+GEOIP,CN

@@ -12,7 +12,7 @@ payload:
   - GEOSITE,microsoft
   - GEOSITE,youtube
   - GEOSITE,tiktok
-  
+
   # General sites
   - DOMAIN-SUFFIX,aws.dev # AWS
   - DOMAIN-SUFFIX,api.ipify.org # IPify

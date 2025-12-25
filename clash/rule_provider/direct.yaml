@@ -24,16 +24,6 @@ payload:
   - IP-CIDR,1.1.1.1/32
 
   - DOMAIN-SUFFIX,kang.zone
-
-  # GeoSites
-  - GEOSITE,private
-  - GEOSITE,onedrive
-  - GEOSITE,category-bank-cn
-  # - GEOSITE,microsoft@cn
-  # - GEOSITE,apple@cn
-  - GEOSITE,steam@cn
-  - GEOSITE,category-games@cn
-  - GEOIP,CN
   
   # My domains
   - DOMAIN-SUFFIX,kang.zone
@@ -60,3 +50,12 @@ payload:
   # Maya domains that needs Netskope VPN
   - DOMAIN,splunk-stg.corp.paymaya.com
 
+  # GeoSites
+  - GEOSITE,private
+  - GEOSITE,onedrive
+  - GEOSITE,category-bank-cn
+  # - GEOSITE,microsoft@cn
+  # - GEOSITE,apple@cn
+  - GEOSITE,steam@cn
+  - GEOSITE,category-games@cn
+  - GEOIP,CN

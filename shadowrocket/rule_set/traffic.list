@@ -1,7 +1,5 @@
 DOMAIN-KEYWORD,release
 DOMAIN-KEYWORD,download
-GEOSITE,netflix
-GEOSITE,disney
 DOMAIN-SUFFIX,apt.releases.hashicorp.com
 DOMAIN-SUFFIX,apt.releases.teleport.dev
 DOMAIN,cdn-images.orbstack.dev
@@ -41,3 +39,5 @@ DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,public.ecr.aws
+GEOSITE,netflix
+GEOSITE,disney

@@ -1,12 +1,4 @@
 payload:
-  # GeoSites
-  - GEOSITE,google
-  - GEOSITE,github
-  - GEOSITE,gitlab
-  - GEOSITE,telegram
-  - GEOSITE,paypal
-  - GEOSITE,twitter
-
   # General sites
   - DOMAIN-SUFFIX,1password.com # 1Password
   - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
@@ -15,3 +7,10 @@ payload:
   - DOMAIN,logon.turtle-wow.org # Turtle WoW (EU)
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
 
+  # GeoSites
+  - GEOSITE,google
+  - GEOSITE,github
+  - GEOSITE,gitlab
+  - GEOSITE,telegram
+  - GEOSITE,paypal
+  - GEOSITE,twitter
