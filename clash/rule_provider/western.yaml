@@ -2,6 +2,7 @@ payload:
   # GeoSites
   - GEOSITE,google
   - GEOSITE,github
+  - GEOSITE,gitlab
   - GEOSITE,telegram
   - GEOSITE,paypal
   - GEOSITE,twitter

@@ -19,7 +19,6 @@ payload:
   - DOMAIN,release-assets.githubusercontent.com # Github releases
   - DOMAIN-SUFFIX,get.gravitational.com # teleport download
   - DOMAIN-SUFFIX,maven.org # Maven
-  - DOMAIN-SUFFIX,registry.gitlab.com # GitLab registry
   - DOMAIN-SUFFIX,repo.clickhouse.com # ClickHouse repo
   - DOMAIN-SUFFIX,s3-accelerate.amazonaws.com # Amazon S3 accelerate
   - DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3
