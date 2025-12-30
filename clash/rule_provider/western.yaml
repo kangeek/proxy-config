@@ -6,6 +6,8 @@ payload:
   - DOMAIN-SUFFIX,linkedin.com # LinkedIn
   - DOMAIN,logon.turtle-wow.org # Turtle WoW (EU)
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
+  - DOMAIN-SUFFIX,monica.im # Monica
+  - DOMAIN-SUFFIX,monica-cdn.im # Monica
 
   # GeoSites
   - GEOSITE,google
