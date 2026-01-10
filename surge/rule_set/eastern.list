@@ -401,6 +401,7 @@ DOMAIN,ocsp.apple.com # @cn
 DOMAIN,ocsp2-lb.apple.com.akadns.net # @cn
 DOMAIN,ocsp2.apple.com # @cn
 DOMAIN,valid.apple.com # @cn
+DOMAIN,valid.origin-apple.com.akadns.net # @cn
 DOMAIN,apple-tv-plus-press.apple.com 
 DOMAIN,hls-amt.itunes.apple.com 
 DOMAIN,hls.itunes.apple.com 
@@ -1252,10 +1253,6 @@ DOMAIN-SUFFIX,itunesu.com
 DOMAIN-SUFFIX,itunesu.net 
 DOMAIN-SUFFIX,iutunes.com 
 DOMAIN-SUFFIX,wwwitunes.com 
-DOMAIN-SUFFIX,appleswift.com 
-DOMAIN-SUFFIX,swift.org 
-DOMAIN-SUFFIX,swiftui.cn # @cn
-DOMAIN-SUFFIX,swiftui.com.cn # @cn
 DOMAIN-SUFFIX,apple 
 DOMAIN-SUFFIX,apple.ae 
 DOMAIN-SUFFIX,apple.at 
@@ -2053,7 +2050,6 @@ DOMAIN,cds-cdn.v.aaplimg.com # @cn
 DOMAIN,cds.apple.com # @cn
 DOMAIN,cds.apple.com.akadns.net # @cn
 DOMAIN,cdsassets.apple.com # @cn
-DOMAIN,certs.apple.com # @cn
 DOMAIN,cl2-cn.apple.com # @cn
 DOMAIN,cl4-cn.apple.com # @cn
 DOMAIN,clientflow.apple.com # @cn
@@ -2061,7 +2057,6 @@ DOMAIN,clientflow.apple.com.akadns.net # @cn
 DOMAIN,cn-smp-paymentservices.apple.com # @cn
 DOMAIN,configuration.apple.com # @cn
 DOMAIN,configuration.apple.com.akadns.net # @cn
-DOMAIN,crl.apple.com # @cn
 DOMAIN,cstat.apple.com # @cn
 DOMAIN,cstat.cdn-apple.com # @cn
 DOMAIN,dd-cdn.origin-apple.com.akadns.net # @cn
@@ -2114,10 +2109,6 @@ DOMAIN,mesu-china.apple.com.akadns.net # @cn
 DOMAIN,mesu.apple.com # @cn
 DOMAIN,ml.cdn-apple.com # @cn
 DOMAIN,music.apple.com # @cn
-DOMAIN,ocsp-lb.apple.com.akadns.net # @cn
-DOMAIN,ocsp.apple.com # @cn
-DOMAIN,ocsp2-lb.apple.com.akadns.net # @cn
-DOMAIN,ocsp2.apple.com # @cn
 DOMAIN,oscdn.apple.com # @cn
 DOMAIN,oscdn.origin-apple.com.akadns.net # @cn
 DOMAIN,osxapps.itunes.g.aaplimg.com # @cn
@@ -2160,8 +2151,6 @@ DOMAIN,tj-pod1-smp-device.apple.com # @cn
 DOMAIN,updates-http.cdn-apple.com # @cn
 DOMAIN,updates-http.cdn-apple.com.akadns.net # @cn
 DOMAIN,updates.cdn-apple.com # @cn
-DOMAIN,valid.apple.com # @cn
-DOMAIN,valid.origin-apple.com.akadns.net # @cn
 DOMAIN,weather-data.apple.com # @cn
 DOMAIN,weather-data.apple.com.akadns.net # @cn
 DOMAIN,weather-map.apple.com # @cn
