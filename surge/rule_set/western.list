@@ -6,6 +6,7 @@ DOMAIN,logon.turtle-wow.org
 DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,monica.im
 DOMAIN-SUFFIX,monica-cdn.im
+DOMAIN-SUFFIX,ansible.com
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/google
 DOMAIN-SUFFIX,android 

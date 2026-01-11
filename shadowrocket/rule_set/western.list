@@ -6,6 +6,7 @@ DOMAIN,logon.turtle-wow.org
 DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,monica.im
 DOMAIN-SUFFIX,monica-cdn.im
+DOMAIN-SUFFIX,ansible.com
 GEOSITE,google
 GEOSITE,github
 GEOSITE,gitlab
