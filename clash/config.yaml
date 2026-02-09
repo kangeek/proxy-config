@@ -4,12 +4,11 @@
 
 ### Global
 
-port: 7890
-socks-port: 7891
-redir-port: 7892
 mixed-port: 7890
 tproxy-port: 7895
 external-controller: 0.0.0.0:9090
+# external-ui: /etc/mihomo/ui
+# external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 bind-address: "*"
 keep-alive-interval: 15
 keep-alive-idle: 600
@@ -17,6 +16,15 @@ allow-lan: true
 mode: rule
 log-level: info
 ipv6: false
+
+### TUN — transparent proxy for all host/container/VM traffic
+tun:
+  enable: true
+  stack: mixed
+  # device: tun0
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
 
 profile:
   store-selected: true
@@ -54,31 +62,31 @@ dns:
   - "*.local"
   - "*.home.arpa"
   - "*.goskope.com"
-  - time.*.com
-  - time.*.gov
-  - time.*.edu.cn
-  - time.*.apple.com
-  - time1.*.com
-  - time2.*.com
-  - time3.*.com
-  - time4.*.com
-  - time5.*.com
-  - time6.*.com
-  - time7.*.com
-  - ntp.*.com
-  - ntp1.*.com
-  - ntp2.*.com
-  - ntp3.*.com
-  - ntp4.*.com
-  - ntp5.*.com
-  - ntp6.*.com
-  - ntp7.*.com
+  - "time.*.com"
+  - "time.*.gov"
+  - "time.*.edu.cn"
+  - "time.*.apple.com"
+  - "time1.*.com"
+  - "time2.*.com"
+  - "time3.*.com"
+  - "time4.*.com"
+  - "time5.*.com"
+  - "time6.*.com"
+  - "time7.*.com"
+  - "ntp.*.com"
+  - "ntp1.*.com"
+  - "ntp2.*.com"
+  - "ntp3.*.com"
+  - "ntp4.*.com"
+  - "ntp5.*.com"
+  - "ntp6.*.com"
+  - "ntp7.*.com"
   - "*.time.edu.cn"
   - "*.ntp.org.cn"
   - "+.pool.ntp.org"
-  - stun.*.*
-  - stun.*.*.*
-  - geosite:cn
+  - "stun.*.*"
+  - "stun.*.*.*"
+  - "geosite:cn"
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
@@ -101,7 +109,6 @@ dns:
       - 240.0.0.0/4 # “未来使用”的保留地址
       - 127.0.0.1/32
       - 0.0.0.0/32
-      - 192.168.192.0/24 # kang.zone
     domain:
       - '+.google.com'
       - '+.youtube.com'
@@ -109,7 +116,7 @@ dns:
 proxy-providers:
   amy: # https://www.amytele.net/
     type: http
-    url: <update-me>
+    url: <proxy_provider_amy_url>
     interval: 3600
     path: "./proxy_provider/amy.yaml"
     health-check:
@@ -118,7 +125,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   sntp: # https://u.xn--hwqp2zit2amna.com/dashboards/modern
     type: http
-    url: <update-me>
+    url: <proxy_provider_sntp_url>
     interval: 3600
     path: "./proxy_provider/sntp.yaml"
     health-check:
@@ -127,7 +134,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   neo: # https://neoladder.org/services
     type: http
-    url: <update-me>
+    url: <proxy_provider_neo_url>
     interval: 3600
     path: "./proxy_provider/neo.yaml"
     health-check:
@@ -136,7 +143,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   vless: # https://dash.cloudflare.com/f561579510552568c0af12c7fae6ebe3/pages/view/vless
     type: http
-    url: <update-me>
+    url: <proxy_provider_vless_url>
     interval: 3600
     path: "./proxy_provider/vless.yaml"
     health-check:
@@ -146,19 +153,21 @@ proxy-providers:
 
 proxy-groups:
 - name: WESTERN
-  type: select
+  type: url-test
+  filter: "美国"
   use:
   - amy
 - name: EASTERN
-  type: select
+  type: url-test
+  filter: "(日本|台湾|新加坡)"
   use:
   - amy
 - name: TRAFFIC
-  type: select
+  type: url-test
   use:
   - sntp
 - name: NETSKOPE
-  type: select
+  type: url-test
   use:
   - neo
 - name: FREE_CF
