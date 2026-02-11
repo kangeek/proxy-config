@@ -65,8 +65,6 @@ DOMAIN,hammerandchisel.ssl.zendesk.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/amazon
-DOMAIN-SUFFIX,amazon-adsystem.com # @ads
-DOMAIN-SUFFIX,serving-sys.com # @ads
 DOMAIN-SUFFIX,amazontrust.com 
 DOMAIN-SUFFIX,awstrust.com 
 DOMAIN-SUFFIX,ss2.us 
@@ -299,6 +297,8 @@ DOMAIN-SUFFIX,audible.com
 DOMAIN-SUFFIX,createspace.com 
 DOMAIN,images-cn.ssl-images-amazon.com # @cn
 DOMAIN,images-cn-8.ssl-images-amazon.com # @cn
+DOMAIN-SUFFIX,amazon-adsystem.com # @ads
+DOMAIN-SUFFIX,serving-sys.com # @ads
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/aws
@@ -562,8 +562,7 @@ DOMAIN-SUFFIX,r.bing.com # @cn
 DOMAIN-SUFFIX,th.bing.com # @cn
 DOMAIN,bj1.api.bing.com # @cn
 DOMAIN,emoi-cncdn.bing.com # @cn
-DOMAIN-SUFFIX,collector.github.com # @ads
-DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com # @ads
+DOMAIN-SUFFIX,githubcopilot.com 
 DOMAIN-SUFFIX,npm.community 
 DOMAIN-SUFFIX,npmjs.com 
 DOMAIN-SUFFIX,npmjs.org 
@@ -580,7 +579,6 @@ DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,github.io 
 DOMAIN-SUFFIX,githubapp.com 
 DOMAIN-SUFFIX,githubassets.com 
-DOMAIN-SUFFIX,githubcopilot.com 
 DOMAIN-SUFFIX,githubhackathon.com 
 DOMAIN-SUFFIX,githubnext.com 
 DOMAIN-SUFFIX,githubpreview.dev 
@@ -598,12 +596,6 @@ DOMAIN,github-cloud.s3.amazonaws.com
 DOMAIN-WILDCARD,github-production-release-asset-*.s3.amazonaws.com 
 DOMAIN-SUFFIX,collector.github.com # @ads
 DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com # @ads
-DOMAIN-SUFFIX,browser.events.data.msn.cn # @ads
-DOMAIN-SUFFIX,browser.events.data.msn.com # @ads
-DOMAIN-SUFFIX,clarity.ms # @ads
-DOMAIN-SUFFIX,microsoftads.com # @ads
-DOMAIN-SUFFIX,msads.net # @ads
-DOMAIN-SUFFIX,nelreports.net # @ads
 DOMAIN-SUFFIX,adaptivecards.io 
 DOMAIN-SUFFIX,api-extractor.com 
 DOMAIN-SUFFIX,apisof.net 
@@ -700,6 +692,8 @@ DOMAIN-SUFFIX,msnewskids.org
 DOMAIN-SUFFIX,msnkids.com 
 DOMAIN-SUFFIX,microsoftstart.com 
 DOMAIN-SUFFIX,start.com 
+DOMAIN-SUFFIX,browser.events.data.msn.cn # @ads @cn
+DOMAIN-SUFFIX,browser.events.data.msn.com # @ads
 DOMAIN-SUFFIX,1drv.com 
 DOMAIN-SUFFIX,1drv.ms 
 DOMAIN-SUFFIX,livefilestore.com 
@@ -1037,6 +1031,10 @@ DOMAIN-SUFFIX,winhec.net
 DOMAIN-SUFFIX,yammer.com 
 DOMAIN-SUFFIX,skype-edf.akadns.net 
 DOMAIN-SUFFIX,skypedata.akadns.net 
+DOMAIN-SUFFIX,clarity.ms # @ads
+DOMAIN-SUFFIX,microsoftads.com # @ads
+DOMAIN-SUFFIX,msads.net # @ads
+DOMAIN-SUFFIX,nelreports.net # @ads
 DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com # @cn
 DOMAIN-SUFFIX,download.windowsupdate.com # @cn
 DOMAIN,b.c2r.ts.cdn.office.net # @cn
@@ -1256,6 +1254,7 @@ DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be 
 DOMAIN-SUFFIX,ytimg.com 
 DOMAIN,yt3.googleusercontent.com 
+DOMAIN-SUFFIX,ads.youtube.com # @ads
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/tiktok
@@ -1294,6 +1293,7 @@ DOMAIN,roovza-launches.appsflyersdk.com # @!cn
 DOMAIN,roovza.inapps.appsflyersdk.com # @!cn
 DOMAIN,roovza.launches.appsflyersdk.com # @!cn
 DOMAIN,roovza.skadsdk.appsflyersdk.com # @!cn
+DOMAIN-SUFFIX,analytics.tiktok.com # @!cn @ads
 ##############################
 DOMAIN-SUFFIX,aws.dev
 DOMAIN-SUFFIX,api.ipify.org

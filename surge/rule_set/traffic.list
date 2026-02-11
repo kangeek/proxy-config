@@ -6,6 +6,7 @@ DOMAIN,cdn-images.orbstack.dev
 DOMAIN,storage.googleapis.com
 DOMAIN-SUFFIX,cloud-images.ubuntu.com
 DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-WILDCARD,*.s3.*.amazonaws.com
 DOMAIN-SUFFIX,debian.map.fastlydns.net
 DOMAIN-SUFFIX,dl.google.com
 DOMAIN-SUFFIX,dl.k8s.io

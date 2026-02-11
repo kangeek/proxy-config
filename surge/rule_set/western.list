@@ -122,60 +122,6 @@ DOMAIN-SUFFIX,godoc.org
 DOMAIN-SUFFIX,golang.com 
 DOMAIN-SUFFIX,golang.net 
 DOMAIN-SUFFIX,golang.org 
-DOMAIN-SUFFIX,2mdn-cn.net # @ads
-DOMAIN-SUFFIX,2mdn.net # @ads
-DOMAIN-SUFFIX,admob-cn.com # @ads
-DOMAIN-SUFFIX,admob.com # @ads
-DOMAIN-SUFFIX,ads.youtube.com # @ads
-DOMAIN-SUFFIX,adsense.com # @ads
-DOMAIN-SUFFIX,adsensecustomsearchads.com # @ads
-DOMAIN-SUFFIX,adsenseformobileapps.com # @ads
-DOMAIN-SUFFIX,adservice.google.com # @ads
-DOMAIN-SUFFIX,adtrafficquality.google # @ads
-DOMAIN-SUFFIX,advertisercommunity.com # @ads
-DOMAIN-SUFFIX,advertiserscommunity.com # @ads
-DOMAIN-SUFFIX,adwords-community.com # @ads
-DOMAIN-SUFFIX,adwords.com # @ads
-DOMAIN-SUFFIX,adwordsexpress.com # @ads
-DOMAIN-SUFFIX,analytics-alv.google.com # @ads
-DOMAIN-SUFFIX,app-analytics-services.com # @ads
-DOMAIN-SUFFIX,app-analytics-services-att.com # @ads
-DOMAIN-SUFFIX,app-measurement-cn.com # @ads
-DOMAIN-SUFFIX,app-measurement.com # @ads
-DOMAIN-SUFFIX,doubleclick-cn.net # @ads
-DOMAIN-SUFFIX,doubleclick.cn # @ads
-DOMAIN-SUFFIX,doubleclick.com # @ads
-DOMAIN-SUFFIX,doubleclick.net # @ads
-DOMAIN-SUFFIX,fcmatch.google.com # @ads
-DOMAIN-SUFFIX,google-analytics-cn.com # @ads
-DOMAIN-SUFFIX,google-analytics.com # @ads
-DOMAIN-SUFFIX,googleadapis.com # @ads
-DOMAIN-SUFFIX,googleadapis.l.google.com # @ads
-DOMAIN-SUFFIX,googleads-cn.com # @ads
-DOMAIN-SUFFIX,googleads.com # @ads
-DOMAIN-SUFFIX,googleadservices-cn.com # @ads
-DOMAIN-SUFFIX,googleadservices.com # @ads
-DOMAIN-SUFFIX,googleadsserving.cn # @ads
-DOMAIN-SUFFIX,googleanalytics.com # @ads
-DOMAIN-SUFFIX,googleoptimize-cn.com # @ads
-DOMAIN-SUFFIX,googleoptimize.com # @ads
-DOMAIN-SUFFIX,googlesyndication-cn.com # @ads
-DOMAIN-SUFFIX,googlesyndication.com # @ads
-DOMAIN-SUFFIX,googletagmanager-cn.com # @ads
-DOMAIN-SUFFIX,googletagmanager.com # @ads
-DOMAIN-SUFFIX,googletagservices-cn.com # @ads
-DOMAIN-SUFFIX,googletagservices.com # @ads
-DOMAIN-SUFFIX,googletraveladservices-cn.com # @ads
-DOMAIN-SUFFIX,googletraveladservices.com # @ads
-DOMAIN-SUFFIX,googlevads-cn.com # @ads
-DOMAIN-SUFFIX,mail-ads.google.com # @ads
-DOMAIN-SUFFIX,mobileads.google.com # @ads
-DOMAIN-SUFFIX,marketingplatform.google.com # @ads
-DOMAIN-SUFFIX,pagead.l.google.com # @ads
-DOMAIN-SUFFIX,partnerad.l.google.com # @ads
-DOMAIN-SUFFIX,urchin.com # @ads
-DOMAIN,analytics.google.com # @ads
-DOMAIN-WILDCARD,adservice.google.** # @ads
 DOMAIN-SUFFIX,deepmind.com 
 DOMAIN-SUFFIX,deepmind.google 
 DOMAIN-SUFFIX,geller-pa.googleapis.com 
@@ -560,6 +506,7 @@ DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be 
 DOMAIN-SUFFIX,ytimg.com 
 DOMAIN,yt3.googleusercontent.com 
+DOMAIN-SUFFIX,ads.youtube.com # @ads
 DOMAIN-SUFFIX,chrome 
 DOMAIN-SUFFIX,dclk 
 DOMAIN-SUFFIX,gbiz 
@@ -1046,6 +993,58 @@ DOMAIN-SUFFIX,xn--gogl-1nd42e.com # goοglе.com
 DOMAIN-SUFFIX,xplr.co 
 DOMAIN-SUFFIX,zukunftswerkstatt.de 
 DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com 
+DOMAIN-SUFFIX,2mdn-cn.net # @ads
+DOMAIN-SUFFIX,2mdn.net # @ads
+DOMAIN-SUFFIX,admob-cn.com # @ads
+DOMAIN-SUFFIX,admob.com # @ads
+DOMAIN-SUFFIX,adsense.com # @ads
+DOMAIN-SUFFIX,adsensecustomsearchads.com # @ads
+DOMAIN-SUFFIX,adsenseformobileapps.com # @ads
+DOMAIN-SUFFIX,adservice.google.com # @ads
+DOMAIN-SUFFIX,adtrafficquality.google # @ads
+DOMAIN-SUFFIX,advertisercommunity.com # @ads
+DOMAIN-SUFFIX,advertiserscommunity.com # @ads
+DOMAIN-SUFFIX,adwords-community.com # @ads
+DOMAIN-SUFFIX,adwords.com # @ads
+DOMAIN-SUFFIX,adwordsexpress.com # @ads
+DOMAIN-SUFFIX,analytics-alv.google.com # @ads
+DOMAIN-SUFFIX,app-analytics-services.com # @ads
+DOMAIN-SUFFIX,app-analytics-services-att.com # @ads
+DOMAIN-SUFFIX,app-measurement-cn.com # @ads
+DOMAIN-SUFFIX,app-measurement.com # @ads
+DOMAIN-SUFFIX,doubleclick-cn.net # @ads
+DOMAIN-SUFFIX,doubleclick.cn # @ads
+DOMAIN-SUFFIX,doubleclick.com # @ads
+DOMAIN-SUFFIX,doubleclick.net # @ads
+DOMAIN-SUFFIX,fcmatch.google.com # @ads
+DOMAIN-SUFFIX,google-analytics-cn.com # @ads
+DOMAIN-SUFFIX,google-analytics.com # @ads
+DOMAIN-SUFFIX,googleadapis.com # @ads
+DOMAIN-SUFFIX,googleadapis.l.google.com # @ads
+DOMAIN-SUFFIX,googleads-cn.com # @ads
+DOMAIN-SUFFIX,googleads.com # @ads
+DOMAIN-SUFFIX,googleadservices-cn.com # @ads
+DOMAIN-SUFFIX,googleadservices.com # @ads
+DOMAIN-SUFFIX,googleadsserving.cn # @ads
+DOMAIN-SUFFIX,googleanalytics.com # @ads
+DOMAIN-SUFFIX,googleoptimize-cn.com # @ads
+DOMAIN-SUFFIX,googleoptimize.com # @ads
+DOMAIN-SUFFIX,googlesyndication-cn.com # @ads
+DOMAIN-SUFFIX,googlesyndication.com # @ads
+DOMAIN-SUFFIX,googletagmanager-cn.com # @ads
+DOMAIN-SUFFIX,googletagmanager.com # @ads
+DOMAIN-SUFFIX,googletagservices-cn.com # @ads
+DOMAIN-SUFFIX,googletagservices.com # @ads
+DOMAIN-SUFFIX,googletraveladservices-cn.com # @ads
+DOMAIN-SUFFIX,googletraveladservices.com # @ads
+DOMAIN-SUFFIX,googlevads-cn.com # @ads
+DOMAIN-SUFFIX,mail-ads.google.com # @ads
+DOMAIN-SUFFIX,mobileads.google.com # @ads
+DOMAIN-SUFFIX,marketingplatform.google.com # @ads
+DOMAIN-SUFFIX,pagead.l.google.com # @ads
+DOMAIN-SUFFIX,partnerad.l.google.com # @ads
+DOMAIN-SUFFIX,urchin.com # @ads
+DOMAIN,analytics.google.com # @ads
 DOMAIN-SUFFIX,gvt1-cn.com # @cn
 DOMAIN-SUFFIX,gvt2-cn.com # @cn
 DOMAIN,www.recaptcha.net # @cn
@@ -1187,8 +1186,7 @@ DOMAIN,xn--flw351e.com # @cn
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/github
-DOMAIN-SUFFIX,collector.github.com # @ads
-DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com # @ads
+DOMAIN-SUFFIX,githubcopilot.com 
 DOMAIN-SUFFIX,npm.community 
 DOMAIN-SUFFIX,npmjs.com 
 DOMAIN-SUFFIX,npmjs.org 
@@ -1205,7 +1203,6 @@ DOMAIN-SUFFIX,github.dev
 DOMAIN-SUFFIX,github.io 
 DOMAIN-SUFFIX,githubapp.com 
 DOMAIN-SUFFIX,githubassets.com 
-DOMAIN-SUFFIX,githubcopilot.com 
 DOMAIN-SUFFIX,githubhackathon.com 
 DOMAIN-SUFFIX,githubnext.com 
 DOMAIN-SUFFIX,githubpreview.dev 
@@ -1221,6 +1218,8 @@ DOMAIN-SUFFIX,blob.core.windows.net
 DOMAIN,github-api.arkoselabs.com 
 DOMAIN,github-cloud.s3.amazonaws.com 
 DOMAIN-WILDCARD,github-production-release-asset-*.s3.amazonaws.com 
+DOMAIN-SUFFIX,collector.github.com # @ads
+DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com # @ads
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/gitlab
@@ -1529,11 +1528,6 @@ DOMAIN-SUFFIX,x.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/apple
-DOMAIN-SUFFIX,advertising.apple.com # @ads
-DOMAIN-SUFFIX,api-adservices.apple.com # @ads
-DOMAIN-SUFFIX,iadsdk.apple.com # @ads
-DOMAIN-SUFFIX,iad.apple.com # @ads
-DOMAIN-SUFFIX,qwapi.com # @ads
 DOMAIN-SUFFIX,appleswift.com 
 DOMAIN-SUFFIX,swift.org 
 DOMAIN-SUFFIX,swiftui.cn # @cn
@@ -3339,6 +3333,11 @@ DOMAIN,weatherkit.apple.com # @cn
 DOMAIN,www.apple.com # @cn
 DOMAIN,www.apple.com.edgekey.net.globalredir.akadns.net # @cn
 DOMAIN,xp.apple.com # @cn
+DOMAIN-SUFFIX,advertising.apple.com # @ads
+DOMAIN-SUFFIX,api-adservices.apple.com # @ads
+DOMAIN-SUFFIX,iadsdk.apple.com # @ads
+DOMAIN-SUFFIX,iad.apple.com # @ads
+DOMAIN-SUFFIX,qwapi.com # @ads
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/bing

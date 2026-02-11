@@ -9,6 +9,7 @@ payload:
   - DOMAIN,storage.googleapis.com # Google storage
   - DOMAIN-SUFFIX,cloud-images.ubuntu.com # Ubuntu cloud images
   - DOMAIN-SUFFIX,cloudfront.net # Amazon CloudFront
+  - DOMAIN-WILDCARD,*.s3.*.amazonaws.com # Amazon S3
   - DOMAIN-SUFFIX,debian.map.fastlydns.net # Debian CDN
   - DOMAIN-SUFFIX,dl.google.com # Google download
   - DOMAIN-SUFFIX,dl.k8s.io # K8s download
