@@ -38,6 +38,7 @@ DOMAIN-KEYWORD,docker
 DOMAIN-SUFFIX,ecr.io
 DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,ghcr.io
+DOMAIN,pkg-containers.githubusercontent.com
 DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,public.ecr.aws
 GEOSITE,netflix

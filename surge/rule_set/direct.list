@@ -38,691 +38,642 @@ DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,tuoyouyun.com
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/private
-DOMAIN-SUFFIX,lan 
-DOMAIN-SUFFIX,localdomain 
-DOMAIN-SUFFIX,example 
-DOMAIN-SUFFIX,invalid 
-DOMAIN-SUFFIX,localhost 
-DOMAIN-SUFFIX,test 
-DOMAIN-SUFFIX,local 
-DOMAIN-SUFFIX,home.arpa 
-DOMAIN-SUFFIX,internal 
-DOMAIN-SUFFIX,0.in-addr.arpa 
-DOMAIN-SUFFIX,2.0.192.in-addr.arpa 
-DOMAIN-SUFFIX,10.in-addr.arpa 
-DOMAIN-SUFFIX,16.172.in-addr.arpa 
-DOMAIN-SUFFIX,17.172.in-addr.arpa 
-DOMAIN-SUFFIX,18.172.in-addr.arpa 
-DOMAIN-SUFFIX,19.172.in-addr.arpa 
-DOMAIN-SUFFIX,20.172.in-addr.arpa 
-DOMAIN-SUFFIX,21.172.in-addr.arpa 
-DOMAIN-SUFFIX,22.172.in-addr.arpa 
-DOMAIN-SUFFIX,23.172.in-addr.arpa 
-DOMAIN-SUFFIX,24.172.in-addr.arpa 
-DOMAIN-SUFFIX,25.172.in-addr.arpa 
-DOMAIN-SUFFIX,26.172.in-addr.arpa 
-DOMAIN-SUFFIX,27.172.in-addr.arpa 
-DOMAIN-SUFFIX,28.172.in-addr.arpa 
-DOMAIN-SUFFIX,29.172.in-addr.arpa 
-DOMAIN-SUFFIX,30.172.in-addr.arpa 
-DOMAIN-SUFFIX,31.172.in-addr.arpa 
-DOMAIN-SUFFIX,100.51.198.in-addr.arpa 
-DOMAIN-SUFFIX,113.0.203.in-addr.arpa 
-DOMAIN-SUFFIX,127.in-addr.arpa 
-DOMAIN-SUFFIX,168.192.in-addr.arpa 
-DOMAIN-SUFFIX,254.169.in-addr.arpa 
-DOMAIN-SUFFIX,255.255.255.255.in-addr.arpa 
-DOMAIN-SUFFIX,0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa 
-DOMAIN-SUFFIX,1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa 
-DOMAIN-SUFFIX,8.b.d.0.1.0.0.2.ip6.arpa 
-DOMAIN-SUFFIX,8.e.f.ip6.arpa 
-DOMAIN-SUFFIX,9.e.f.ip6.arpa 
-DOMAIN-SUFFIX,a.e.f.ip6.arpa 
-DOMAIN-SUFFIX,b.e.f.ip6.arpa 
-DOMAIN-SUFFIX,d.f.ip6.arpa 
-DOMAIN-SUFFIX,64.100.in-addr.arpa 
-DOMAIN-SUFFIX,65.100.in-addr.arpa 
-DOMAIN-SUFFIX,66.100.in-addr.arpa 
-DOMAIN-SUFFIX,67.100.in-addr.arpa 
-DOMAIN-SUFFIX,68.100.in-addr.arpa 
-DOMAIN-SUFFIX,69.100.in-addr.arpa 
-DOMAIN-SUFFIX,70.100.in-addr.arpa 
-DOMAIN-SUFFIX,71.100.in-addr.arpa 
-DOMAIN-SUFFIX,72.100.in-addr.arpa 
-DOMAIN-SUFFIX,73.100.in-addr.arpa 
-DOMAIN-SUFFIX,74.100.in-addr.arpa 
-DOMAIN-SUFFIX,75.100.in-addr.arpa 
-DOMAIN-SUFFIX,76.100.in-addr.arpa 
-DOMAIN-SUFFIX,77.100.in-addr.arpa 
-DOMAIN-SUFFIX,78.100.in-addr.arpa 
-DOMAIN-SUFFIX,79.100.in-addr.arpa 
-DOMAIN-SUFFIX,80.100.in-addr.arpa 
-DOMAIN-SUFFIX,81.100.in-addr.arpa 
-DOMAIN-SUFFIX,82.100.in-addr.arpa 
-DOMAIN-SUFFIX,83.100.in-addr.arpa 
-DOMAIN-SUFFIX,84.100.in-addr.arpa 
-DOMAIN-SUFFIX,85.100.in-addr.arpa 
-DOMAIN-SUFFIX,86.100.in-addr.arpa 
-DOMAIN-SUFFIX,87.100.in-addr.arpa 
-DOMAIN-SUFFIX,88.100.in-addr.arpa 
-DOMAIN-SUFFIX,89.100.in-addr.arpa 
-DOMAIN-SUFFIX,90.100.in-addr.arpa 
-DOMAIN-SUFFIX,91.100.in-addr.arpa 
-DOMAIN-SUFFIX,92.100.in-addr.arpa 
-DOMAIN-SUFFIX,93.100.in-addr.arpa 
-DOMAIN-SUFFIX,94.100.in-addr.arpa 
-DOMAIN-SUFFIX,95.100.in-addr.arpa 
-DOMAIN-SUFFIX,96.100.in-addr.arpa 
-DOMAIN-SUFFIX,97.100.in-addr.arpa 
-DOMAIN-SUFFIX,98.100.in-addr.arpa 
-DOMAIN-SUFFIX,99.100.in-addr.arpa 
-DOMAIN-SUFFIX,100.100.in-addr.arpa 
-DOMAIN-SUFFIX,101.100.in-addr.arpa 
-DOMAIN-SUFFIX,102.100.in-addr.arpa 
-DOMAIN-SUFFIX,103.100.in-addr.arpa 
-DOMAIN-SUFFIX,104.100.in-addr.arpa 
-DOMAIN-SUFFIX,105.100.in-addr.arpa 
-DOMAIN-SUFFIX,106.100.in-addr.arpa 
-DOMAIN-SUFFIX,107.100.in-addr.arpa 
-DOMAIN-SUFFIX,108.100.in-addr.arpa 
-DOMAIN-SUFFIX,109.100.in-addr.arpa 
-DOMAIN-SUFFIX,110.100.in-addr.arpa 
-DOMAIN-SUFFIX,111.100.in-addr.arpa 
-DOMAIN-SUFFIX,112.100.in-addr.arpa 
-DOMAIN-SUFFIX,113.100.in-addr.arpa 
-DOMAIN-SUFFIX,114.100.in-addr.arpa 
-DOMAIN-SUFFIX,115.100.in-addr.arpa 
-DOMAIN-SUFFIX,116.100.in-addr.arpa 
-DOMAIN-SUFFIX,117.100.in-addr.arpa 
-DOMAIN-SUFFIX,118.100.in-addr.arpa 
-DOMAIN-SUFFIX,119.100.in-addr.arpa 
-DOMAIN-SUFFIX,120.100.in-addr.arpa 
-DOMAIN-SUFFIX,121.100.in-addr.arpa 
-DOMAIN-SUFFIX,122.100.in-addr.arpa 
-DOMAIN-SUFFIX,123.100.in-addr.arpa 
-DOMAIN-SUFFIX,124.100.in-addr.arpa 
-DOMAIN-SUFFIX,125.100.in-addr.arpa 
-DOMAIN-SUFFIX,126.100.in-addr.arpa 
-DOMAIN-SUFFIX,127.100.in-addr.arpa 
-DOMAIN,instant.arubanetworks.com 
-DOMAIN,setmeup.arubanetworks.com 
-DOMAIN,asusrouter.com 
-DOMAIN,router.asus.com 
-DOMAIN,www.asusrouter.com 
-DOMAIN,oasisauth.h3c.com 
-DOMAIN,routerlogin.com 
-DOMAIN,www.routerlogin.com 
-DOMAIN-SUFFIX,hiwifi.com 
-DOMAIN-SUFFIX,leike.cc 
-DOMAIN-SUFFIX,my.router 
-DOMAIN-SUFFIX,peiluyou.com 
-DOMAIN-SUFFIX,phicomm.me 
-DOMAIN-SUFFIX,router.ctc 
-DOMAIN-SUFFIX,plex.direct 
-DOMAIN-SUFFIX,localhost.sec.qq.com 
-DOMAIN-SUFFIX,localhost.ptlogin2.qq.com 
-DOMAIN-SUFFIX,test.steampowered.com 
-DOMAIN-SUFFIX,tendawifi.com 
-DOMAIN-SUFFIX,tplinkwifi.net 
-DOMAIN,tplogin.cn 
-DOMAIN,miwifi.com 
-DOMAIN,www.miwifi.com 
-DOMAIN-SUFFIX,zte.home 
-DOMAIN-SUFFIX,ts.net 
+DOMAIN-SUFFIX,1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+DOMAIN-SUFFIX,10.in-addr.arpa
+DOMAIN-SUFFIX,100.100.in-addr.arpa
+DOMAIN-SUFFIX,100.51.198.in-addr.arpa
+DOMAIN-SUFFIX,101.100.in-addr.arpa
+DOMAIN-SUFFIX,102.100.in-addr.arpa
+DOMAIN-SUFFIX,103.100.in-addr.arpa
+DOMAIN-SUFFIX,104.100.in-addr.arpa
+DOMAIN-SUFFIX,105.100.in-addr.arpa
+DOMAIN-SUFFIX,106.100.in-addr.arpa
+DOMAIN-SUFFIX,107.100.in-addr.arpa
+DOMAIN-SUFFIX,108.100.in-addr.arpa
+DOMAIN-SUFFIX,109.100.in-addr.arpa
+DOMAIN-SUFFIX,110.100.in-addr.arpa
+DOMAIN-SUFFIX,111.100.in-addr.arpa
+DOMAIN-SUFFIX,112.100.in-addr.arpa
+DOMAIN-SUFFIX,113.0.203.in-addr.arpa
+DOMAIN-SUFFIX,113.100.in-addr.arpa
+DOMAIN-SUFFIX,114.100.in-addr.arpa
+DOMAIN-SUFFIX,115.100.in-addr.arpa
+DOMAIN-SUFFIX,116.100.in-addr.arpa
+DOMAIN-SUFFIX,117.100.in-addr.arpa
+DOMAIN-SUFFIX,118.100.in-addr.arpa
+DOMAIN-SUFFIX,119.100.in-addr.arpa
+DOMAIN-SUFFIX,120.100.in-addr.arpa
+DOMAIN-SUFFIX,121.100.in-addr.arpa
+DOMAIN-SUFFIX,122.100.in-addr.arpa
+DOMAIN-SUFFIX,123.100.in-addr.arpa
+DOMAIN-SUFFIX,124.100.in-addr.arpa
+DOMAIN-SUFFIX,125.100.in-addr.arpa
+DOMAIN-SUFFIX,126.100.in-addr.arpa
+DOMAIN-SUFFIX,127.100.in-addr.arpa
+DOMAIN-SUFFIX,127.in-addr.arpa
+DOMAIN-SUFFIX,16.172.in-addr.arpa
+DOMAIN-SUFFIX,168.192.in-addr.arpa
+DOMAIN-SUFFIX,17.172.in-addr.arpa
+DOMAIN-SUFFIX,18.172.in-addr.arpa
+DOMAIN-SUFFIX,19.172.in-addr.arpa
+DOMAIN-SUFFIX,2.0.192.in-addr.arpa
+DOMAIN-SUFFIX,20.172.in-addr.arpa
+DOMAIN-SUFFIX,21.172.in-addr.arpa
+DOMAIN-SUFFIX,22.172.in-addr.arpa
+DOMAIN-SUFFIX,23.172.in-addr.arpa
+DOMAIN-SUFFIX,24.172.in-addr.arpa
+DOMAIN-SUFFIX,25.172.in-addr.arpa
+DOMAIN-SUFFIX,254.169.in-addr.arpa
+DOMAIN-SUFFIX,255.255.255.255.in-addr.arpa
+DOMAIN-SUFFIX,26.172.in-addr.arpa
+DOMAIN-SUFFIX,27.172.in-addr.arpa
+DOMAIN-SUFFIX,28.172.in-addr.arpa
+DOMAIN-SUFFIX,29.172.in-addr.arpa
+DOMAIN-SUFFIX,30.172.in-addr.arpa
+DOMAIN-SUFFIX,31.172.in-addr.arpa
+DOMAIN-SUFFIX,64.100.in-addr.arpa
+DOMAIN-SUFFIX,65.100.in-addr.arpa
+DOMAIN-SUFFIX,66.100.in-addr.arpa
+DOMAIN-SUFFIX,67.100.in-addr.arpa
+DOMAIN-SUFFIX,68.100.in-addr.arpa
+DOMAIN-SUFFIX,69.100.in-addr.arpa
+DOMAIN-SUFFIX,70.100.in-addr.arpa
+DOMAIN-SUFFIX,71.100.in-addr.arpa
+DOMAIN-SUFFIX,72.100.in-addr.arpa
+DOMAIN-SUFFIX,73.100.in-addr.arpa
+DOMAIN-SUFFIX,74.100.in-addr.arpa
+DOMAIN-SUFFIX,75.100.in-addr.arpa
+DOMAIN-SUFFIX,76.100.in-addr.arpa
+DOMAIN-SUFFIX,77.100.in-addr.arpa
+DOMAIN-SUFFIX,78.100.in-addr.arpa
+DOMAIN-SUFFIX,79.100.in-addr.arpa
+DOMAIN-SUFFIX,8.b.d.0.1.0.0.2.ip6.arpa
+DOMAIN-SUFFIX,8.e.f.ip6.arpa
+DOMAIN-SUFFIX,80.100.in-addr.arpa
+DOMAIN-SUFFIX,81.100.in-addr.arpa
+DOMAIN-SUFFIX,82.100.in-addr.arpa
+DOMAIN-SUFFIX,83.100.in-addr.arpa
+DOMAIN-SUFFIX,84.100.in-addr.arpa
+DOMAIN-SUFFIX,85.100.in-addr.arpa
+DOMAIN-SUFFIX,86.100.in-addr.arpa
+DOMAIN-SUFFIX,87.100.in-addr.arpa
+DOMAIN-SUFFIX,88.100.in-addr.arpa
+DOMAIN-SUFFIX,89.100.in-addr.arpa
+DOMAIN-SUFFIX,9.e.f.ip6.arpa
+DOMAIN-SUFFIX,90.100.in-addr.arpa
+DOMAIN-SUFFIX,91.100.in-addr.arpa
+DOMAIN-SUFFIX,92.100.in-addr.arpa
+DOMAIN-SUFFIX,93.100.in-addr.arpa
+DOMAIN-SUFFIX,94.100.in-addr.arpa
+DOMAIN-SUFFIX,95.100.in-addr.arpa
+DOMAIN-SUFFIX,96.100.in-addr.arpa
+DOMAIN-SUFFIX,97.100.in-addr.arpa
+DOMAIN-SUFFIX,98.100.in-addr.arpa
+DOMAIN-SUFFIX,99.100.in-addr.arpa
+DOMAIN-SUFFIX,a.e.f.ip6.arpa
+DOMAIN-SUFFIX,b.e.f.ip6.arpa
+DOMAIN-SUFFIX,d.f.ip6.arpa
+DOMAIN-SUFFIX,example
+DOMAIN-SUFFIX,hiwifi.com
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,internal
+DOMAIN-SUFFIX,invalid
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,leike.cc
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,localdomain
+DOMAIN-SUFFIX,localhost
+DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
+DOMAIN-SUFFIX,localhost.sec.qq.com
+DOMAIN-SUFFIX,my.router
+DOMAIN-SUFFIX,peiluyou.com
+DOMAIN-SUFFIX,phicomm.me
+DOMAIN-SUFFIX,plex.direct
+DOMAIN-SUFFIX,router.ctc
+DOMAIN-SUFFIX,tendawifi.com
+DOMAIN-SUFFIX,test
+DOMAIN-SUFFIX,test.steampowered.com
+DOMAIN-SUFFIX,tplinkwifi.net
+DOMAIN-SUFFIX,ts.net
+DOMAIN-SUFFIX,zte.home
+DOMAIN,asusrouter.com
+DOMAIN,instant.arubanetworks.com
+DOMAIN,miwifi.com
+DOMAIN,oasisauth.h3c.com
+DOMAIN,router.asus.com
+DOMAIN,routerlogin.com
+DOMAIN,setmeup.arubanetworks.com
+DOMAIN,tplogin.cn
+DOMAIN,www.asusrouter.com
+DOMAIN,www.miwifi.com
+DOMAIN,www.routerlogin.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/onedrive
-DOMAIN-SUFFIX,1drv.com 
-DOMAIN-SUFFIX,1drv.ms 
-DOMAIN-SUFFIX,livefilestore.com 
-DOMAIN-SUFFIX,onedrive.co 
-DOMAIN-SUFFIX,onedrive.co.uk 
-DOMAIN-SUFFIX,onedrive.com 
-DOMAIN-SUFFIX,onedrive.eu 
-DOMAIN-SUFFIX,onedrive.net 
-DOMAIN-SUFFIX,onedrive.org 
-DOMAIN-SUFFIX,onedrive.live.com 
-DOMAIN-SUFFIX,storage.live.com 
+DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,livefilestore.com
+DOMAIN-SUFFIX,onedrive.co
+DOMAIN-SUFFIX,onedrive.co.uk
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,onedrive.eu
+DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN-SUFFIX,onedrive.net
+DOMAIN-SUFFIX,onedrive.org
+DOMAIN-SUFFIX,storage.live.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/category-bank-cn
-DOMAIN-SUFFIX,boc.cn 
-DOMAIN-SUFFIX,bank-of-china.com 
-DOMAIN-SUFFIX,bankofchina.com 
-DOMAIN-SUFFIX,bocfullertonbank.com 
-DOMAIN-SUFFIX,bocamchina.com 
-DOMAIN-SUFFIX,bocaviation.com 
-DOMAIN-SUFFIX,boccfc.cc 
-DOMAIN-SUFFIX,boccfc.cn 
-DOMAIN-SUFFIX,bocgi.com 
-DOMAIN-SUFFIX,bocgins.com 
-DOMAIN-SUFFIX,bochk.com # @!cn
-DOMAIN-SUFFIX,bocichina.cn 
-DOMAIN-SUFFIX,bocichina.com 
-DOMAIN-SUFFIX,bocichina.com.cn 
-DOMAIN-SUFFIX,bocifunds.cn 
-DOMAIN-SUFFIX,bocifunds.com 
-DOMAIN-SUFFIX,bocifunds.com.cn 
-DOMAIN-SUFFIX,bocigroup.com 
-DOMAIN-SUFFIX,bocim.com 
-DOMAIN-SUFFIX,bocservices.com.cn 
-DOMAIN-SUFFIX,ccb-life.com.cn 
-DOMAIN-SUFFIX,ccb.cn 
-DOMAIN-SUFFIX,ccb.com 
-DOMAIN-SUFFIX,ccb.com.cn 
-DOMAIN-SUFFIX,ccbcos.com 
-DOMAIN-SUFFIX,ccbfund.cn 
-DOMAIN-SUFFIX,ccbfund.com 
-DOMAIN-SUFFIX,ccbfund.com.cn 
-DOMAIN-SUFFIX,ccbfutures.cn 
-DOMAIN-SUFFIX,ccbfutures.com 
-DOMAIN-SUFFIX,ccbintl.com.hk # @!cn
-DOMAIN-SUFFIX,ccbleasing.com 
-DOMAIN-SUFFIX,ccblife-test.com.cn 
-DOMAIN-SUFFIX,ccbseoul.com # @!cn
-DOMAIN-SUFFIX,ccbtrust.com.cn 
-DOMAIN-SUFFIX,ccbxt.com 
-DOMAIN-SUFFIX,citic 
-DOMAIN-SUFFIX,xn--fiq64b 
-DOMAIN-SUFFIX,cfc108.com 
-DOMAIN-SUFFIX,chinaamc.com 
-DOMAIN-SUFFIX,citic-prudential.com.cn 
-DOMAIN-SUFFIX,citicbank.com 
-DOMAIN-SUFFIX,citiccapital.com 
-DOMAIN-SUFFIX,citiciam.com 
-DOMAIN-SUFFIX,citicifh.com 
-DOMAIN-SUFFIX,citicprufunds.com.cn 
-DOMAIN-SUFFIX,citics.com.hk # @!cn
-DOMAIN-SUFFIX,citicsf.com 
-DOMAIN-SUFFIX,clsa.com 
-DOMAIN-SUFFIX,cncbinternational.com # @!cn
-DOMAIN-SUFFIX,csc108.com 
-DOMAIN-SUFFIX,csci.hk # @!cn
-DOMAIN-SUFFIX,ecitic.com 
-DOMAIN-SUFFIX,8008205555.cn 
-DOMAIN-SUFFIX,8008205555.com 
-DOMAIN-SUFFIX,cignacmb-ipmi.com 
-DOMAIN-SUFFIX,cignacmb.com 
-DOMAIN-SUFFIX,cignacmbamc.com 
-DOMAIN-SUFFIX,cmb-leasing.com 
-DOMAIN-SUFFIX,cmbchina.biz 
-DOMAIN-SUFFIX,cmbchina.cn 
-DOMAIN-SUFFIX,cmbchina.com 
-DOMAIN-SUFFIX,cmbi.com.hk # @!cn
-DOMAIN-SUFFIX,cmbimg.cn 
-DOMAIN-SUFFIX,cmbimg.com 
-DOMAIN-SUFFIX,cmbt.cn 
-DOMAIN-SUFFIX,cmbuat.com 
-DOMAIN-SUFFIX,cmburl.cn 
-DOMAIN-SUFFIX,cmbwinglungbank.com # @!cn
-DOMAIN-SUFFIX,cmf.biz 
-DOMAIN-SUFFIX,cmf.ltd 
-DOMAIN-SUFFIX,cmfchina.com 
-DOMAIN-SUFFIX,cmfunds.cn 
-DOMAIN-SUFFIX,test-cignacmb.com 
-DOMAIN-SUFFIX,joying.com 
-DOMAIN-SUFFIX,hsbc.com.cn 
-DOMAIN-SUFFIX,hsbcqh.com.cn 
-DOMAIN-SUFFIX,hsbcinsurance.com.cn 
-DOMAIN-SUFFIX,icbc 
-DOMAIN-SUFFIX,95588.com 
-DOMAIN-SUFFIX,95588.com.cn 
-DOMAIN-SUFFIX,dccnet.com.cn 
-DOMAIN-SUFFIX,icbc-at.com # @!cn
-DOMAIN-SUFFIX,icbc-cz.com # @!cn
-DOMAIN-SUFFIX,icbc-ltd.com # @!cn
-DOMAIN-SUFFIX,icbc-uk.com # @!cn
-DOMAIN-SUFFIX,icbc-us.com # @!cn
-DOMAIN-SUFFIX,icbc.ae # @!cn
-DOMAIN-SUFFIX,icbc.be # @!cn
-DOMAIN-SUFFIX,icbc.co.id # @!cn
-DOMAIN-SUFFIX,icbc.co.jp # @!cn
-DOMAIN-SUFFIX,icbc.co.kr # @!cn
-DOMAIN-SUFFIX,icbc.co.nl # @!cn
-DOMAIN-SUFFIX,icbc.com.au # @!cn
-DOMAIN-SUFFIX,icbc.com.cn 
-DOMAIN-SUFFIX,icbc.com.es # @!cn
-DOMAIN-SUFFIX,icbc.com.kh # @!cn
-DOMAIN-SUFFIX,icbc.com.kw # @!cn
-DOMAIN-SUFFIX,icbc.com.la # @!cn
-DOMAIN-SUFFIX,icbc.com.mm # @!cn
-DOMAIN-SUFFIX,icbc.com.mo # @!cn
-DOMAIN-SUFFIX,icbc.com.mx # @!cn
-DOMAIN-SUFFIX,icbc.com.pe # @!cn
-DOMAIN-SUFFIX,icbc.com.pk # @!cn
-DOMAIN-SUFFIX,icbc.com.qa # @!cn
-DOMAIN-SUFFIX,icbc.com.sg # @!cn
-DOMAIN-SUFFIX,icbc.com.vn # @!cn
-DOMAIN-SUFFIX,icbc.de # @!cn
-DOMAIN-SUFFIX,icbc.eu # @!cn
-DOMAIN-SUFFIX,icbc.lu # @!cn
-DOMAIN-SUFFIX,icbcalmaty.kz # @!cn
-DOMAIN-SUFFIX,icbcasia.com # @!cn
-DOMAIN-SUFFIX,icbcbr.com.br # @!cn
-DOMAIN-SUFFIX,icbccs.com.cn 
-DOMAIN-SUFFIX,icbccstz.com.cn 
-DOMAIN-SUFFIX,icbci.com.hk # @!cn
-DOMAIN-SUFFIX,icbcina.com 
-DOMAIN-SUFFIX,icbcindia.com # @!cn
-DOMAIN-SUFFIX,icbcit.com # @!cn
-DOMAIN-SUFFIX,icbclondon.com # @!cn
-DOMAIN-SUFFIX,icbcmanila.com.cn 
-DOMAIN-SUFFIX,icbcme.ae # @!cn
-DOMAIN-SUFFIX,icbcmoscow.ru # @!cn
-DOMAIN-SUFFIX,icbcmy.com # @!cn
-DOMAIN-SUFFIX,icbcnz.com # @!cn
-DOMAIN-SUFFIX,icbcpanama.com # @!cn
-DOMAIN-SUFFIX,icbcparis.fr # @!cn
-DOMAIN-SUFFIX,icbcpl.com # @!cn
-DOMAIN-SUFFIX,icbcstandard.com 
-DOMAIN-SUFFIX,icbcstandardbank.com 
-DOMAIN-SUFFIX,icbcstandardresources.com 
-DOMAIN-SUFFIX,icbcstandardsecurities.com 
-DOMAIN-SUFFIX,icbcswiss.com # @!cn
-DOMAIN-SUFFIX,icbcthai.com # @!cn
-DOMAIN-SUFFIX,icbkfs.com # @!cn
-DOMAIN-SUFFIX,icbkus.com # @!cn
-DOMAIN-SUFFIX,95516.com 
-DOMAIN-SUFFIX,95516.net 
-DOMAIN-SUFFIX,chinaunionpay.com 
-DOMAIN-SUFFIX,chinaunionpay.com.cn 
-DOMAIN-SUFFIX,chinaunionpay.net 
-DOMAIN-SUFFIX,cup.com.cn 
-DOMAIN-SUFFIX,cup62.cn 
-DOMAIN-SUFFIX,unionpay.com 
-DOMAIN-SUFFIX,unionpay.net 
-DOMAIN-SUFFIX,unionpaysecure.com 
-DOMAIN-SUFFIX,unionpayintl.cn 
-DOMAIN-SUFFIX,unionpayintl.com 
-DOMAIN-SUFFIX,abchina.com 
-DOMAIN-SUFFIX,bankcomm.com 
-DOMAIN-SUFFIX,bankofbeijing.com.cn 
-DOMAIN-SUFFIX,bosc.cn 
-DOMAIN-SUFFIX,bsb.com.cn 
-DOMAIN-SUFFIX,cebbank.com 
-DOMAIN-SUFFIX,cgbchina.com.cn 
-DOMAIN-SUFFIX,cib.com.cn 
-DOMAIN-SUFFIX,citibank.com.cn 
-DOMAIN-SUFFIX,cmbc.com.cn 
-DOMAIN-SUFFIX,hxb.com.cn 
-DOMAIN-SUFFIX,njcb.com.cn 
-DOMAIN-SUFFIX,psbc.com 
-DOMAIN-SUFFIX,spdb.com.cn 
-DOMAIN-SUFFIX,whccb.com 
-DOMAIN-SUFFIX,kcbebank.com 
-DOMAIN-SUFFIX,shrbank.com 
-DOMAIN-SUFFIX,mybank.cn 
-DOMAIN-SUFFIX,ms-bank.cn 
-DOMAIN-SUFFIX,webank.com 
-DOMAIN-SUFFIX,webankcdn.net 
-DOMAIN-SUFFIX,csxbank.com 
-DOMAIN-SUFFIX,fbank.com 
-DOMAIN-SUFFIX,xwbank.com 
-DOMAIN-SUFFIX,zgcbank.com 
-DOMAIN-SUFFIX,yillionbank.com 
-DOMAIN-SUFFIX,z-bank.com 
-DOMAIN-SUFFIX,onebank.com.cn 
-DOMAIN-SUFFIX,wegobank.cn 
-DOMAIN-SUFFIX,suningbank.com 
-DOMAIN-SUFFIX,kshbank.cn 
-DOMAIN-SUFFIX,xa-bank.com 
-DOMAIN-SUFFIX,newupbank.com 
-DOMAIN-SUFFIX,ymbank.com 
-DOMAIN-SUFFIX,wxsbank.com 
+DOMAIN-SUFFIX,8008205555.cn
+DOMAIN-SUFFIX,8008205555.com
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,95516.net
+DOMAIN-SUFFIX,95588.com
+DOMAIN-SUFFIX,95588.com.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,bank-of-china.com
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,bankofbeijing.com.cn
+DOMAIN-SUFFIX,bankofchina.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,bocamchina.com
+DOMAIN-SUFFIX,bocaviation.com
+DOMAIN-SUFFIX,boccfc.cc
+DOMAIN-SUFFIX,boccfc.cn
+DOMAIN-SUFFIX,bocfullertonbank.com
+DOMAIN-SUFFIX,bocgi.com
+DOMAIN-SUFFIX,bocgins.com
+DOMAIN-SUFFIX,bocichina.cn
+DOMAIN-SUFFIX,bocichina.com
+DOMAIN-SUFFIX,bocichina.com.cn
+DOMAIN-SUFFIX,bocifunds.cn
+DOMAIN-SUFFIX,bocifunds.com
+DOMAIN-SUFFIX,bocifunds.com.cn
+DOMAIN-SUFFIX,bocigroup.com
+DOMAIN-SUFFIX,bocim.com
+DOMAIN-SUFFIX,bocservices.com.cn
+DOMAIN-SUFFIX,bosc.cn
+DOMAIN-SUFFIX,bsb.com.cn
+DOMAIN-SUFFIX,ccb-life.com.cn
+DOMAIN-SUFFIX,ccb.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,ccb.com.cn
+DOMAIN-SUFFIX,ccbcos.com
+DOMAIN-SUFFIX,ccbfund.cn
+DOMAIN-SUFFIX,ccbfund.com
+DOMAIN-SUFFIX,ccbfund.com.cn
+DOMAIN-SUFFIX,ccbfutures.cn
+DOMAIN-SUFFIX,ccbfutures.com
+DOMAIN-SUFFIX,ccbleasing.com
+DOMAIN-SUFFIX,ccblife-test.com.cn
+DOMAIN-SUFFIX,ccbtrust.com.cn
+DOMAIN-SUFFIX,ccbxt.com
+DOMAIN-SUFFIX,cebbank.com
+DOMAIN-SUFFIX,cfc108.com
+DOMAIN-SUFFIX,cgbchina.com.cn
+DOMAIN-SUFFIX,chinaamc.com
+DOMAIN-SUFFIX,chinaunionpay.com
+DOMAIN-SUFFIX,chinaunionpay.com.cn
+DOMAIN-SUFFIX,chinaunionpay.net
+DOMAIN-SUFFIX,cib.com.cn
+DOMAIN-SUFFIX,cignacmb-ipmi.com
+DOMAIN-SUFFIX,cignacmb.com
+DOMAIN-SUFFIX,cignacmbamc.com
+DOMAIN-SUFFIX,citibank.com.cn
+DOMAIN-SUFFIX,citic
+DOMAIN-SUFFIX,citic-prudential.com.cn
+DOMAIN-SUFFIX,citicbank.com
+DOMAIN-SUFFIX,citiccapital.com
+DOMAIN-SUFFIX,citiciam.com
+DOMAIN-SUFFIX,citicifh.com
+DOMAIN-SUFFIX,citicprufunds.com.cn
+DOMAIN-SUFFIX,citicsf.com
+DOMAIN-SUFFIX,clsa.com
+DOMAIN-SUFFIX,cmb-leasing.com
+DOMAIN-SUFFIX,cmbc.com.cn
+DOMAIN-SUFFIX,cmbchina.biz
+DOMAIN-SUFFIX,cmbchina.cn
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,cmbimg.cn
+DOMAIN-SUFFIX,cmbimg.com
+DOMAIN-SUFFIX,cmbt.cn
+DOMAIN-SUFFIX,cmbuat.com
+DOMAIN-SUFFIX,cmburl.cn
+DOMAIN-SUFFIX,cmf.biz
+DOMAIN-SUFFIX,cmf.ltd
+DOMAIN-SUFFIX,cmfchina.com
+DOMAIN-SUFFIX,cmfunds.cn
+DOMAIN-SUFFIX,csc108.com
+DOMAIN-SUFFIX,csxbank.com
+DOMAIN-SUFFIX,cup.com.cn
+DOMAIN-SUFFIX,cup62.cn
+DOMAIN-SUFFIX,dccnet.com.cn
+DOMAIN-SUFFIX,ecitic.com
+DOMAIN-SUFFIX,fbank.com
+DOMAIN-SUFFIX,hsbc.com.cn
+DOMAIN-SUFFIX,hsbcinsurance.com.cn
+DOMAIN-SUFFIX,hsbcqh.com.cn
+DOMAIN-SUFFIX,hxb.com.cn
+DOMAIN-SUFFIX,icbc
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,icbccs.com.cn
+DOMAIN-SUFFIX,icbccstz.com.cn
+DOMAIN-SUFFIX,icbcina.com
+DOMAIN-SUFFIX,icbcmanila.com.cn
+DOMAIN-SUFFIX,icbcstandard.com
+DOMAIN-SUFFIX,icbcstandardbank.com
+DOMAIN-SUFFIX,icbcstandardresources.com
+DOMAIN-SUFFIX,icbcstandardsecurities.com
+DOMAIN-SUFFIX,joying.com
+DOMAIN-SUFFIX,kcbebank.com
+DOMAIN-SUFFIX,kshbank.cn
+DOMAIN-SUFFIX,ms-bank.cn
+DOMAIN-SUFFIX,mybank.cn
+DOMAIN-SUFFIX,newupbank.com
+DOMAIN-SUFFIX,njcb.com.cn
+DOMAIN-SUFFIX,onebank.com.cn
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,shrbank.com
+DOMAIN-SUFFIX,spdb.com.cn
+DOMAIN-SUFFIX,suningbank.com
+DOMAIN-SUFFIX,test-cignacmb.com
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,unionpay.net
+DOMAIN-SUFFIX,unionpayintl.cn
+DOMAIN-SUFFIX,unionpayintl.com
+DOMAIN-SUFFIX,unionpaysecure.com
+DOMAIN-SUFFIX,webank.com
+DOMAIN-SUFFIX,webankcdn.net
+DOMAIN-SUFFIX,wegobank.cn
+DOMAIN-SUFFIX,whccb.com
+DOMAIN-SUFFIX,wxsbank.com
+DOMAIN-SUFFIX,xa-bank.com
+DOMAIN-SUFFIX,xn--fiq64b
+DOMAIN-SUFFIX,xwbank.com
+DOMAIN-SUFFIX,yillionbank.com
+DOMAIN-SUFFIX,ymbank.com
+DOMAIN-SUFFIX,z-bank.com
+DOMAIN-SUFFIX,zgcbank.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/apple@cn
-DOMAIN-SUFFIX,swiftui.cn # @cn
-DOMAIN-SUFFIX,swiftui.com.cn # @cn
-DOMAIN-SUFFIX,researchkit.cn # @cn
-DOMAIN-SUFFIX,researchkit.com.cn # @cn
-DOMAIN,certs-lb.apple.com.akadns.net # @cn
-DOMAIN,certs.apple.com # @cn
-DOMAIN,crl-lb.apple.com.akadns.net # @cn
-DOMAIN,crl.apple.com # @cn
-DOMAIN,ocsp-lb.apple.com.akadns.net # @cn
-DOMAIN,ocsp.apple.com # @cn
-DOMAIN,ocsp2-lb.apple.com.akadns.net # @cn
-DOMAIN,ocsp2.apple.com # @cn
-DOMAIN,valid.apple.com # @cn
-DOMAIN,valid.origin-apple.com.akadns.net # @cn
-DOMAIN-SUFFIX,beats1.cn # @cn
-DOMAIN-SUFFIX,beats1.com.cn # @cn
-DOMAIN-SUFFIX,beats2.com.cn # @cn
-DOMAIN-SUFFIX,beats4.cn # @cn
-DOMAIN-SUFFIX,beatsbydre.com # @cn
-DOMAIN-SUFFIX,beatsbydre.com.cn # @cn
-DOMAIN-SUFFIX,beatsep.cn # @cn
-DOMAIN-SUFFIX,apple-icloud.cn # @cn
-DOMAIN-SUFFIX,appleicloud.cn # @cn
-DOMAIN-SUFFIX,icloud-apple.cn # @cn
-DOMAIN-SUFFIX,icloud.com.cn # @cn
-DOMAIN-SUFFIX,icloud.net.cn # @cn
-DOMAIN-SUFFIX,icloudapple.cn # @cn
-DOMAIN-SUFFIX,apple-itunes.cn # @cn
-DOMAIN-SUFFIX,itunes-apple.cn # @cn
-DOMAIN-SUFFIX,itunesapple.cn # @cn
-DOMAIN-SUFFIX,itunesradio.cn # @cn
-DOMAIN-SUFFIX,itunesradio.com.cn # @cn
-DOMAIN-SUFFIX,apple.cn # @cn
-DOMAIN-SUFFIX,apple.com.cn # @cn
-DOMAIN-SUFFIX,apple-store.cn # @cn
-DOMAIN-SUFFIX,applestore.cn # @cn
-DOMAIN-SUFFIX,applestore.com.cn # @cn
-DOMAIN-SUFFIX,apple-appstore.cn # @cn
-DOMAIN-SUFFIX,appleappstore.cn # @cn
-DOMAIN-SUFFIX,appstoreapple.cn # @cn
-DOMAIN-SUFFIX,iphone-8.com.cn # @cn
-DOMAIN-SUFFIX,ipod.com.cn # @cn
-DOMAIN-SUFFIX,macbookair.cn # @cn
-DOMAIN-SUFFIX,macbookair.com.cn # @cn
-DOMAIN-SUFFIX,applepaycash.cn # @cn
-DOMAIN-SUFFIX,applepaycash.com.cn # @cn
-DOMAIN-SUFFIX,applepaysupplies.cn # @cn
-DOMAIN-SUFFIX,applepaysupplies.com.cn # @cn
-DOMAIN-SUFFIX,appletv4.cn # @cn
-DOMAIN-SUFFIX,appletv4.com.cn # @cn
-DOMAIN-SUFFIX,apple-dns.cn # @cn
-DOMAIN-SUFFIX,apple-dns.com.cn # @cn
-DOMAIN-SUFFIX,apple-ibooks.cn # @cn
-DOMAIN-SUFFIX,apple-maps.cn # @cn
-DOMAIN-SUFFIX,applecenter.cn # @cn
-DOMAIN-SUFFIX,applecenter.com.cn # @cn
-DOMAIN-SUFFIX,applecomputer.cn # @cn
-DOMAIN-SUFFIX,applecomputer.com.cn # @cn
-DOMAIN-SUFFIX,appledns.cn # @cn
-DOMAIN-SUFFIX,appledns.com.cn # @cn
-DOMAIN-SUFFIX,applesiri.cn # @cn
-DOMAIN-SUFFIX,ecgapp.com.cn # @cn
-DOMAIN-SUFFIX,faceshift.cn # @cn
-DOMAIN-SUFFIX,homepod.cn # @cn
-DOMAIN-SUFFIX,insidear.cn # @cn
-DOMAIN-SUFFIX,livephotos.cn # @cn
-DOMAIN-SUFFIX,livephotos.com.cn # @cn
-DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn # @cn # 苹果商店.cn
-DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn # @cn # 苹果中国.cn
-DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn # @cn # 苹果专卖店.cn
-DOMAIN,amp-api-edge-lb-cn.itunes-apple.com.akadns.net # @cn
-DOMAIN,amp-api-edge-lb.itunes-apple.com.akadns.net # @cn
-DOMAIN,amp-api-edge.apps.apple.com # @cn
-DOMAIN,amp-api-search-edge.apps.apple.com # @cn
-DOMAIN,amp-api.apps.apple.com # @cn
-DOMAIN,amp-api.music.apple.com # @cn
-DOMAIN,aod-ssl.itunes.apple.com # @cn
-DOMAIN,aod.itunes.apple.com # @cn
-DOMAIN,api-edge.apps.apple.com # @cn
-DOMAIN,apptrailers.itunes.apple.com # @cn
-DOMAIN,auth.music.apple.com # @cn
-DOMAIN,bag.itunes.apple.com # @cn
-DOMAIN,bookkeeper.itunes.apple.com # @cn
-DOMAIN,client-api.itunes.apple.com # @cn
-DOMAIN,cma.itunes.apple.com # @cn
-DOMAIN,communities.apple.com # @cn
-DOMAIN,discussionschinese.apple.com # @cn
-DOMAIN,downloaddispatch.itunes.apple.com # @cn
-DOMAIN,fides-pol.apple.com # @cn
-DOMAIN,gspe11-2-cn-ssl.ls.apple.com # @cn
-DOMAIN,gspe12-cn-ssl.ls.apple.com # @cn
-DOMAIN,gspe85-cn-ssl.ls.apple.com # @cn
-DOMAIN,inappcheck-cn.itunes-apple.com.akadns.net # @cn
-DOMAIN,inappcheck-lb.itunes-apple.com.akadns.net # @cn
-DOMAIN,inappcheck.itunes.apple.com # @cn
-DOMAIN,init.gc-lb.apple.com.akadns.net # @cn
-DOMAIN,init.gc.apple.com # @cn
-DOMAIN,init.itunes.apple.com # @cn
-DOMAIN,iosapps.itunes.apple.com # @cn
-DOMAIN,js-cdn.music.apple.com # @cn
-DOMAIN,km.support.apple.com # @cn
-DOMAIN,maps.apple.com # @cn
-DOMAIN,misc-assets.itunes.apple.com # @cn
-DOMAIN,myapp.itunes.apple.com # @cn
-DOMAIN,np-edge.itunes.apple.com # @cn
-DOMAIN,osxapps.itunes.apple.com # @cn
-DOMAIN,pd-nk.itunes.apple.com # @cn
-DOMAIN,pd.itunes.apple.com # @cn
-DOMAIN,play.itunes.apple.com # @cn
-DOMAIN,play.music.apple.com # @cn
-DOMAIN,se-edge.itunes.apple.com # @cn
-DOMAIN,se2.itunes.apple.com # @cn
-DOMAIN,search.itunes.apple.com # @cn
-DOMAIN,sf-api-token-service.itunes.apple.com # @cn
-DOMAIN,sp.itunes.apple.com # @cn
-DOMAIN,streamingaudio.itunes.apple.com # @cn
-DOMAIN,su.itunes.apple.com # @cn
-DOMAIN,sync.itunes.apple.com # @cn
-DOMAIN,tf-feedback.itunes.apple.com # @cn
-DOMAIN,upp.itunes.apple.com # @cn
-DOMAIN,www.support.apple.com # @cn
-DOMAIN,a1.mzstatic.com # @cn
-DOMAIN,a2.mzstatic.com # @cn
-DOMAIN,a3.mzstatic.com # @cn
-DOMAIN,a4.mzstatic.com # @cn
-DOMAIN,a5.mzstatic.com # @cn
-DOMAIN,cdn.apple-mapkit.com # @cn
-DOMAIN,cdn1.apple-mapkit.com # @cn
-DOMAIN,cdn2.apple-mapkit.com # @cn
-DOMAIN,cdn3.apple-mapkit.com # @cn
-DOMAIN,cdn4.apple-mapkit.com # @cn
-DOMAIN,cdn-cn.apple-mapkit.com # @cn
-DOMAIN,cdn-cn1.apple-mapkit.com # @cn
-DOMAIN,cdn-cn2.apple-mapkit.com # @cn
-DOMAIN,cdn-cn3.apple-mapkit.com # @cn
-DOMAIN,cdn-cn4.apple-mapkit.com # @cn
-DOMAIN,cl1-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,cl2-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,cl3-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,cl4-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,cl5-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,cl1.apple.com # @cn
-DOMAIN,cl2.apple.com # @cn
-DOMAIN,cl3.apple.com # @cn
-DOMAIN,cl4.apple.com # @cn
-DOMAIN,cl5.apple.com # @cn
-DOMAIN,is1.mzstatic.com # @cn
-DOMAIN,is1-ssl.mzstatic.com # @cn
-DOMAIN,is2.mzstatic.com # @cn
-DOMAIN,is2-ssl.mzstatic.com # @cn
-DOMAIN,is3.mzstatic.com # @cn
-DOMAIN,is3-ssl.mzstatic.com # @cn
-DOMAIN,is4.mzstatic.com # @cn
-DOMAIN,is4-ssl.mzstatic.com # @cn
-DOMAIN,is5.mzstatic.com # @cn
-DOMAIN,is5-ssl.mzstatic.com # @cn
-DOMAIN,s.mzstatic.com # @cn
-DOMAIN,s1.mzstatic.com # @cn
-DOMAIN,s2.mzstatic.com # @cn
-DOMAIN,s3.mzstatic.com # @cn
-DOMAIN,s4.mzstatic.com # @cn
-DOMAIN,s5.mzstatic.com # @cn
-DOMAIN,adcdownload.apple.com # @cn
-DOMAIN,adcdownload.apple.com.akadns.net # @cn
-DOMAIN,amp-api-updates.apps.apple.com # @cn
-DOMAIN,amp-api.media.apple.com # @cn
-DOMAIN,app-site-association.cdn-apple.com # @cn
-DOMAIN,appldnld.apple.com # @cn
-DOMAIN,appldnld.g.aaplimg.com # @cn
-DOMAIN,appleid.cdn-apple.com # @cn
-DOMAIN,apps.mzstatic.com # @cn
-DOMAIN,bag-cdn.itunes-apple.com.akadns.net # @cn
-DOMAIN,cds-cdn.v.aaplimg.com # @cn
-DOMAIN,cds.apple.com # @cn
-DOMAIN,cds.apple.com.akadns.net # @cn
-DOMAIN,cdsassets.apple.com # @cn
-DOMAIN,cl2-cn.apple.com # @cn
-DOMAIN,cl4-cn.apple.com # @cn
-DOMAIN,clientflow.apple.com # @cn
-DOMAIN,clientflow.apple.com.akadns.net # @cn
-DOMAIN,cn-smp-paymentservices.apple.com # @cn
-DOMAIN,configuration.apple.com # @cn
-DOMAIN,configuration.apple.com.akadns.net # @cn
-DOMAIN,cstat.apple.com # @cn
-DOMAIN,cstat.cdn-apple.com # @cn
-DOMAIN,dd-cdn.origin-apple.com.akadns.net # @cn
-DOMAIN,dejavu.apple.com # @cn
-DOMAIN,devimages-cdn.apple.com # @cn
-DOMAIN,devstreaming-cdn.apple.com # @cn
-DOMAIN,download.developer.apple.com # @cn
-DOMAIN,experiments.apple.com # @cn
-DOMAIN,gs-loc-cn.apple.com # @cn
-DOMAIN,gs-loc.apple.com # @cn
-DOMAIN,gsp10-ssl-cn.ls.apple.com # @cn
-DOMAIN,gsp12-cn.ls.apple.com # @cn
-DOMAIN,gsp13-cn.ls.apple.com # @cn
-DOMAIN,gsp4-cn.ls.apple.com # @cn
-DOMAIN,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net # @cn
-DOMAIN,gsp5-cn.ls.apple.com # @cn
-DOMAIN,gsp85-cn-ssl.ls.apple.com # @cn
-DOMAIN,gspe19-2-cn-ssl.ls-apple.com.akadns.net # @cn
-DOMAIN,gspe19-2-cn-ssl.ls.apple.com # @cn
-DOMAIN,gspe19-cn-ssl.ls.apple.com # @cn
-DOMAIN,gspe19-cn.ls-apple.com.akadns.net # @cn
-DOMAIN,gspe19-cn.ls.apple.com # @cn
-DOMAIN,gspe21-ssl.ls.apple.com # @cn
-DOMAIN,gspe35-ssl.ls.apple.com # @cn
-DOMAIN,gspe79-cn-ssl.ls.apple.com # @cn
-DOMAIN,guzzoni-apple-com.v.aaplimg.com # @cn
-DOMAIN,guzzoni.apple.com # @cn
-DOMAIN,guzzoni.smoot.apple.com # @cn
-DOMAIN,icloud-cdn.icloud.com.akadns.net # @cn
-DOMAIN,icloud.cdn-apple.com # @cn
-DOMAIN,images.apple.com.edgekey.net.globalredir.akadns.net # @cn
-DOMAIN,init-kt.apple.com # @cn
-DOMAIN,init-p01md-lb.push-apple.com.akadns.net # @cn
-DOMAIN,init-p01md.apple.com # @cn
-DOMAIN,init-p01st-lb.push-apple.com.akadns.net # @cn
-DOMAIN,init-p01st.push.apple.com # @cn
-DOMAIN,init-s01st-lb.push-apple.com.akadns.net # @cn
-DOMAIN,init-s01st.push.apple.com # @cn
-DOMAIN,init.ess.apple.com # @cn
-DOMAIN,iosapps.itunes.g.aaplimg.com # @cn
-DOMAIN,ipcdn.apple.com # @cn
-DOMAIN,iphone-ld.apple.com # @cn
-DOMAIN,iphone-ld.origin-apple.com.akadns.net # @cn
-DOMAIN,is-ssl.mzstatic.com-cn-lb.itunes-apple.com.akadns.net # @cn
-DOMAIN,itunes-apple.com.akadns.net # @cn
-DOMAIN,itunes.apple.com # @cn
-DOMAIN,itunesconnect.apple.com # @cn
-DOMAIN,mesu-cdn.apple.com.akadns.net # @cn
-DOMAIN,mesu-china.apple.com.akadns.net # @cn
-DOMAIN,mesu.apple.com # @cn
-DOMAIN,ml.cdn-apple.com # @cn
-DOMAIN,music.apple.com # @cn
-DOMAIN,oscdn.apple.com # @cn
-DOMAIN,oscdn.origin-apple.com.akadns.net # @cn
-DOMAIN,osxapps.itunes.g.aaplimg.com # @cn
-DOMAIN,pancake.apple.com # @cn
-DOMAIN,pancake.cdn-apple.com.akadns.net # @cn
-DOMAIN,pba0.apple.com # @cn
-DOMAIN,probe.siri.apple.com # @cn
-DOMAIN,prod-support.apple-support.akadns.net # @cn
-DOMAIN,publicassets.cdn-apple.com # @cn
-DOMAIN,reserve-prime.apple.com # @cn
-DOMAIN,seed-sequoia.siri.apple.com # @cn
-DOMAIN,seed-swallow.siri.apple.com # @cn
-DOMAIN,seed.siri.apple.com # @cn
-DOMAIN,sequoia.apple.com # @cn
-DOMAIN,sh-pod2-smp-device.apple.com # @cn
-DOMAIN,shazam-insights.cdn-apple.com # @cn
-DOMAIN,smp-device-content.apple.com # @cn
-DOMAIN,static.gc.apple.com # @cn
-DOMAIN,stocks-sparkline-lb.apple.com.akadns.net # @cn
-DOMAIN,stocks-sparkline.apple.com # @cn
-DOMAIN,store.apple.com # @cn
-DOMAIN,store.apple.com.edgekey.net # @cn
-DOMAIN,store.apple.com.edgekey.net.globalredir.akadns.net # @cn
-DOMAIN,store.storeimages.apple.com.akadns.net # @cn
-DOMAIN,store.storeimages.cdn-apple.com # @cn
-DOMAIN,support-china.apple-support.akadns.net # @cn
-DOMAIN,support.apple.com # @cn
-DOMAIN,swallow-apple-com.v.aaplimg.com # @cn
-DOMAIN,swallow.apple.com # @cn
-DOMAIN,swcatalog-cdn.apple.com.akadns.net # @cn
-DOMAIN,swcatalog.apple.com # @cn
-DOMAIN,swcdn.apple.com # @cn
-DOMAIN,swcdn.g.aaplimg.com # @cn
-DOMAIN,swdist.apple.com # @cn
-DOMAIN,swdist.apple.com.akadns.net # @cn
-DOMAIN,swscan-cdn.apple.com.akadns.net # @cn
-DOMAIN,swscan.apple.com # @cn
-DOMAIN,sylvan.apple.com # @cn
-DOMAIN,tj-pod1-smp-device.apple.com # @cn
-DOMAIN,updates-http.cdn-apple.com # @cn
-DOMAIN,updates-http.cdn-apple.com.akadns.net # @cn
-DOMAIN,updates.cdn-apple.com # @cn
-DOMAIN,weather-data.apple.com # @cn
-DOMAIN,weather-data.apple.com.akadns.net # @cn
-DOMAIN,weather-map.apple.com # @cn
-DOMAIN,weather-map2.apple.com # @cn
-DOMAIN,weatherkit.apple.com # @cn
-DOMAIN,www.apple.com # @cn
-DOMAIN,www.apple.com.edgekey.net.globalredir.akadns.net # @cn
-DOMAIN,xp.apple.com # @cn
+DOMAIN-SUFFIX,apple-appstore.cn
+DOMAIN-SUFFIX,apple-dns.cn
+DOMAIN-SUFFIX,apple-dns.com.cn
+DOMAIN-SUFFIX,apple-ibooks.cn
+DOMAIN-SUFFIX,apple-icloud.cn
+DOMAIN-SUFFIX,apple-itunes.cn
+DOMAIN-SUFFIX,apple-maps.cn
+DOMAIN-SUFFIX,apple-store.cn
+DOMAIN-SUFFIX,apple.cn
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,appleappstore.cn
+DOMAIN-SUFFIX,applecenter.cn
+DOMAIN-SUFFIX,applecenter.com.cn
+DOMAIN-SUFFIX,applecomputer.cn
+DOMAIN-SUFFIX,applecomputer.com.cn
+DOMAIN-SUFFIX,appledns.cn
+DOMAIN-SUFFIX,appledns.com.cn
+DOMAIN-SUFFIX,appleicloud.cn
+DOMAIN-SUFFIX,applepaycash.cn
+DOMAIN-SUFFIX,applepaycash.com.cn
+DOMAIN-SUFFIX,applepaysupplies.cn
+DOMAIN-SUFFIX,applepaysupplies.com.cn
+DOMAIN-SUFFIX,applesiri.cn
+DOMAIN-SUFFIX,applestore.cn
+DOMAIN-SUFFIX,applestore.com.cn
+DOMAIN-SUFFIX,appletv4.cn
+DOMAIN-SUFFIX,appletv4.com.cn
+DOMAIN-SUFFIX,appstoreapple.cn
+DOMAIN-SUFFIX,beats1.cn
+DOMAIN-SUFFIX,beats1.com.cn
+DOMAIN-SUFFIX,beats2.com.cn
+DOMAIN-SUFFIX,beats4.cn
+DOMAIN-SUFFIX,beatsbydre.com
+DOMAIN-SUFFIX,beatsbydre.com.cn
+DOMAIN-SUFFIX,beatsep.cn
+DOMAIN-SUFFIX,ecgapp.com.cn
+DOMAIN-SUFFIX,faceshift.cn
+DOMAIN-SUFFIX,homepod.cn
+DOMAIN-SUFFIX,icloud-apple.cn
+DOMAIN-SUFFIX,icloud.cn
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud.net.cn
+DOMAIN-SUFFIX,icloudapple.cn
+DOMAIN-SUFFIX,insidear.cn
+DOMAIN-SUFFIX,iphone-8.com.cn
+DOMAIN-SUFFIX,ipod.com.cn
+DOMAIN-SUFFIX,itunes-apple.cn
+DOMAIN-SUFFIX,itunesapple.cn
+DOMAIN-SUFFIX,itunesradio.cn
+DOMAIN-SUFFIX,itunesradio.com.cn
+DOMAIN-SUFFIX,livephotos.cn
+DOMAIN-SUFFIX,livephotos.com.cn
+DOMAIN-SUFFIX,macbookair.cn
+DOMAIN-SUFFIX,macbookair.com.cn
+DOMAIN-SUFFIX,researchkit.cn
+DOMAIN-SUFFIX,researchkit.com.cn
+DOMAIN-SUFFIX,swiftui.cn
+DOMAIN-SUFFIX,swiftui.com.cn
+DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
+DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
+DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
+DOMAIN,a1.mzstatic.com
+DOMAIN,a2.mzstatic.com
+DOMAIN,a3.mzstatic.com
+DOMAIN,a4.mzstatic.com
+DOMAIN,a5.mzstatic.com
+DOMAIN,adcdownload.apple.com
+DOMAIN,adcdownload.apple.com.akadns.net
+DOMAIN,amp-api-edge-lb-cn.itunes-apple.com.akadns.net
+DOMAIN,amp-api-edge-lb.itunes-apple.com.akadns.net
+DOMAIN,amp-api-edge.apps.apple.com
+DOMAIN,amp-api-edge.music.apple.com
+DOMAIN,amp-api-search-edge.apps.apple.com
+DOMAIN,amp-api-updates.apps.apple.com
+DOMAIN,amp-api.apps.apple.com
+DOMAIN,amp-api.media.apple.com
+DOMAIN,amp-api.music.apple.com
+DOMAIN,aod-ssl.itunes.apple.com
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api-edge.apps.apple.com
+DOMAIN,app-site-association.cdn-apple.com
+DOMAIN,appldnld.apple.com
+DOMAIN,appldnld.g.aaplimg.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,apps.mzstatic.com
+DOMAIN,apptrailers.itunes.apple.com
+DOMAIN,auth.music.apple.com
+DOMAIN,bag-cdn.itunes-apple.com.akadns.net
+DOMAIN,bag.itunes.apple.com
+DOMAIN,bookkeeper.itunes.apple.com
+DOMAIN,cdn-cn.apple-mapkit.com
+DOMAIN,cdn-cn1.apple-mapkit.com
+DOMAIN,cdn-cn2.apple-mapkit.com
+DOMAIN,cdn-cn3.apple-mapkit.com
+DOMAIN,cdn-cn4.apple-mapkit.com
+DOMAIN,cdn.apple-mapkit.com
+DOMAIN,cdn1.apple-mapkit.com
+DOMAIN,cdn2.apple-mapkit.com
+DOMAIN,cdn3.apple-mapkit.com
+DOMAIN,cdn4.apple-mapkit.com
+DOMAIN,cds-cdn.v.aaplimg.com
+DOMAIN,cds.apple.com
+DOMAIN,cds.apple.com.akadns.net
+DOMAIN,cdsassets.apple.com
+DOMAIN,certs-lb.apple.com.akadns.net
+DOMAIN,certs.apple.com
+DOMAIN,cl1-cdn.origin-apple.com.akadns.net
+DOMAIN,cl1.apple.com
+DOMAIN,cl2-cdn.origin-apple.com.akadns.net
+DOMAIN,cl2-cn.apple.com
+DOMAIN,cl2.apple.com
+DOMAIN,cl3-cdn.origin-apple.com.akadns.net
+DOMAIN,cl3.apple.com
+DOMAIN,cl4-cdn.origin-apple.com.akadns.net
+DOMAIN,cl4-cn.apple.com
+DOMAIN,cl4.apple.com
+DOMAIN,cl5-cdn.origin-apple.com.akadns.net
+DOMAIN,cl5.apple.com
+DOMAIN,client-api.itunes.apple.com
+DOMAIN,clientflow.apple.com
+DOMAIN,clientflow.apple.com.akadns.net
+DOMAIN,cma.itunes.apple.com
+DOMAIN,cn-smp-paymentservices.apple.com
+DOMAIN,communities.apple.com
+DOMAIN,configuration.apple.com
+DOMAIN,configuration.apple.com.akadns.net
+DOMAIN,crl-lb.apple.com.akadns.net
+DOMAIN,crl.apple.com
+DOMAIN,cstat.apple.com
+DOMAIN,cstat.cdn-apple.com
+DOMAIN,dd-cdn.origin-apple.com.akadns.net
+DOMAIN,dejavu.apple.com
+DOMAIN,devimages-cdn.apple.com
+DOMAIN,devstreaming-cdn.apple.com
+DOMAIN,discussionschinese.apple.com
+DOMAIN,download.developer.apple.com
+DOMAIN,downloaddispatch.itunes.apple.com
+DOMAIN,experiments.apple.com
+DOMAIN,fides-pol.apple.com
+DOMAIN,gs-loc-cn.apple.com
+DOMAIN,gs-loc.apple.com
+DOMAIN,gsp10-ssl-cn.ls.apple.com
+DOMAIN,gsp12-cn.ls.apple.com
+DOMAIN,gsp13-cn.ls.apple.com
+DOMAIN,gsp4-cn.ls.apple.com
+DOMAIN,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,gsp5-cn.ls.apple.com
+DOMAIN,gsp85-cn-ssl.ls.apple.com
+DOMAIN,gspe11-2-cn-ssl.ls.apple.com
+DOMAIN,gspe12-cn-ssl.ls.apple.com
+DOMAIN,gspe19-2-cn-ssl.ls-apple.com.akadns.net
+DOMAIN,gspe19-2-cn-ssl.ls.apple.com
+DOMAIN,gspe19-cn-ssl.ls.apple.com
+DOMAIN,gspe19-cn.ls-apple.com.akadns.net
+DOMAIN,gspe19-cn.ls.apple.com
+DOMAIN,gspe21-ssl.ls.apple.com
+DOMAIN,gspe35-ssl.ls.apple.com
+DOMAIN,gspe79-cn-ssl.ls.apple.com
+DOMAIN,gspe85-cn-ssl.ls.apple.com
+DOMAIN,guzzoni-apple-com.v.aaplimg.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,guzzoni.smoot.apple.com
+DOMAIN,icloud-cdn.icloud.com.akadns.net
+DOMAIN,icloud.cdn-apple.com
+DOMAIN,images.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,inappcheck-cn.itunes-apple.com.akadns.net
+DOMAIN,inappcheck-lb.itunes-apple.com.akadns.net
+DOMAIN,inappcheck.itunes.apple.com
+DOMAIN,init-kt.apple.com
+DOMAIN,init-p01md-lb.push-apple.com.akadns.net
+DOMAIN,init-p01md.apple.com
+DOMAIN,init-p01st-lb.push-apple.com.akadns.net
+DOMAIN,init-p01st.push.apple.com
+DOMAIN,init-s01st-lb.push-apple.com.akadns.net
+DOMAIN,init-s01st.push.apple.com
+DOMAIN,init.ess.apple.com
+DOMAIN,init.gc-lb.apple.com.akadns.net
+DOMAIN,init.gc.apple.com
+DOMAIN,init.itunes.apple.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,iosapps.itunes.g.aaplimg.com
+DOMAIN,ipcdn.apple.com
+DOMAIN,iphone-ld.apple.com
+DOMAIN,iphone-ld.origin-apple.com.akadns.net
+DOMAIN,is-ssl.mzstatic.com-cn-lb.itunes-apple.com.akadns.net
+DOMAIN,is1-ssl.mzstatic.com
+DOMAIN,is1.mzstatic.com
+DOMAIN,is2-ssl.mzstatic.com
+DOMAIN,is2.mzstatic.com
+DOMAIN,is3-ssl.mzstatic.com
+DOMAIN,is3.mzstatic.com
+DOMAIN,is4-ssl.mzstatic.com
+DOMAIN,is4.mzstatic.com
+DOMAIN,is5-ssl.mzstatic.com
+DOMAIN,is5.mzstatic.com
+DOMAIN,itunes-apple.com.akadns.net
+DOMAIN,itunes.apple.com
+DOMAIN,itunesconnect.apple.com
+DOMAIN,js-cdn.music.apple.com
+DOMAIN,km.support.apple.com
+DOMAIN,maps.apple.com
+DOMAIN,mesu-cdn.apple.com.akadns.net
+DOMAIN,mesu-china.apple.com.akadns.net
+DOMAIN,mesu.apple.com
+DOMAIN,misc-assets.itunes.apple.com
+DOMAIN,ml.cdn-apple.com
+DOMAIN,music.apple.com
+DOMAIN,musicstatus.music.apple.com
+DOMAIN,mvod.itunes.apple.com
+DOMAIN,myapp.itunes.apple.com
+DOMAIN,np-edge.itunes.apple.com
+DOMAIN,ocsp-lb.apple.com.akadns.net
+DOMAIN,ocsp.apple.com
+DOMAIN,ocsp2-lb.apple.com.akadns.net
+DOMAIN,ocsp2.apple.com
+DOMAIN,oscdn.apple.com
+DOMAIN,oscdn.origin-apple.com.akadns.net
+DOMAIN,osxapps.itunes.apple.com
+DOMAIN,osxapps.itunes.g.aaplimg.com
+DOMAIN,pancake.apple.com
+DOMAIN,pancake.cdn-apple.com.akadns.net
+DOMAIN,pba0.apple.com
+DOMAIN,pd-nk.itunes.apple.com
+DOMAIN,pd.itunes.apple.com
+DOMAIN,play.itunes.apple.com
+DOMAIN,play.music.apple.com
+DOMAIN,probe.siri.apple.com
+DOMAIN,prod-support.apple-support.akadns.net
+DOMAIN,publicassets.cdn-apple.com
+DOMAIN,reserve-prime.apple.com
+DOMAIN,s.mzstatic.com
+DOMAIN,s1.mzstatic.com
+DOMAIN,s2.mzstatic.com
+DOMAIN,s3.mzstatic.com
+DOMAIN,s4.mzstatic.com
+DOMAIN,s5.mzstatic.com
+DOMAIN,se-edge.itunes.apple.com
+DOMAIN,se2.itunes.apple.com
+DOMAIN,search.itunes.apple.com
+DOMAIN,seed-sequoia.siri.apple.com
+DOMAIN,seed-swallow.siri.apple.com
+DOMAIN,seed.siri.apple.com
+DOMAIN,sequoia.apple.com
+DOMAIN,sf-api-token-service.itunes.apple.com
+DOMAIN,sh-pod2-smp-device.apple.com
+DOMAIN,shazam-insights.cdn-apple.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN,sp.itunes.apple.com
+DOMAIN,speedysub.music.apple.com
+DOMAIN,static.gc.apple.com
+DOMAIN,stocks-sparkline-lb.apple.com.akadns.net
+DOMAIN,stocks-sparkline.apple.com
+DOMAIN,store.apple.com
+DOMAIN,store.apple.com.edgekey.net
+DOMAIN,store.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,store.storeimages.apple.com.akadns.net
+DOMAIN,store.storeimages.cdn-apple.com
+DOMAIN,streamingaudio.itunes.apple.com
+DOMAIN,su.itunes.apple.com
+DOMAIN,support-china.apple-support.akadns.net
+DOMAIN,support.apple.com
+DOMAIN,swallow-apple-com.v.aaplimg.com
+DOMAIN,swallow.apple.com
+DOMAIN,swcatalog-cdn.apple.com.akadns.net
+DOMAIN,swcatalog.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,swcdn.g.aaplimg.com
+DOMAIN,swdist.apple.com
+DOMAIN,swdist.apple.com.akadns.net
+DOMAIN,swscan-cdn.apple.com.akadns.net
+DOMAIN,swscan.apple.com
+DOMAIN,sylvan.apple.com
+DOMAIN,sync.itunes.apple.com
+DOMAIN,tf-feedback.itunes.apple.com
+DOMAIN,tj-pod1-smp-device.apple.com
+DOMAIN,updates-http.cdn-apple.com
+DOMAIN,updates-http.cdn-apple.com.akadns.net
+DOMAIN,updates.cdn-apple.com
+DOMAIN,upp.itunes.apple.com
+DOMAIN,valid.apple.com
+DOMAIN,valid.origin-apple.com.akadns.net
+DOMAIN,weather-data.apple.com
+DOMAIN,weather-data.apple.com.akadns.net
+DOMAIN,weather-map.apple.com
+DOMAIN,weather-map2.apple.com
+DOMAIN,weatherkit.apple.com
+DOMAIN,www.apple.com
+DOMAIN,www.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,www.support.apple.com
+DOMAIN,xp.apple.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/steam@cn
-DOMAIN-SUFFIX,csgo.wmsj.cn # @cn
-DOMAIN-SUFFIX,dota2.wmsj.cn # @cn
-DOMAIN-SUFFIX,wmsjsteam.com # @cn
-DOMAIN-SUFFIX,client-update.queniuqe.com # @cn
-DOMAIN-SUFFIX,dl.steam.clngaa.com # @cn
-DOMAIN-SUFFIX,st.dl.bscstorage.net # @cn
-DOMAIN-SUFFIX,st.dl.eccdnx.com # @cn
-DOMAIN-SUFFIX,st.dl.pinyuncloud.com # @cn
-DOMAIN-SUFFIX,steampowered.com.8686c.com # @cn
-DOMAIN-SUFFIX,steamstatic.com.8686c.com # @cn
-DOMAIN,alibaba.cdn.steampipe.steamcontent.com # @cn
-DOMAIN,lv.queniujq.cn # @cn
-DOMAIN,xz.pphimalayanrt.com # @cn
-DOMAIN-SUFFIX,steamchina.com # @cn
-DOMAIN-SUFFIX,gstore.val.manlaxy.com # @cn
+DOMAIN-SUFFIX,client-update.queniuqe.com
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,gstore.val.manlaxy.com
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steamchina.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstatic.com.8686c.com
+DOMAIN-SUFFIX,wmsjsteam.com
+DOMAIN,alibaba.cdn.steampipe.steamcontent.com
+DOMAIN,lv.queniujq.cn
+DOMAIN,xz.pphimalayanrt.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/category-games@cn
-DOMAIN-WILDCARD,*-mihayo.akamaized.net # @cn
-DOMAIN-SUFFIX,bluearchive-cn.com # @cn
-DOMAIN-WILDCARD,cdn?-epicgames-*.file.myqcloud.com # @cn
-DOMAIN-WILDCARD,epicgames-download?-*.file.myqcloud.com # @cn
-DOMAIN,gog.qtlglb.com # @cn
-DOMAIN,gogalaxy.gog-statics.com # @cn
-DOMAIN,menu-static.gog-statics.com # @cn
-DOMAIN,productcard.gog-statics.com # @cn
-DOMAIN,static-login.gog-statics.com # @cn
-DOMAIN,www4-static.gog-statics.com # @cn
-DOMAIN-WILDCARD,cdn-akamai-*.gog-services.com # @cn
-DOMAIN-WILDCARD,gog-cdn-*.footprint.net # @cn
-DOMAIN-WILDCARD,images*.gog-statics.com # @cn
-DOMAIN,gog-cdn-fastly.gog.com # @cn
-DOMAIN,gog-cdn.akamaized.net # @cn
-DOMAIN-SUFFIX,legendofzelda.cn # @cn
-DOMAIN-SUFFIX,legendofzelda.com.cn # @cn
-DOMAIN-SUFFIX,miitomo.com.cn # @cn
-DOMAIN-SUFFIX,nintendolabo.cn # @cn
-DOMAIN-SUFFIX,nintendoswitch.cn # @cn
-DOMAIN-SUFFIX,nintendoswitch.com.cn # @cn
-DOMAIN-SUFFIX,supersmashbros.cn # @cn
-DOMAIN-SUFFIX,supersmashbros.com.cn # @cn
-DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn # @cn # 神奇宝贝.cn
-DOMAIN-SUFFIX,mariokart.cn # @cn
-DOMAIN-SUFFIX,mariokart.com.cn # @cn
-DOMAIN-SUFFIX,supermariobros.com.cn # @cn
-DOMAIN-SUFFIX,leagueoflegends.cn # @cn
-DOMAIN-SUFFIX,lpl.com.cn # @cn
-DOMAIN-SUFFIX,csgo.wmsj.cn # @cn
-DOMAIN-SUFFIX,dota2.wmsj.cn # @cn
-DOMAIN-SUFFIX,wmsjsteam.com # @cn
-DOMAIN-SUFFIX,client-update.queniuqe.com # @cn
-DOMAIN-SUFFIX,dl.steam.clngaa.com # @cn
-DOMAIN-SUFFIX,st.dl.bscstorage.net # @cn
-DOMAIN-SUFFIX,st.dl.eccdnx.com # @cn
-DOMAIN-SUFFIX,st.dl.pinyuncloud.com # @cn
-DOMAIN-SUFFIX,steampowered.com.8686c.com # @cn
-DOMAIN-SUFFIX,steamstatic.com.8686c.com # @cn
-DOMAIN,alibaba.cdn.steampipe.steamcontent.com # @cn
-DOMAIN,lv.queniujq.cn # @cn
-DOMAIN,xz.pphimalayanrt.com # @cn
-DOMAIN-SUFFIX,steamchina.com # @cn
-DOMAIN-SUFFIX,gstore.val.manlaxy.com # @cn
-DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com # @cn
-DOMAIN-SUFFIX,xboxlive.cn # @cn
+DOMAIN-SUFFIX,bluearchive-cn.com
+DOMAIN-SUFFIX,client-update.queniuqe.com
+DOMAIN-SUFFIX,csgo.wmsj.cn
+DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dota2.wmsj.cn
+DOMAIN-SUFFIX,gstore.val.manlaxy.com
+DOMAIN-SUFFIX,leagueoflegends.cn
+DOMAIN-SUFFIX,legendofzelda.cn
+DOMAIN-SUFFIX,legendofzelda.com.cn
+DOMAIN-SUFFIX,lpl.com.cn
+DOMAIN-SUFFIX,mariokart.cn
+DOMAIN-SUFFIX,mariokart.com.cn
+DOMAIN-SUFFIX,miitomo.com.cn
+DOMAIN-SUFFIX,nintendolabo.cn
+DOMAIN-SUFFIX,nintendoswitch.cn
+DOMAIN-SUFFIX,nintendoswitch.com.cn
+DOMAIN-SUFFIX,st.dl.bscstorage.net
+DOMAIN-SUFFIX,st.dl.eccdnx.com
+DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+DOMAIN-SUFFIX,steamchina.com
+DOMAIN-SUFFIX,steampowered.com.8686c.com
+DOMAIN-SUFFIX,steamstatic.com.8686c.com
+DOMAIN-SUFFIX,supermariobros.com.cn
+DOMAIN-SUFFIX,supersmashbros.cn
+DOMAIN-SUFFIX,supersmashbros.com.cn
+DOMAIN-SUFFIX,wmsjsteam.com
+DOMAIN-SUFFIX,xboxlive.cn
+DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
+DOMAIN-SUFFIX,yostar.cn
+DOMAIN,alibaba.cdn.steampipe.steamcontent.com
+DOMAIN,gog-cdn-fastly.gog.com
+DOMAIN,gog-cdn.akamaized.net
+DOMAIN,gog.qtlglb.com
+DOMAIN,gogalaxy.gog-statics.com
+DOMAIN,lv.queniujq.cn
+DOMAIN,menu-static.gog-statics.com
+DOMAIN,productcard.gog-statics.com
+DOMAIN,static-login.gog-statics.com
+DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+DOMAIN,www4-static.gog-statics.com
+DOMAIN,xz.pphimalayanrt.com
+DOMAIN-WILDCARD,*.-mihayo.akamaized.net
+DOMAIN-WILDCARD,cdn-akamai-.*.gog-services.com
+DOMAIN-WILDCARD,cdn*-epicgames-*.file.myqcloud.com
+DOMAIN-WILDCARD,epicgames-download*-*.file.myqcloud.com
+DOMAIN-WILDCARD,gog-cdn-.*.footprint.net
+DOMAIN-WILDCARD,images*.gog-statics.com
 ##############################
 GEOIP,CN
