@@ -9,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,monica.im # Monica
   - DOMAIN-SUFFIX,monica-cdn.im # Monica
   - DOMAIN-SUFFIX,ansible.com # Ansible
+  - DOMAIN-SUFFIX,cursor.sh # Cursor
 
   # GeoSites
   - GEOSITE,google

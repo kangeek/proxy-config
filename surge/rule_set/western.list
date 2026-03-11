@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,monica.im
 DOMAIN-SUFFIX,monica-cdn.im
 DOMAIN-SUFFIX,ansible.com
+DOMAIN-SUFFIX,cursor.sh
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/google
 DOMAIN-SUFFIX,0emm.com
