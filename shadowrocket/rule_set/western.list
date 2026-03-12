@@ -7,7 +7,6 @@ DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,monica.im
 DOMAIN-SUFFIX,monica-cdn.im
 DOMAIN-SUFFIX,ansible.com
-DOMAIN-SUFFIX,cursor.sh
 GEOSITE,google
 GEOSITE,github
 GEOSITE,gitlab
@@ -17,3 +16,7 @@ GEOSITE,twitter
 GEOSITE,apple
 GEOSITE,bing
 GEOSITE,bing@cn
+GEOSITE,anthropic
+GEOSITE,google-gemini
+GEOSITE,openai
+GEOSITE,cursor
