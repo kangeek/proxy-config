@@ -36,6 +36,7 @@ DOMAIN-KEYWORD,drive.quark.cn
 DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,tuoyouyun.com
+DOMAIN,rama991.siamparagon.org
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/private
 DOMAIN-SUFFIX,1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa

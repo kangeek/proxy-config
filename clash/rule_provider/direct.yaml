@@ -45,6 +45,9 @@ payload:
   # Other sites
   - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
 
+  # Proxies
+  - DOMAIN,rama991.siamparagon.org
+
   # GeoSites
   - GEOSITE,private
   - GEOSITE,onedrive

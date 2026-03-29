@@ -51,7 +51,7 @@ dns:
   ipv6: false
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
-  fake-ip-filter: ["*.lan", "*.localdomain", "*.example", "*.invalid", "*.localhost", "kang.zone", "*.kang.zone", "*.test", "*.local", "*.home.arpa", "*.goskope.com", "time.*.com", "time.*.gov", "time.*.edu.cn", "time.*.apple.com", "time1.*.com", "time2.*.com", "time3.*.com", "time4.*.com", "time5.*.com", "time6.*.com", "time7.*.com", "ntp.*.com", "ntp1.*.com", "ntp2.*.com", "ntp3.*.com", "ntp4.*.com", "ntp5.*.com", "ntp6.*.com", "ntp7.*.com", "*.time.edu.cn", "*.ntp.org.cn", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
+  fake-ip-filter: ["kang.zone", "*.kang.zone", "*.siamparagon.org", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
@@ -98,15 +98,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  neo: # https://neoladder.org/services
-    type: http
-    url: <proxy_provider_neo_url>
-    interval: 3600
-    path: "./proxy_provider/neo.yaml"
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
   tag: # https://tagxx.vip
     type: http
     url: <proxy_provider_tag_url>
@@ -134,16 +125,28 @@ proxy-groups:
   - sntp
 - name: NETSKOPE
   type: select
+  filter: "1x"
   use:
-  - neo
+  - tag
 - name: CLEANIP
   type: select
-  filter: "家宽"
+  filter: "日本家宽"
+  use:
+  - tag
+- name: GAMING
+  type: select
+  filter: "香港游戏"
   use:
   - tag
 
 # https://github.com/Loyalsoldier/clash-rules
 rule-providers:
+  gaming:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/gaming.yaml"
+    path: "./rule_provider/gaming.yaml"
+    behavior: classical
+    interval: 86400
   cleanip:
     type: http
     url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/cleanip.yaml"
@@ -186,6 +189,7 @@ rule-providers:
 rules:
 # - GEOSITE,category-ads-all,REJECT
 - RULE-SET,cleanip,CLEANIP
+- RULE-SET,gaming,GAMING
 - RULE-SET,netskope,NETSKOPE
 - RULE-SET,direct,DIRECT
 - RULE-SET,traffic,TRAFFIC

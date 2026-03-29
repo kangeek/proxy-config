@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
   - DOMAIN-SUFFIX,battle.net # Battle.net
   - DOMAIN-SUFFIX,linkedin.com # LinkedIn
-  - DOMAIN,logon.turtle-wow.org # Turtle WoW (EU)
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
   - DOMAIN-SUFFIX,warp.dev # Warp
   - DOMAIN-SUFFIX,perplexity.ai # Perplexity
