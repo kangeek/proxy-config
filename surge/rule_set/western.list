@@ -3180,16 +3180,6 @@ DOMAIN,bj1.api.bing.com
 DOMAIN,emoi-cncdn.bing.com
 ##############################
 ##############################
-# RuleSet: https://surge.bojin.co/geosite/anthropic
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudeusercontent.com
-DOMAIN,servd-anthropic-website.b-cdn.net
-##############################
-##############################
 # RuleSet: https://surge.bojin.co/geosite/google-gemini
 DOMAIN-SUFFIX,ai.studio
 DOMAIN-SUFFIX,aida.googleapis.com
