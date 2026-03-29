@@ -51,42 +51,7 @@ dns:
   ipv6: false
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
-  fake-ip-filter:
-  - "*.lan"
-  - "*.localdomain"
-  - "*.example"
-  - "*.invalid"
-  - "*.localhost"
-  - "*.kang.zone"
-  - "*.test"
-  - "*.local"
-  - "*.home.arpa"
-  - "*.goskope.com"
-  - "time.*.com"
-  - "time.*.gov"
-  - "time.*.edu.cn"
-  - "time.*.apple.com"
-  - "time1.*.com"
-  - "time2.*.com"
-  - "time3.*.com"
-  - "time4.*.com"
-  - "time5.*.com"
-  - "time6.*.com"
-  - "time7.*.com"
-  - "ntp.*.com"
-  - "ntp1.*.com"
-  - "ntp2.*.com"
-  - "ntp3.*.com"
-  - "ntp4.*.com"
-  - "ntp5.*.com"
-  - "ntp6.*.com"
-  - "ntp7.*.com"
-  - "*.time.edu.cn"
-  - "*.ntp.org.cn"
-  - "+.pool.ntp.org"
-  - "stun.*.*"
-  - "stun.*.*.*"
-  - "geosite:cn"
+  fake-ip-filter: ["*.lan", "*.localdomain", "*.example", "*.invalid", "*.localhost", "kang.zone", "*.kang.zone", "*.test", "*.local", "*.home.arpa", "*.goskope.com", "time.*.com", "time.*.gov", "time.*.edu.cn", "time.*.apple.com", "time1.*.com", "time2.*.com", "time3.*.com", "time4.*.com", "time5.*.com", "time6.*.com", "time7.*.com", "ntp.*.com", "ntp1.*.com", "ntp2.*.com", "ntp3.*.com", "ntp4.*.com", "ntp5.*.com", "ntp6.*.com", "ntp7.*.com", "*.time.edu.cn", "*.ntp.org.cn", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
@@ -109,6 +74,7 @@ dns:
       - 240.0.0.0/4 # “未来使用”的保留地址
       - 127.0.0.1/32
       - 0.0.0.0/32
+      - 192.168.192.0/24 # kang.zone
     domain:
       - '+.google.com'
       - '+.youtube.com'
@@ -141,11 +107,11 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  vless: # https://dash.cloudflare.com/f561579510552568c0af12c7fae6ebe3/pages/view/vless
+  tag: # https://tagxx.vip
     type: http
-    url: <proxy_provider_vless_url>
+    url: <proxy_provider_tag_url>
     interval: 3600
-    path: "./proxy_provider/vless.yaml"
+    path: "./proxy_provider/tag.yaml"
     health-check:
       enable: true
       interval: 600
@@ -167,18 +133,23 @@ proxy-groups:
   use:
   - sntp
 - name: NETSKOPE
-  type: url-test
+  type: select
   use:
   - neo
-- name: FREE_CF
-  type: url-test
+- name: CLEANIP
+  type: select
+  filter: "家宽"
   use:
-  - vless
-  url: http://www.gstatic.com/generate_204
-  interval: 300
+  - tag
 
 # https://github.com/Loyalsoldier/clash-rules
 rule-providers:
+  cleanip:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/cleanip.yaml"
+    path: "./rule_provider/cleanip.yaml"
+    behavior: classical
+    interval: 86400
   traffic:
     type: http
     url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/traffic.yaml"
@@ -213,11 +184,12 @@ rule-providers:
 # https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo-lite/geosite
 # geosites: https://github.com/v2fly/domain-list-community/tree/master/data
 rules:
+# - GEOSITE,category-ads-all,REJECT
+- RULE-SET,cleanip,CLEANIP
 - RULE-SET,netskope,NETSKOPE
-- GEOSITE,category-ads-all,REJECT
+- RULE-SET,direct,DIRECT
 - RULE-SET,traffic,TRAFFIC
 - RULE-SET,western,WESTERN
 - RULE-SET,eastern,EASTERN
-- RULE-SET,direct,DIRECT
 - GEOIP,US,WESTERN
 - MATCH,EASTERN
