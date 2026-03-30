@@ -43,7 +43,7 @@ geox-url:
 ### DNS
 dns:
   enable: true
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host # fake-ip
   cache-algorithm: arc
   use-system-hosts: true
   respect-rules: false
@@ -81,6 +81,8 @@ dns:
     domain:
       - '+.google.com'
       - '+.youtube.com'
+sniffer:
+  enable: false
 
 proxy-providers:
   amy: # https://www.amytele.net/
