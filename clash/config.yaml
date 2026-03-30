@@ -35,10 +35,10 @@ geodata-auto-update: true
 geo-update-interval: 24 # hours
 # https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo/geosite
 geox-url:
-  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
-  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
-  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
-  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
 ### DNS
 dns:
@@ -55,6 +55,12 @@ dns:
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
+  nameserver-policy: # 替代已弃用的 fallback-filter.geosite；gfw 列表域名只用境外 DNS
+    "geosite:gfw":
+      - 8.8.8.8
+      - 1.1.1.1
+      - tls://8.8.8.8
+      - tls://1.1.1.1
   nameserver: # 处理国内域名和直连流量的解析，通常选择低延迟的本土 DNS
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
@@ -68,13 +74,10 @@ dns:
   fallback-filter: # 使用 fallback 解析
     geoip: true
     geoip-code: CN # 非中国 IP 采用 fallback 解析结果
-    geosite: # 列表的内容被视为已污染，使用 fallback 解析
-      - gfw
     ipcidr:
       - 240.0.0.0/4 # “未来使用”的保留地址
       - 127.0.0.1/32
       - 0.0.0.0/32
-      - 192.168.192.0/24 # kang.zone
     domain:
       - '+.google.com'
       - '+.youtube.com'
