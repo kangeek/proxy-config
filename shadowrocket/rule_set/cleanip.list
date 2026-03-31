@@ -1,10 +1,10 @@
 DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,ultramobile.com
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,diabrowser.engineering
 GEOSITE,telegram
 GEOSITE,paypal
 GEOSITE,anthropic
 GEOSITE,cursor
 GEOSITE,openai
-DOMAIN-SUFFIX,diabrowser.com
-DOMAIN-SUFFIX,diabrowser.engineering

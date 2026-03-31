@@ -1,6 +1,8 @@
 DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,ultramobile.com
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,diabrowser.engineering
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/telegram
 DOMAIN-SUFFIX,cdn-telegram.org
@@ -311,5 +313,3 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-WILDCARD,chatgpt-async-webps-prod-*-*.webpubsub.azure.com
 ##############################
-DOMAIN-SUFFIX,diabrowser.com
-DOMAIN-SUFFIX,diabrowser.engineering
