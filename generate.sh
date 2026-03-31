@@ -18,6 +18,8 @@ SHADOWROCKET_RULE_DIR="$ROOT_DIR/shadowrocket/rule_set"
 
 GEOSITE_API_BASE="https://surge.bojin.co/geosite"
 GEOSITE_INDEX_JSON=""
+CLASH_CONFIG_FILE="$ROOT_DIR/clash/config.yaml"
+CLASH_GEOSITE_NAMES_FILE=""
 
 FAILED_RULESET_URLS=()
 
@@ -40,6 +42,65 @@ fetch_url_with_retry() {
   done
   return 1
 }
+
+prepare_clash_geosite_index() {
+  local geosite_dat_url=""
+  local dat_tmp=""
+  local names_tmp=""
+
+  if ! command -v yq >/dev/null 2>&1; then
+    echo "[WARN] yq not found; skip Clash geosite.dat validation." >&2
+    return
+  fi
+
+  if ! command -v curl >/dev/null 2>&1; then
+    echo "[WARN] curl not found; skip Clash geosite.dat validation." >&2
+    return
+  fi
+
+  if ! command -v strings >/dev/null 2>&1; then
+    echo "[WARN] strings not found; skip Clash geosite.dat validation." >&2
+    return
+  fi
+
+  geosite_dat_url="$(yq e '.geox-url.geosite // ""' "$CLASH_CONFIG_FILE" 2>/dev/null || true)"
+  if [ -z "$geosite_dat_url" ] || [ "$geosite_dat_url" = "null" ]; then
+    echo "[WARN] geox-url.geosite not found in $CLASH_CONFIG_FILE; skip Clash geosite.dat validation." >&2
+    return
+  fi
+
+  dat_tmp="$(mktemp)"
+  names_tmp="$(mktemp)"
+
+  if ! fetch_url_with_retry "$geosite_dat_url" > "$dat_tmp"; then
+    echo "[WARN] Failed to fetch Clash geosite.dat: $geosite_dat_url; skip validation." >&2
+    rm -f "$dat_tmp" "$names_tmp"
+    return
+  fi
+
+  strings "$dat_tmp" \
+    | tr '[:upper:]' '[:lower:]' \
+    | sed -n 's/^\([a-z0-9][a-z0-9._-]*\)$/\1/p' \
+    | sort -u > "$names_tmp"
+
+  rm -f "$dat_tmp"
+
+  if [ ! -s "$names_tmp" ]; then
+    echo "[WARN] Extracted empty geosite index from Clash geosite.dat; skip validation." >&2
+    rm -f "$names_tmp"
+    return
+  fi
+
+  CLASH_GEOSITE_NAMES_FILE="$names_tmp"
+}
+
+cleanup_tmp_files() {
+  if [ -n "$CLASH_GEOSITE_NAMES_FILE" ] && [ -f "$CLASH_GEOSITE_NAMES_FILE" ]; then
+    rm -f "$CLASH_GEOSITE_NAMES_FILE"
+  fi
+}
+
+trap cleanup_tmp_files EXIT
 
 expand_surge_ruleset_file() {
   local file="$1"
@@ -87,6 +148,21 @@ expand_surge_ruleset_file() {
 mkdir -p "$SURGE_RULE_DIR"
 mkdir -p "$SHADOWROCKET_RULE_DIR"
 
+# Fetch geosite index once to avoid repeated network calls in the loop.
+if command -v curl >/dev/null 2>&1; then
+  if ! GEOSITE_INDEX_JSON="$(fetch_url_with_retry "$GEOSITE_API_BASE" || true)"; then
+    GEOSITE_INDEX_JSON=""
+  fi
+  if [ -z "$GEOSITE_INDEX_JSON" ]; then
+    echo "[WARN] Failed to fetch geosite index: $GEOSITE_API_BASE" >&2
+  fi
+else
+  echo "[WARN] curl not found; cannot fetch geosite index: $GEOSITE_API_BASE" >&2
+fi
+
+# Best-effort validation for Clash geosite.dat (does not affect output generation).
+prepare_clash_geosite_index
+
 for yaml in "$CLASH_RULE_DIR"/*.yaml; do
   [ -e "$yaml" ] || continue
 
@@ -107,12 +183,6 @@ for yaml in "$CLASH_RULE_DIR"/*.yaml; do
   # Post-process Surge rule-set: convert GEOSITE entries to RULE-SET using Surge-Geosite.
   # If a GEOSITE tag does not exist in the Surge-Geosite index, keep the original
   # GEOSITE line and print a warning to the script output for manual handling.
-  if [ -z "$GEOSITE_INDEX_JSON" ]; then
-    if command -v curl >/dev/null 2>&1; then
-      GEOSITE_INDEX_JSON="$(curl -fsSL "$GEOSITE_API_BASE" || true)"
-    fi
-  fi
-
   tmp_surge_file="$out_file_surge.tmp"
   : > "$tmp_surge_file"
 
@@ -125,8 +195,13 @@ for yaml in "$CLASH_RULE_DIR"/*.yaml; do
         if printf '%s' "$geosite_name" | grep -q '@'; then
           lookup_name="${geosite_name%@*}"
         fi
+        lookup_name_lc="$(printf '%s' "$lookup_name" | tr '[:upper:]' '[:lower:]')"
 
-        if [ -n "$GEOSITE_INDEX_JSON" ] && printf '%s\n' "$GEOSITE_INDEX_JSON" | grep -q "\"$lookup_name\""; then
+        if [ -n "$CLASH_GEOSITE_NAMES_FILE" ] && ! grep -qx "$lookup_name_lc" "$CLASH_GEOSITE_NAMES_FILE"; then
+          echo "[WARN] Possibly missing in Clash geosite.dat: $base_name:$geosite_name" >&2
+        fi
+
+        if [ -n "$GEOSITE_INDEX_JSON" ] && printf '%s\n' "$GEOSITE_INDEX_JSON" | grep -qi "\"$lookup_name_lc\""; then
           # URL always keeps the original full name (including suffix if any)
           echo "RULE-SET,${GEOSITE_API_BASE}/$geosite_name" >> "$tmp_surge_file"
         else

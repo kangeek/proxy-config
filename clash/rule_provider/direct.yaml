@@ -21,7 +21,6 @@ payload:
   - IP-CIDR6,fc00::/7
   - IP-CIDR6,fe80::/10
   - IP-CIDR6,ff00::/8
-  - IP-CIDR,1.1.1.1/32
 
   # My domains
   - DOMAIN-SUFFIX,kang.zone
@@ -52,7 +51,6 @@ payload:
   - GEOSITE,private
   - GEOSITE,onedrive
   - GEOSITE,category-bank-cn
-  # - GEOSITE,microsoft@cn
   - GEOSITE,apple@cn
   - GEOSITE,steam@cn
   - GEOSITE,category-games@cn

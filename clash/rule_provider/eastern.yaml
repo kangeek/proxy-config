@@ -5,13 +5,27 @@ payload:
   - GEOSITE,godaddy
   - GEOSITE,discord
   - GEOSITE,amazon
-  - GEOSITE,aws
-  - GEOSITE,microsoft
   - GEOSITE,youtube
   - GEOSITE,tiktok
+  - GEOSITE,google
+  - GEOSITE,github
+  - GEOSITE,gitlab
+  - GEOSITE,twitter
+  - GEOSITE,apple
+  - GEOSITE,microsoft
+  - GEOSITE,bing
+  - GEOSITE,microsoft@cn
+  - GEOSITE,bing@cn
 
   # General sites
-  - DOMAIN-SUFFIX,aws.dev # AWS
+  - DOMAIN-SUFFIX,1password.com # 1Password
+  - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
+  - DOMAIN-SUFFIX,linkedin.com # LinkedIn
+  - DOMAIN-SUFFIX,warp.dev # Warp
+  - DOMAIN-SUFFIX,perplexity.ai # Perplexity
+  - DOMAIN-SUFFIX,monica.im # Monica
+  - DOMAIN-SUFFIX,monica-cdn.im # Monica
+  - DOMAIN-SUFFIX,ansible.com # Ansible
   - DOMAIN-SUFFIX,api.ipify.org # IPify
   - DOMAIN-SUFFIX,contentful.com # Contentful
   - DOMAIN-SUFFIX,discourse-cdn.com # Discourse
