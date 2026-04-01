@@ -188,7 +188,7 @@ rules:
 - RULE-SET,cleanip,CLEANIP
 - RULE-SET,gaming,GAMING
 - RULE-SET,netskope,NETSKOPE
-- RULE-SET,direct,DIRECT
 - RULE-SET,traffic,TRAFFIC
 - RULE-SET,eastern,EASTERN
+- RULE-SET,direct,DIRECT
 - MATCH,EASTERN
