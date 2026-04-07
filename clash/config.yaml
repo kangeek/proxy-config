@@ -54,7 +54,7 @@ dns:
   ipv6: false
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
-  fake-ip-filter: ["kang.zone", "*.kang.zone", "*.siamparagon.org", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
+  fake-ip-filter: ["kang.zone", "*.kang.zone", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod

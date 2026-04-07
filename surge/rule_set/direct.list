@@ -36,6 +36,7 @@ DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,kimi.com
 DOMAIN-SUFFIX,tuoyouyun.com
 DOMAIN,rama991.siamparagon.org
+DOMAIN,sub1.sntp.me
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/private
 DOMAIN-SUFFIX,1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
@@ -152,7 +153,6 @@ DOMAIN-SUFFIX,plex.direct
 DOMAIN-SUFFIX,router.ctc
 DOMAIN-SUFFIX,tendawifi.com
 DOMAIN-SUFFIX,test
-DOMAIN-SUFFIX,test.steampowered.com
 DOMAIN-SUFFIX,tplinkwifi.net
 DOMAIN-SUFFIX,ts.net
 DOMAIN-SUFFIX,zte.home

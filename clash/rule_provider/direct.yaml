@@ -45,7 +45,8 @@ payload:
   - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
 
   # Proxies
-  - DOMAIN,rama991.siamparagon.org
+  - DOMAIN,rama991.siamparagon.org # tag
+  - DOMAIN,sub1.sntp.me # sntp
 
   # GeoSites
   - GEOSITE,private
