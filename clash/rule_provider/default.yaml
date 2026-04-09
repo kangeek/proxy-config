@@ -5,8 +5,6 @@ payload:
   - GEOSITE,godaddy
   - GEOSITE,discord
   - GEOSITE,amazon
-  - GEOSITE,youtube
-  - GEOSITE,tiktok
   - GEOSITE,google
   - GEOSITE,github
   - GEOSITE,gitlab
@@ -21,7 +19,6 @@ payload:
   - DOMAIN-SUFFIX,1password.com # 1Password
   - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
   - DOMAIN-SUFFIX,linkedin.com # LinkedIn
-  - DOMAIN-SUFFIX,warp.dev # Warp
   - DOMAIN-SUFFIX,perplexity.ai # Perplexity
   - DOMAIN-SUFFIX,monica.im # Monica
   - DOMAIN-SUFFIX,monica-cdn.im # Monica

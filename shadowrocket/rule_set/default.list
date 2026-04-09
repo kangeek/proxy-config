@@ -3,8 +3,6 @@ GEOSITE,slack
 GEOSITE,godaddy
 GEOSITE,discord
 GEOSITE,amazon
-GEOSITE,youtube
-GEOSITE,tiktok
 GEOSITE,google
 GEOSITE,github
 GEOSITE,gitlab
@@ -17,7 +15,6 @@ GEOSITE,bing@cn
 DOMAIN-SUFFIX,1password.com
 DOMAIN-SUFFIX,bitwarden.com
 DOMAIN-SUFFIX,linkedin.com
-DOMAIN-SUFFIX,warp.dev
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,monica.im
 DOMAIN-SUFFIX,monica-cdn.im

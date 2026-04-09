@@ -56,13 +56,13 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-filter: ["kang.zone", "*.kang.zone", "*.corp.maya.ph", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
-  - 223.5.5.5  # 阿里 DNS
-  - 119.29.29.29  # DNSPod
+    - 223.5.5.5 # 阿里 DNS
+    - 119.29.29.29 # DNSPod
   nameserver: # 处理国内域名和直连流量的解析，通常选择低延迟的本土 DNS
-  - 223.5.5.5  # 阿里 DNS
-  - 119.29.29.29  # DNSPod
-  - https://dns.alidns.com/dns-query # 阿里 DoH
-  - https://doh.pub/dns-query # 腾讯 DoH
+    - 223.5.5.5 # 阿里 DNS
+    - 119.29.29.29 # DNSPod
+    - https://dns.alidns.com/dns-query # 阿里 DoH
+    - https://doh.pub/dns-query # 腾讯 DoH
   nameserver-policy: # 替代已弃用的 fallback-filter.geosite；gfw 列表域名只用境外 DNS
     "geosite:gfw":
       - 8.8.8.8
@@ -70,10 +70,10 @@ dns:
       - tls://8.8.8.8
       - tls://1.1.1.1
   fallback: # 处理国外域名和代理流量的解析，通常选择稳定的 DoH/DoT
-  - 8.8.8.8
-  - 1.1.1.1
-  - tls://8.8.8.8
-  - tls://1.1.1.1
+    - 8.8.8.8
+    - 1.1.1.1
+    - tls://8.8.8.8
+    - tls://1.1.1.1
   fallback-filter: # 使用 fallback 解析
     geoip: true
     geoip-code: CN # 非中国 IP 采用 fallback 解析结果
@@ -126,47 +126,47 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
 
 proxy-groups:
-- name: EASTERN
-  type: url-test
-  filter: "(台湾|新加坡|TW|KR|SG|JP)"
-  use:
-  - amy
-  - mitce
-- name: TRAFFIC
-  type: url-test
-  use:
-  - sntp
-- name: NETSKOPE
-  type: select
-  filter: "1x"
-  use:
-  - tag
-- name: CLEANIP
-  type: select
-  filter: "家宽"
-  use:
-  - tag
-- name: GAMING
-  type: select
-  filter: "游戏"
-  use:
-  - tag
-- name: ⚡amy
-  type: select
-  use:
-  - amy
-- name: ⚡sntp
-  type: select
-  use:
-  - sntp
-- name: ⚡tag
-  type: select
-  use:
-  - tag
-- name: ⚡mitce
-  type: select
-  use:
-  - mitce
+  - name: DEFAULT
+    type: url-test
+    filter: "(台湾|新加坡|TW|KR|SG|JP)"
+    use:
+      - amy
+      - mitce
+  - name: TRAFFIC
+    type: url-test
+    use:
+      - sntp
+  - name: NETSKOPE
+    type: select
+    filter: "1x"
+    use:
+      - tag
+  - name: CLEANIP
+    type: select
+    filter: "家宽"
+    use:
+      - tag
+  - name: GAMING
+    type: select
+    filter: "游戏"
+    use:
+      - tag
+  - name: ⚡amy
+    type: select
+    use:
+      - amy
+  - name: ⚡sntp
+    type: select
+    use:
+      - sntp
+  - name: ⚡tag
+    type: select
+    use:
+      - tag
+  - name: ⚡mitce
+    type: select
+    use:
+      - mitce
 
 # https://github.com/Loyalsoldier/clash-rules
 rule-providers:
@@ -188,10 +188,10 @@ rule-providers:
     path: "./rule_provider/traffic.yaml"
     behavior: classical
     interval: 86400
-  eastern:
+  default:
     type: http
-    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/eastern.yaml"
-    path: "./rule_provider/eastern.yaml"
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/default.yaml"
+    path: "./rule_provider/default.yaml"
     behavior: classical
     interval: 86400
   netskope:
@@ -210,11 +210,11 @@ rule-providers:
 # https://github.com/MetaCubeX/meta-rules-dat/tree/meta/geo-lite/geosite
 # geosites: https://github.com/v2fly/domain-list-community/tree/master/data
 rules:
-# - GEOSITE,category-ads-all,REJECT
-- RULE-SET,cleanip,CLEANIP
-- RULE-SET,gaming,GAMING
-- RULE-SET,netskope,NETSKOPE
-- RULE-SET,traffic,TRAFFIC
-- RULE-SET,eastern,EASTERN
-- RULE-SET,direct,DIRECT
-- MATCH,EASTERN
+  # - GEOSITE,category-ads-all,REJECT
+  - RULE-SET,traffic,TRAFFIC
+  - RULE-SET,cleanip,CLEANIP
+  - RULE-SET,gaming,GAMING
+  - RULE-SET,netskope,NETSKOPE
+  - RULE-SET,default,DEFAULT
+  - RULE-SET,direct,DIRECT
+  - MATCH,DEFAULT

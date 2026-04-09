@@ -6,27 +6,33 @@ payload:
   # General sites
   - DOMAIN-SUFFIX,apt.releases.hashicorp.com # HashiCorp releases
   - DOMAIN,cdn-images.orbstack.dev # orbstack download images
+  - DOMAIN-SUFFIX,vagrantcloud.com # Vagrant boxes
+  - DOMAIN-SUFFIX,cloud-images.ubuntu.com # Ubuntu cloud images
+  - DOMAIN-SUFFIX,debian.map.fastlydns.net # Debian CDN
+  - DOMAIN,release-assets.githubusercontent.com # Github releases
+
+  - GEOSITE,youtube
   - DOMAIN,storage.googleapis.com # Google storage
   - DOMAIN-SUFFIX,photos.google.com # Google photo
   - DOMAIN-SUFFIX,drive.google.com # Google drive
   - DOMAIN-SUFFIX,dl.google.com # Google download
-  - DOMAIN-SUFFIX,cloud-images.ubuntu.com # Ubuntu cloud images
+
   - DOMAIN-SUFFIX,cloudfront.net # Amazon CloudFront
   - DOMAIN-WILDCARD,*.s3.*.amazonaws.com # Amazon S3
   - DOMAIN-SUFFIX,s3-accelerate.amazonaws.com # Amazon S3 accelerate
   - DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3
-  - DOMAIN-SUFFIX,debian.map.fastlydns.net # Debian CDN
+
   - DOMAIN-SUFFIX,dl.k8s.io # K8s download
-  - DOMAIN,release-assets.githubusercontent.com # Github releases
   - DOMAIN-SUFFIX,maven.org # Maven
   - DOMAIN-SUFFIX,repo.clickhouse.com # ClickHouse repo
-  - DOMAIN-SUFFIX,vagrantcloud.com # Vagrant boxes
   - DOMAIN,emby.cn2gias.uk # 守候影院
+
   - DOMAIN,level3.blizzard.com # Blizzard CDN
   - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
 
   # Docker registries
-  - DOMAIN-SUFFIX,docker.io
+  - GEOSITE,google-registry
+  - GEOSITE,docker
   - DOMAIN-SUFFIX,gcr.io
   - DOMAIN-SUFFIX,ghcr.io
   - DOMAIN-SUFFIX,quay.io
@@ -39,3 +45,4 @@ payload:
   - GEOSITE,netflix
   - GEOSITE,disney
   - GEOSITE,xvideos
+  - GEOSITE,tiktok

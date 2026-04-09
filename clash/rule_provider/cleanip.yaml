@@ -5,8 +5,10 @@ payload:
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
   - DOMAIN-SUFFIX,diabrowser.com # Dia Browser
   - DOMAIN-SUFFIX,diabrowser.engineering # Dia Browser
+  - DOMAIN-SUFFIX,warp.dev # Warp
 
   # GeoSites
+  - GEOSITE,google
   - GEOSITE,telegram
   - GEOSITE,paypal
   - GEOSITE,anthropic
