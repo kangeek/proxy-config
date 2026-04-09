@@ -54,7 +54,7 @@ dns:
   ipv6: false
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
-  fake-ip-filter: ["kang.zone", "*.kang.zone", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
+  fake-ip-filter: ["kang.zone", "*.kang.zone", "*.corp.maya.ph", "*.lan", "*.local", "*.localhost", "*.localdomain", "*.home.arpa", "*.goskope.com", "time.*", "time.*.*", "ntp.*", "ntp.*.*", "+.pool.ntp.org", "stun.*.*", "stun.*.*.*", "geosite:cn"]
   default-nameserver: # 解析 nameserver 和 fallback 中的 DNS 服务器域名
   - 223.5.5.5  # 阿里 DNS
   - 119.29.29.29  # DNSPod
@@ -115,13 +115,23 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+  mitce: # https://mitce.net/clientarea.php
+    type: http
+    url: <proxy_provider_mitce_url>
+    interval: 3600
+    path: "./proxy_provider/mitce.yaml"
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 
 proxy-groups:
 - name: EASTERN
   type: url-test
-  filter: "(台湾|新加坡)"
+  filter: "(台湾|新加坡|TW|KR|SG|JP)"
   use:
   - amy
+  - mitce
 - name: TRAFFIC
   type: url-test
   use:
@@ -141,6 +151,22 @@ proxy-groups:
   filter: "游戏"
   use:
   - tag
+- name: ⚡amy
+  type: select
+  use:
+  - amy
+- name: ⚡sntp
+  type: select
+  use:
+  - sntp
+- name: ⚡tag
+  type: select
+  use:
+  - tag
+- name: ⚡mitce
+  type: select
+  use:
+  - mitce
 
 # https://github.com/Loyalsoldier/clash-rules
 rule-providers:
