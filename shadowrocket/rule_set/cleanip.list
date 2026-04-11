@@ -4,6 +4,7 @@ DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,diabrowser.com
 DOMAIN-SUFFIX,diabrowser.engineering
 DOMAIN-SUFFIX,warp.dev
+GEOSITE,google
 GEOSITE,telegram
 GEOSITE,paypal
 GEOSITE,anthropic
