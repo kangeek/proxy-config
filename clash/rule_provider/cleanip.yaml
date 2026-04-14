@@ -1,8 +1,6 @@
 payload:
   # General sites
   - DOMAIN-SUFFIX,ping0.cc
-  - DOMAIN-SUFFIX,battle.net # Battle.net
-  - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
   - DOMAIN-SUFFIX,diabrowser.com # Dia Browser
   - DOMAIN-SUFFIX,diabrowser.engineering # Dia Browser
   - DOMAIN-SUFFIX,warp.dev # Warp

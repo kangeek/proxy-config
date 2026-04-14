@@ -8,26 +8,22 @@ payload:
   - GEOSITE,github
   - GEOSITE,gitlab
   - GEOSITE,twitter
+  - GEOSITE,facebook
+  - GEOSITE,gravatar
   - GEOSITE,apple
   - GEOSITE,microsoft
   - GEOSITE,bing
   - GEOSITE,microsoft@cn
   - GEOSITE,bing@cn
+  - GEOSITE,perplexity
+  - GEOSITE,linkedin
 
   # General sites
   - DOMAIN-SUFFIX,1password.com # 1Password
-  - DOMAIN-SUFFIX,bitwarden.com # Bitwarden
-  - DOMAIN-SUFFIX,linkedin.com # LinkedIn
-  - DOMAIN-SUFFIX,perplexity.ai # Perplexity
   - DOMAIN-SUFFIX,monica.im # Monica
   - DOMAIN-SUFFIX,monica-cdn.im # Monica
   - DOMAIN-SUFFIX,ansible.com # Ansible
-  - DOMAIN-SUFFIX,api.ipify.org # IPify
-  - DOMAIN-SUFFIX,contentful.com # Contentful
   - DOMAIN-SUFFIX,discourse-cdn.com # Discourse
-  - DOMAIN-SUFFIX,facebook.com # Facebook
-  - DOMAIN-SUFFIX,gravatar.com # Gravatar
-  - DOMAIN-SUFFIX,gravatar.io # Gravatar
   - DOMAIN-SUFFIX,hypothes.is # Hypothesis
   - DOMAIN-SUFFIX,inoreader.com # Inoreader
   - DOMAIN-SUFFIX,jsfiddle.net # JSFiddle
@@ -41,7 +37,5 @@ payload:
   - DOMAIN-SUFFIX,vimeo.com # Vimeo, AI video
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
   - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
-  
-  # Work
-  - DOMAIN,mayaph.atlassian.net # Maya Jira
-
+  - DOMAIN-SUFFIX,battle.net # Battle.net
+  - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile

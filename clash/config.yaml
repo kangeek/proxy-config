@@ -97,7 +97,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  sntp: # https://u.xn--hwqp2zit2amna.com/dashboards/modern
+  sntp: # https://newsite.sntp.uk
     type: http
     url: <proxy_provider_sntp_url>
     interval: 3600

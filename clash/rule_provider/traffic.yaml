@@ -10,6 +10,12 @@ payload:
   - DOMAIN-SUFFIX,cloud-images.ubuntu.com # Ubuntu cloud images
   - DOMAIN-SUFFIX,debian.map.fastlydns.net # Debian CDN
   - DOMAIN,release-assets.githubusercontent.com # Github releases
+  - DOMAIN-SUFFIX,dl.k8s.io # K8s download
+  - DOMAIN-SUFFIX,maven.org # Maven
+  - DOMAIN-SUFFIX,repo.clickhouse.com # ClickHouse repo
+  - DOMAIN,emby.cn2gias.uk # 守候影院
+
+  - DOMAIN-SUFFIX,cloudflarestorage.com # Cloudflare storage
 
   - GEOSITE,youtube
   - DOMAIN,storage.googleapis.com # Google storage
@@ -21,11 +27,6 @@ payload:
   - DOMAIN-WILDCARD,*.s3.*.amazonaws.com # Amazon S3
   - DOMAIN-SUFFIX,s3-accelerate.amazonaws.com # Amazon S3 accelerate
   - DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3
-
-  - DOMAIN-SUFFIX,dl.k8s.io # K8s download
-  - DOMAIN-SUFFIX,maven.org # Maven
-  - DOMAIN-SUFFIX,repo.clickhouse.com # ClickHouse repo
-  - DOMAIN,emby.cn2gias.uk # 守候影院
 
   - DOMAIN,level3.blizzard.com # Blizzard CDN
   - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN

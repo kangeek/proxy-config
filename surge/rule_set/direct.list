@@ -139,6 +139,7 @@ DOMAIN-SUFFIX,hiwifi.com
 DOMAIN-SUFFIX,home.arpa
 DOMAIN-SUFFIX,internal
 DOMAIN-SUFFIX,invalid
+DOMAIN-SUFFIX,kis.v2.scr.kaspersky-labs.com
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,leike.cc
 DOMAIN-SUFFIX,local
@@ -158,6 +159,7 @@ DOMAIN-SUFFIX,ts.net
 DOMAIN-SUFFIX,zte.home
 DOMAIN,asusrouter.com
 DOMAIN,instant.arubanetworks.com
+DOMAIN,local.adguard.org
 DOMAIN,miwifi.com
 DOMAIN,oasisauth.h3c.com
 DOMAIN,router.asus.com
