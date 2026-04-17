@@ -12,4 +12,3 @@ payload:
   - GEOSITE,anthropic
   - GEOSITE,cursor
   - GEOSITE,openai
-  - GEOSITE,perplexity

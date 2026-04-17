@@ -1307,11 +1307,3 @@ DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN-WILDCARD,chatgpt-async-webps-prod-*-*.webpubsub.azure.com
 ##############################
-##############################
-# RuleSet: https://surge.bojin.co/geosite/perplexity
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,perplexity.com
-DOMAIN-SUFFIX,pplx.ai
-DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
-DOMAIN,pplx-res.cloudinary.com
-##############################

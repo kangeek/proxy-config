@@ -15,7 +15,6 @@ payload:
   - GEOSITE,bing
   - GEOSITE,microsoft@cn
   - GEOSITE,bing@cn
-  - GEOSITE,perplexity
   - GEOSITE,linkedin
 
   # General sites
