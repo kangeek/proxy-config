@@ -21,7 +21,14 @@ payload:
   - DOMAIN,storage.googleapis.com # Google storage
   - DOMAIN-SUFFIX,photos.google.com # Google photo
   - DOMAIN-SUFFIX,drive.google.com # Google drive
+  - DOMAIN-SUFFIX,googledrive.com # Google Drive
   - DOMAIN-SUFFIX,dl.google.com # Google download
+  - DOMAIN-SUFFIX,googleusercontent.com # Google user content CDN
+  - DOMAIN-SUFFIX,googlephotos.com # Google Photos
+  - DOMAIN-SUFFIX,googleplay.com # Google Play Store
+  - DOMAIN-SUFFIX,ggpht.com # Google hosted images
+  - DOMAIN-SUFFIX,gvt1.com # Google cache/update servers
+  - DOMAIN-SUFFIX,gvt2.com # Google cache/update servers
 
   - DOMAIN-SUFFIX,cloudfront.net # Amazon CloudFront
   - DOMAIN-WILDCARD,*.s3.*.amazonaws.com # Amazon S3
@@ -42,8 +49,10 @@ payload:
   - DOMAIN,pkg-containers.githubusercontent.com
   - DOMAIN,production.cloudflare.docker.com
 
-  # GeoSites
+  # Streaming (need clean IP for region/anti-VPN detection)
   - GEOSITE,netflix
   - GEOSITE,disney
-  - GEOSITE,xvideos
+  - GEOSITE,hulu
   - GEOSITE,tiktok
+  - GEOSITE,xvideos
+  - DOMAIN-SUFFIX,vimeo.com # Vimeo

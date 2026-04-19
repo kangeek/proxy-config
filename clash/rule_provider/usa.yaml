@@ -1,0 +1,11 @@
+payload:
+  # Google (DOMAIN-KEYWORD covers google.com, google.co.jp, googleapis.com, etc.
+  # without pulling in 900+ unrelated domains from GEOSITE,google like blogspot,
+  # flutter.dev, chromium.org, deepmind.com, kaggle.com, etc.)
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-SUFFIX,gmail.com
+  - DOMAIN-SUFFIX,recaptcha.net
+
+  # General sites
+  - GEOSITE,paypal
+  - GEOSITE,telegram

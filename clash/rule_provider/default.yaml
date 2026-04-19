@@ -33,7 +33,6 @@ payload:
   - DOMAIN-SUFFIX,obsidian.md # Obsidian
   - DOMAIN-SUFFIX,pagerduty.com # PagerDuty
   - DOMAIN-SUFFIX,stackexchange.com # StackExchange
-  - DOMAIN-SUFFIX,vimeo.com # Vimeo, AI video
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
   - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
   - DOMAIN-SUFFIX,battle.net # Battle.net

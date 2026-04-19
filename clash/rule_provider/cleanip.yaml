@@ -6,9 +6,6 @@ payload:
   - DOMAIN-SUFFIX,warp.dev # Warp
 
   # GeoSites
-  - GEOSITE,google
-  - GEOSITE,telegram
-  - GEOSITE,paypal
   - GEOSITE,anthropic
   - GEOSITE,cursor
   - GEOSITE,openai

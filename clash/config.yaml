@@ -135,6 +135,11 @@ proxy-groups:
     filter: "家宽"
     use:
       - tag
+  - name: USA
+    type: select
+    filter: "(阿什本|夏洛特|斯波坎)"
+    use:
+      - tag
   - name: GAMING
     type: select
     filter: "游戏"
@@ -171,6 +176,12 @@ rule-providers:
     path: "./rule_provider/cleanip.yaml"
     behavior: classical
     interval: 86400
+  usa:
+    type: http
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/usa.yaml"
+    path: "./rule_provider/usa.yaml"
+    behavior: classical
+    interval: 86400
   traffic:
     type: http
     url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/traffic.yaml"
@@ -202,6 +213,7 @@ rules:
   # - GEOSITE,category-ads-all,REJECT
   - RULE-SET,traffic,TRAFFIC
   - RULE-SET,cleanip,CLEANIP
+  - RULE-SET,usa,USA
   - RULE-SET,gaming,GAMING
   - RULE-SET,netskope,NETSKOPE
   - RULE-SET,default,DEFAULT
