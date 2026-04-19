@@ -177,8 +177,7 @@ for yaml in "$CLASH_RULE_DIR"/*.yaml; do
   # Comments and blank lines are naturally ignored by the YAML parser.
   yq e '.payload[] | select(. != null)' "$yaml" > "$out_file_surge"
 
-  # Shadowrocket keeps the original GEOSITE entries.
-  cp "$out_file_surge" "$out_file_shadowrocket"
+  # Shadowrocket copy is done after Surge expansion (see below).
 
   # Post-process Surge rule-set: convert GEOSITE entries to RULE-SET using Surge-Geosite.
   # If a GEOSITE tag does not exist in the Surge-Geosite index, keep the original
@@ -218,6 +217,10 @@ for yaml in "$CLASH_RULE_DIR"/*.yaml; do
   mv "$tmp_surge_file" "$out_file_surge"
 
   expand_surge_ruleset_file "$out_file_surge"
+
+  # Shadowrocket reuses the fully-expanded Surge rule set, stripping
+  # DOMAIN-WILDCARD (unsupported by Shadowrocket) and GEOSITE leftovers.
+  sed -e '/^DOMAIN-WILDCARD,/d' -e '/^GEOSITE,/d' "$out_file_surge" > "$out_file_shadowrocket"
 done
 
 if [ "${#FAILED_RULESET_URLS[@]}" -gt 0 ]; then
