@@ -132,7 +132,7 @@ proxy-groups:
       - tag
   - name: CLEANIP
     type: select
-    filter: "家宽"
+    filter: "(阿什本|夏洛特|斯波坎|家宽)"
     use:
       - tag
   - name: USA
