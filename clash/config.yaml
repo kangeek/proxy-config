@@ -46,7 +46,7 @@ geox-url:
 ### DNS
 dns:
   enable: true
-  enhanced-mode: redir-host # fake-ip
+  enhanced-mode: fake-ip # redir-host
   cache-algorithm: arc
   use-system-hosts: true
   respect-rules: false
@@ -64,26 +64,15 @@ dns:
     - https://dns.alidns.com/dns-query # 阿里 DoH
     - https://doh.pub/dns-query # 腾讯 DoH
   nameserver-policy: # 替代已弃用的 fallback-filter.geosite；gfw 列表域名只用境外 DNS
-    "geosite:gfw":
-      - 8.8.8.8
-      - 1.1.1.1
-      - tls://8.8.8.8
-      - tls://1.1.1.1
+    "geosite:cn,apple,category-games@cn,private":
+      - 119.29.29.29
+      - 223.5.5.5
+      - system
   fallback: # 处理国外域名和代理流量的解析，通常选择稳定的 DoH/DoT
     - 8.8.8.8
     - 1.1.1.1
     - tls://8.8.8.8
     - tls://1.1.1.1
-  fallback-filter: # 使用 fallback 解析
-    geoip: true
-    geoip-code: CN # 非中国 IP 采用 fallback 解析结果
-    ipcidr:
-      - 240.0.0.0/4 # “未来使用”的保留地址
-      - 127.0.0.1/32
-      - 0.0.0.0/32
-    domain:
-      - "+.google.com"
-      - "+.youtube.com"
 sniffer:
   enable: false
 

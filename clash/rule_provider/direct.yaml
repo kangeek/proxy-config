@@ -46,6 +46,9 @@ payload:
 
   # Proxies
   - DOMAIN,rama991.siamparagon.org # tag
+  - DOMAIN,link01.nobodys.uk # tag
+  - DOMAIN,huaikhwang.central-world.org # tag
+  - DOMAIN,villa.parkson-market.org # tag
   - DOMAIN,sub1.sntp.me # sntp
 
   # GeoSites
