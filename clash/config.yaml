@@ -63,16 +63,20 @@ dns:
     - 119.29.29.29 # DNSPod
     - https://dns.alidns.com/dns-query # 阿里 DoH
     - https://doh.pub/dns-query # 腾讯 DoH
-  nameserver-policy: # 替代已弃用的 fallback-filter.geosite；gfw 列表域名只用境外 DNS
-    "geosite:cn,apple,category-games@cn,private":
-      - 119.29.29.29
-      - 223.5.5.5
-      - system
   fallback: # 处理国外域名和代理流量的解析，通常选择稳定的 DoH/DoT
     - 8.8.8.8
     - 1.1.1.1
     - tls://8.8.8.8
     - tls://1.1.1.1
+  proxy-server-nameserver: # 解析 proxy 中的节点域名
+    - 180.184.1.1 # for tag proxy
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
+  nameserver-policy: # 替代已弃用的 fallback-filter.geosite；gfw 列表域名只用境外 DNS
+    "geosite:cn,apple,category-games@cn,private":
+      - 119.29.29.29
+      - 223.5.5.5
+      - system
 sniffer:
   enable: false
 
