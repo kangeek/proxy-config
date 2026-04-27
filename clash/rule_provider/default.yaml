@@ -35,5 +35,4 @@ payload:
   - DOMAIN-SUFFIX,stackexchange.com # StackExchange
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
   - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
-  - DOMAIN-SUFFIX,battle.net # Battle.net
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile

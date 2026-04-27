@@ -41,8 +41,19 @@ payload:
   - DOMAIN,files.pythonhosted.org # python hosted
   - DOMAIN-SUFFIX,kimi.com # Kimi
   
-  # Other sites
-  - DOMAIN-SUFFIX,tuoyouyun.com # 儿保网
+  # Blizzard & Battlenet CN
+  - DOMAIN-SUFFIX,battlenet.com.cn
+  - DOMAIN-SUFFIX,wowchina.com
+  - DOMAIN-SUFFIX,blizzard.cn
+  - DOMAIN-SUFFIX,163.com
+  - DOMAIN-SUFFIX,netease.com
+  - DOMAIN-SUFFIX,game.163.com
+  - DOMAIN-SUFFIX,api.netease.com
+  - DOMAIN-SUFFIX,service.netease.com
+  - DOMAIN,downloader.battle.net
+  - DOMAIN-SUFFIX,patch.battle.net
+  - DOMAIN,level3.blizzard.com # Blizzard CDN
+  - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
 
   # Proxies
   - DOMAIN,rama991.siamparagon.org # tag

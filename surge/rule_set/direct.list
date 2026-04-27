@@ -34,7 +34,18 @@ DOMAIN-SUFFIX,queniuak.com
 DOMAIN-KEYWORD,drive.quark.cn
 DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,kimi.com
-DOMAIN-SUFFIX,tuoyouyun.com
+DOMAIN-SUFFIX,battlenet.com.cn
+DOMAIN-SUFFIX,wowchina.com
+DOMAIN-SUFFIX,blizzard.cn
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,netease.com
+DOMAIN-SUFFIX,game.163.com
+DOMAIN-SUFFIX,api.netease.com
+DOMAIN-SUFFIX,service.netease.com
+DOMAIN,downloader.battle.net
+DOMAIN-SUFFIX,patch.battle.net
+DOMAIN,level3.blizzard.com
+DOMAIN-SUFFIX,cdn.blizzard.com
 DOMAIN,rama991.siamparagon.org
 DOMAIN,link01.nobodys.uk
 DOMAIN,huaikhwang.central-world.org
@@ -197,6 +208,7 @@ DOMAIN-SUFFIX,95588.com
 DOMAIN-SUFFIX,95588.com.cn
 DOMAIN-SUFFIX,abchina.com
 DOMAIN-SUFFIX,bank-of-china.com
+DOMAIN-SUFFIX,bankcomm.cn
 DOMAIN-SUFFIX,bankcomm.com
 DOMAIN-SUFFIX,bankofbeijing.com.cn
 DOMAIN-SUFFIX,bankofchina.com

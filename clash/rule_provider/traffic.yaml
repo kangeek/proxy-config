@@ -35,9 +35,6 @@ payload:
   - DOMAIN-SUFFIX,s3-accelerate.amazonaws.com # Amazon S3 accelerate
   - DOMAIN-SUFFIX,s3.amazonaws.com # Amazon S3
 
-  - DOMAIN,level3.blizzard.com # Blizzard CDN
-  - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
-
   # Docker registries
   - GEOSITE,google-registry
   - GEOSITE,docker
