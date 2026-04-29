@@ -50,10 +50,7 @@ payload:
   - DOMAIN-SUFFIX,game.163.com
   - DOMAIN-SUFFIX,api.netease.com
   - DOMAIN-SUFFIX,service.netease.com
-  - DOMAIN,downloader.battle.net
-  - DOMAIN-SUFFIX,patch.battle.net
-  - DOMAIN,level3.blizzard.com # Blizzard CDN
-  - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
+  - DOMAIN,cn.actual.battle.net
 
   # Proxies
   - DOMAIN,rama991.siamparagon.org # tag

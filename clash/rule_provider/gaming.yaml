@@ -3,5 +3,11 @@ payload:
   - DOMAIN-SUFFIX,wuguifu.com
   - AND,((DOMAIN-SUFFIX,turtle-server-cn.kz),(DST-PORT,3724))
   - AND,((IP-CIDR,169.150.222.0/24,no-resolve),(DST-PORT,8090))
+  # Blizzard Battle.net
   - DOMAIN-SUFFIX,tw.battle.net
-  - DOMAIN-SUFFIX,asia.battle.net
+  - DOMAIN-SUFFIX,shop.battle.net
+  - DOMAIN-SUFFIX,prod.actual.battle.net
+  - DOMAIN-SUFFIX,us.actual.battle.net
+  - DOMAIN-SUFFIX,kr.actual.battle.net
+  - DOMAIN-SUFFIX,version.battle.net
+  - DOMAIN-SUFFIX,geo.battle.net

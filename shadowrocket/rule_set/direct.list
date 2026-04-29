@@ -42,10 +42,7 @@ DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,game.163.com
 DOMAIN-SUFFIX,api.netease.com
 DOMAIN-SUFFIX,service.netease.com
-DOMAIN,downloader.battle.net
-DOMAIN-SUFFIX,patch.battle.net
-DOMAIN,level3.blizzard.com
-DOMAIN-SUFFIX,cdn.blizzard.com
+DOMAIN,cn.actual.battle.net
 DOMAIN,rama991.siamparagon.org
 DOMAIN,link01.nobodys.uk
 DOMAIN,huaikhwang.central-world.org
@@ -609,6 +606,7 @@ DOMAIN,sylvan.apple.com
 DOMAIN,sync.itunes.apple.com
 DOMAIN,tf-feedback.itunes.apple.com
 DOMAIN,tj-pod1-smp-device.apple.com
+DOMAIN,universal-activity-service.itunes.apple.com
 DOMAIN,updates-http.cdn-apple.com
 DOMAIN,updates-http.cdn-apple.com.akadns.net
 DOMAIN,updates.cdn-apple.com

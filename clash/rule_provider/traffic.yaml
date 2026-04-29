@@ -53,3 +53,11 @@ payload:
   - GEOSITE,tiktok
   - GEOSITE,xvideos
   - DOMAIN-SUFFIX,vimeo.com # Vimeo
+
+  # Blizzard Battle.net
+  - DOMAIN,downloader.battle.net
+  - DOMAIN,rum.battle.net
+  - DOMAIN,level3.blizzard.com # Blizzard CDN
+  - DOMAIN-SUFFIX,patch.battle.net
+  - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
+  - DOMAIN-SUFFIX,depot.battle.net # Update, verification server
