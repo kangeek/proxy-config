@@ -18,7 +18,9 @@ function FindProxyForURL(url, host) {
   // ===== 3. 指定网站 bypass =====
   if (
     dnsDomainIs(host, ".paymaya.com") ||
+    dnsDomainIs(host, ".maya.ph") ||
     dnsDomainIs(host, ".corp.voyager.ph") ||
+    dnsDomainIs(host, ".voyagerapis.com") ||
     shExpMatch(host, "*.corp.maya*")
   ) {
     return "DIRECT";
