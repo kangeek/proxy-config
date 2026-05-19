@@ -52,6 +52,10 @@ payload:
   - DOMAIN-SUFFIX,service.netease.com
   - DOMAIN,cn.actual.battle.net
 
+  # XDGame
+  - DOMAIN-SUFFIX,xdgame.com
+  - DOMAIN-SUFFIX,xdgame.vip
+
   # Proxies
   - DOMAIN,rama991.siamparagon.org # tag
   - DOMAIN,link01.nobodys.uk # tag

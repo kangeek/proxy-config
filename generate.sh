@@ -1,3 +1,4 @@
+#!/bin/bash
 ############################################################
 # Read rule providers from clash/rule_provider/ and generate
 # rule sets for other apps:
@@ -5,7 +6,6 @@
 # - ./shadowrocket/rule_set/
 ############################################################
 
-#!/bin/bash
 
 # Read rule providers from clash/rule_provider/ and generate rule sets for other apps
 
