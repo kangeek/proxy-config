@@ -1,21 +1,22 @@
 payload:
   # GeoSites
-  - GEOSITE,atlassian
-  - GEOSITE,slack
-  - GEOSITE,godaddy
-  - GEOSITE,discord
+  - GEOSITE,apple
   - GEOSITE,amazon
+  - GEOSITE,atlassian
+  - GEOSITE,bing
+  - GEOSITE,bing@cn
+  - GEOSITE,discord
+  - GEOSITE,godaddy
+  - GEOSITE,google
+  - GEOSITE,facebook
   - GEOSITE,github
   - GEOSITE,gitlab
-  - GEOSITE,twitter
-  - GEOSITE,facebook
   - GEOSITE,gravatar
-  - GEOSITE,apple
   - GEOSITE,microsoft
-  - GEOSITE,bing
   - GEOSITE,microsoft@cn
-  - GEOSITE,bing@cn
   - GEOSITE,linkedin
+  - GEOSITE,slack
+  - GEOSITE,twitter
 
   # General sites
   - DOMAIN-SUFFIX,1password.com # 1Password

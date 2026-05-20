@@ -1,6 +1,3 @@
-DOMAIN-KEYWORD,google
-DOMAIN-SUFFIX,gmail.com
-DOMAIN-SUFFIX,recaptcha.net
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/paypal
 DOMAIN-SUFFIX,account-paypal.info
