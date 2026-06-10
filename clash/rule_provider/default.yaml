@@ -37,3 +37,4 @@ payload:
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
   - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
+  - DOMAIN-SUFFIX,open.xiaojingai.com # 小鲸AI

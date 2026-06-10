@@ -27,7 +27,10 @@ payload:
   - DOMAIN-SUFFIX,gitlab.cool
   - DOMAIN-SUFFIX,srelab.io
 
-# CDN, mirrors
+  # General sites
+  - DOMAIN-SUFFIX,aigc.x-see.cn # 小鲸AI
+
+  # CDN, mirrors
   - DOMAIN,download-cf.jetbrains.com # JetBrains download
   - DOMAIN,download.jetbrains.com # JetBrains download
   - DOMAIN-SUFFIX,archive.ubuntu.com # ubuntu mirror
