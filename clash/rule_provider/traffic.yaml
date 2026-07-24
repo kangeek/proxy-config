@@ -17,7 +17,6 @@ payload:
 
   - DOMAIN-SUFFIX,cloudflarestorage.com # Cloudflare storage
 
-  - GEOSITE,youtube
   - DOMAIN,storage.googleapis.com # Google storage
   - DOMAIN-SUFFIX,photos.google.com # Google photo
   - DOMAIN-SUFFIX,drive.google.com # Google drive
@@ -50,7 +49,6 @@ payload:
   - GEOSITE,netflix
   - GEOSITE,disney
   - GEOSITE,hulu
-  - GEOSITE,tiktok
   - GEOSITE,xvideos
   - DOMAIN-SUFFIX,vimeo.com # Vimeo
 

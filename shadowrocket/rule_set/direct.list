@@ -22,6 +22,7 @@ IP-CIDR6,ff00::/8
 DOMAIN-SUFFIX,kang.zone
 DOMAIN-SUFFIX,gitlab.cool
 DOMAIN-SUFFIX,srelab.io
+DOMAIN-SUFFIX,aigc.x-see.cn
 DOMAIN,download-cf.jetbrains.com
 DOMAIN,download.jetbrains.com
 DOMAIN-SUFFIX,archive.ubuntu.com
@@ -248,6 +249,8 @@ DOMAIN-SUFFIX,cebbank.com
 DOMAIN-SUFFIX,cfc108.com
 DOMAIN-SUFFIX,cgbchina.com.cn
 DOMAIN-SUFFIX,chinaamc.com
+DOMAIN-SUFFIX,chinapay.com
+DOMAIN-SUFFIX,chinaums.com
 DOMAIN-SUFFIX,chinaunionpay.com
 DOMAIN-SUFFIX,chinaunionpay.com.cn
 DOMAIN-SUFFIX,chinaunionpay.net
@@ -372,6 +375,7 @@ DOMAIN-SUFFIX,ecgapp.com.cn
 DOMAIN-SUFFIX,faceshift.cn
 DOMAIN-SUFFIX,homepod.cn
 DOMAIN-SUFFIX,icloud-apple.cn
+DOMAIN-SUFFIX,icloud-content.com.cn
 DOMAIN-SUFFIX,icloud.cn
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.net.cn
@@ -410,6 +414,7 @@ DOMAIN,amp-api-updates.apps.apple.com
 DOMAIN,amp-api.apps.apple.com
 DOMAIN,amp-api.media.apple.com
 DOMAIN,amp-api.music.apple.com
+DOMAIN,amp-api.podcasts.apple.com
 DOMAIN,aod-ssl.itunes.apple.com
 DOMAIN,aod.itunes.apple.com
 DOMAIN,api-edge.apps.apple.com
@@ -419,7 +424,6 @@ DOMAIN,appldnld.g.aaplimg.com
 DOMAIN,appleid.cdn-apple.com
 DOMAIN,apps.mzstatic.com
 DOMAIN,apptrailers.itunes.apple.com
-DOMAIN,auth.music.apple.com
 DOMAIN,bag-cdn.itunes-apple.com.akadns.net
 DOMAIN,bag.itunes.apple.com
 DOMAIN,bookkeeper.itunes.apple.com
@@ -471,8 +475,10 @@ DOMAIN,devstreaming-cdn.apple.com
 DOMAIN,discussionschinese.apple.com
 DOMAIN,download.developer.apple.com
 DOMAIN,downloaddispatch.itunes.apple.com
+DOMAIN,entitlements-edge.itunes.apple.com
 DOMAIN,experiments.apple.com
 DOMAIN,fides-pol.apple.com
+DOMAIN,fpinit.itunes.apple.com
 DOMAIN,gs-loc-cn.apple.com
 DOMAIN,gs-loc.apple.com
 DOMAIN,gsp10-ssl-cn.ls.apple.com
@@ -534,6 +540,7 @@ DOMAIN,itunesconnect.apple.com
 DOMAIN,js-cdn.music.apple.com
 DOMAIN,km.support.apple.com
 DOMAIN,maps.apple.com
+DOMAIN,mensura.cdn-apple.com
 DOMAIN,mesu-cdn.apple.com.akadns.net
 DOMAIN,mesu-china.apple.com.akadns.net
 DOMAIN,mesu.apple.com
@@ -554,8 +561,11 @@ DOMAIN,pancake.apple.com
 DOMAIN,pba0.apple.com
 DOMAIN,pd-nk.itunes.apple.com
 DOMAIN,pd.itunes.apple.com
+DOMAIN,play-edge.itunes.apple.com
 DOMAIN,play.itunes.apple.com
 DOMAIN,play.music.apple.com
+DOMAIN,podcasts.apple.com
+DOMAIN,podcasts.itunes.apple.com
 DOMAIN,probe.siri.apple.com
 DOMAIN,prod-support.apple-support.akadns.net
 DOMAIN,publicassets.cdn-apple.com
@@ -624,8 +634,10 @@ DOMAIN,xp.apple.com
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/steam@cn
 DOMAIN-SUFFIX,client-update.queniuqe.com
+DOMAIN-SUFFIX,csgo.com.cn
 DOMAIN-SUFFIX,csgo.wmsj.cn
 DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dota2.com.cn
 DOMAIN-SUFFIX,dota2.wmsj.cn
 DOMAIN-SUFFIX,gstore.val.manlaxy.com
 DOMAIN-SUFFIX,st.dl.bscstorage.net
@@ -643,8 +655,10 @@ DOMAIN,xz.pphimalayanrt.com
 # RuleSet: https://surge.bojin.co/geosite/category-games@cn
 DOMAIN-SUFFIX,bluearchive-cn.com
 DOMAIN-SUFFIX,client-update.queniuqe.com
+DOMAIN-SUFFIX,csgo.com.cn
 DOMAIN-SUFFIX,csgo.wmsj.cn
 DOMAIN-SUFFIX,dl.steam.clngaa.com
+DOMAIN-SUFFIX,dota2.com.cn
 DOMAIN-SUFFIX,dota2.wmsj.cn
 DOMAIN-SUFFIX,gstore.val.manlaxy.com
 DOMAIN-SUFFIX,leagueoflegends.cn
@@ -671,16 +685,9 @@ DOMAIN-SUFFIX,xboxlive.cn
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
 DOMAIN-SUFFIX,yostar.cn
 DOMAIN,alibaba.cdn.steampipe.steamcontent.com
-DOMAIN,gog-cdn-fastly.gog.com
-DOMAIN,gog-cdn.akamaized.net
 DOMAIN,gog.qtlglb.com
-DOMAIN,gogalaxy.gog-statics.com
 DOMAIN,lv.queniujq.cn
-DOMAIN,menu-static.gog-statics.com
-DOMAIN,productcard.gog-statics.com
-DOMAIN,static-login.gog-statics.com
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
-DOMAIN,www4-static.gog-statics.com
 DOMAIN,xz.pphimalayanrt.com
 ##############################
 GEOIP,CN

@@ -16,7 +16,9 @@ payload:
   - GEOSITE,microsoft@cn
   - GEOSITE,linkedin
   - GEOSITE,slack
+  - GEOSITE,tiktok
   - GEOSITE,twitter
+  - GEOSITE,youtube
 
   # General sites
   - DOMAIN-SUFFIX,1password.com # 1Password

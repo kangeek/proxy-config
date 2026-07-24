@@ -113,9 +113,8 @@ proxy-providers:
 proxy-groups:
   - name: DEFAULT
     type: url-test
-    filter: "(KR|SG|JP)"
     use:
-      - mitce
+      - amy
   - name: TRAFFIC
     type: url-test
     filter: "(KR|SG|JP)"
@@ -133,9 +132,10 @@ proxy-groups:
       - tag
   - name: USA
     type: select
-    filter: "(阿什本|夏洛特|斯波坎)"
+    filter: "(阿什本|夏洛特|斯波坎|美国)"
     use:
       - tag
+      - amy
   - name: GAMING
     type: select
     filter: "游戏"
