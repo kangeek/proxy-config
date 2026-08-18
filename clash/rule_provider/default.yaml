@@ -5,6 +5,7 @@ payload:
   - GEOSITE,atlassian
   - GEOSITE,bing
   - GEOSITE,bing@cn
+  - GEOSITE,cloudflare
   - GEOSITE,discord
   - GEOSITE,godaddy
   - GEOSITE,google
@@ -39,4 +40,5 @@ payload:
   - DOMAIN-SUFFIX,zerotier.com # Zerotier
   - DOMAIN-SUFFIX,dynatrace.com # Dynatrace
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
+  - DOMAIN-SUFFIX,okx.com # OKX
   - DOMAIN-SUFFIX,open.xiaojingai.com # 小鲸AI
