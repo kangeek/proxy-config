@@ -44,6 +44,7 @@ payload:
   - DOMAIN-KEYWORD,drive.quark.cn # 夸克网盘
   - DOMAIN,files.pythonhosted.org # python hosted
   - DOMAIN-SUFFIX,kimi.com # Kimi
+  - DOMAIN,persistent.oaistatic.com # ChatGPT CDN
   
   # Blizzard & Battlenet CN
   - DOMAIN-SUFFIX,battlenet.com.cn

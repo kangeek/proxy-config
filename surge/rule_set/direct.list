@@ -36,6 +36,7 @@ DOMAIN-SUFFIX,queniuak.com
 DOMAIN-KEYWORD,drive.quark.cn
 DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,kimi.com
+DOMAIN,persistent.oaistatic.com
 DOMAIN-SUFFIX,battlenet.com.cn
 DOMAIN-SUFFIX,wowchina.com
 DOMAIN-SUFFIX,blizzard.cn
@@ -316,12 +317,14 @@ DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,shrbank.com
 DOMAIN-SUFFIX,spdb.com.cn
 DOMAIN-SUFFIX,suningbank.com
+DOMAIN-SUFFIX,tctpwebankcdn.net
 DOMAIN-SUFFIX,test-cignacmb.com
 DOMAIN-SUFFIX,unionpay.com
 DOMAIN-SUFFIX,unionpay.net
 DOMAIN-SUFFIX,unionpayintl.cn
 DOMAIN-SUFFIX,unionpayintl.com
 DOMAIN-SUFFIX,unionpaysecure.com
+DOMAIN-SUFFIX,wbweilicai.com
 DOMAIN-SUFFIX,webank.com
 DOMAIN-SUFFIX,webankcdn.net
 DOMAIN-SUFFIX,wegobank.cn
@@ -690,7 +693,6 @@ DOMAIN-SUFFIX,yostar.cn
 DOMAIN,alibaba.cdn.steampipe.steamcontent.com
 DOMAIN,gog.qtlglb.com
 DOMAIN,lv.queniujq.cn
-DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
 DOMAIN,xz.pphimalayanrt.com
 DOMAIN-WILDCARD,*.-mihayo.akamaized.net
 DOMAIN-WILDCARD,cdn*-epicgames-*.file.myqcloud.com
