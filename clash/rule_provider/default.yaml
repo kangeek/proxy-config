@@ -42,3 +42,24 @@ payload:
   - DOMAIN-SUFFIX,ultramobile.com # Ultra Mobile
   - DOMAIN-SUFFIX,okx.com # OKX
   - DOMAIN-SUFFIX,open.xiaojingai.com # 小鲸AI
+
+  # Blizzard Battle.net - launcher control plane
+  - DOMAIN-SUFFIX,account.battle.net # 账号管理（含区域端点）
+  - DOMAIN,login.battle.net # 登录验证（短暂连接）
+  - DOMAIN,oauth.battle.net # OAuth 授权
+  - DOMAIN,content-ui.battle.net # 启动器界面内容
+  - DOMAIN,rum.battle.net # 启动器性能监测
+  - DOMAIN-SUFFIX,shop.battle.net # 商店（含区域端点）
+  - DOMAIN,telemetry-in.battle.net # 遥测上报
+  - DOMAIN-SUFFIX,geo.battle.net # 区域定位
+  - DOMAIN,www.battle.net # 战网官网
+  - DOMAIN-SUFFIX,tw.battle.net # 台湾地区战网页面
+  - DOMAIN,us.battle.net # 美服（只玩亚服时无需走游戏代理）
+  - DOMAIN,eu.battle.net # 欧服（只玩亚服时无需走游戏代理）
+  - DOMAIN-SUFFIX,blizzard.com # 暴雪官网及新闻
+  - DOMAIN-SUFFIX,worldofwarcraft.com # 魔兽世界官网
+  - DOMAIN-SUFFIX,blz-contentstack.com # 暴雪 CMS 内容
+  - DOMAIN,bnetcmsus-a.akamaihd.net # 战网 CMS 内容
+  - DOMAIN,bnetproduct-a.akamaihd.net # 启动器产品信息
+  - DOMAIN,bnetshopus.akamaized.net # 战网商店资源
+  - DOMAIN,blznav.akamaized.net # 战网导航资源

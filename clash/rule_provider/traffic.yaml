@@ -53,9 +53,16 @@ payload:
   - DOMAIN-SUFFIX,vimeo.com # Vimeo
 
   # Blizzard Battle.net
-  - DOMAIN,downloader.battle.net
-  - DOMAIN,rum.battle.net
+  - DOMAIN,download.battle.net # 游戏下载
+  - DOMAIN,downloader.battle.net # 游戏下载
+  - DOMAIN,update.battle.net # 游戏更新
   - DOMAIN,level3.blizzard.com # Blizzard CDN
-  - DOMAIN-SUFFIX,patch.battle.net
+  - DOMAIN-SUFFIX,patch.battle.net # 游戏补丁
   - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
-  - DOMAIN-SUFFIX,depot.battle.net # Update, verification server
+  - DOMAIN-SUFFIX,blzddist.battle.net # 补丁分发
+  - DOMAIN-SUFFIX,depot.battle.net # 内容仓库、更新及校验
+  - DOMAIN-SUFFIX,version.battle.net # 版本检查及补丁清单
+  - DOMAIN,blizzard.nefficient.co.kr # 韩国 CDN
+  - DOMAIN,blzddist1-a.akamaihd.net # 全球补丁 CDN
+  - DOMAIN,blzddistkr1-a.akamaihd.net # 韩国补丁 CDN
+  - DOMAIN,blzmedia-a.akamaihd.net # 暴雪媒体 CDN

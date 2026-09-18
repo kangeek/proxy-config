@@ -50,12 +50,20 @@ payload:
   - DOMAIN-SUFFIX,battlenet.com.cn
   - DOMAIN-SUFFIX,wowchina.com
   - DOMAIN-SUFFIX,blizzard.cn
+  - DOMAIN-SUFFIX,blizzardgames.cn
+  - DOMAIN-SUFFIX,blzstatic.cn
   - DOMAIN-SUFFIX,163.com
   - DOMAIN-SUFFIX,netease.com
   - DOMAIN-SUFFIX,game.163.com
   - DOMAIN-SUFFIX,api.netease.com
   - DOMAIN-SUFFIX,service.netease.com
   - DOMAIN,cn.actual.battle.net
+  - DOMAIN,blz.nosdn.127.net # 国服暴雪 CDN
+  - DOMAIN,diablo3.nosdn.127.net # 国服暗黑破坏神 CDN
+  - DOMAIN,hearthstone.nosdn.127.net # 国服炉石传说 CDN
+  - DOMAIN,overwatch.nosdn.127.net # 国服守望先锋 CDN
+  - DOMAIN,sc2.nosdn.127.net # 国服星际争霸 II CDN
+  - DOMAIN,wow.nosdn.127.net # 国服魔兽世界 CDN
 
   # XDGame
   - DOMAIN-SUFFIX,xdgame.com

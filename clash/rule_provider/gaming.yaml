@@ -6,11 +6,8 @@ payload:
   # - DOMAIN-SUFFIX,capycraft.io
   - AND,((DOMAIN-SUFFIX,apac.capycraft.io),(DST-PORT,3724))
   - AND,((IP-CIDR,178.249.208.0/24,no-resolve),(DST-PORT,8085))
-  # Blizzard Battle.net
-  - DOMAIN-SUFFIX,tw.battle.net
-  - DOMAIN-SUFFIX,shop.battle.net
-  - DOMAIN-SUFFIX,prod.actual.battle.net
-  - DOMAIN-SUFFIX,us.actual.battle.net
-  - DOMAIN-SUFFIX,kr.actual.battle.net
-  - DOMAIN-SUFFIX,version.battle.net
-  - DOMAIN-SUFFIX,geo.battle.net
+  # Blizzard Battle.net - real-time game endpoints
+  - DOMAIN,prod.actual.battle.net
+  - DOMAIN,test.actual.battle.net
+  - DOMAIN,us.actual.battle.net
+  - DOMAIN,kr.actual.battle.net
