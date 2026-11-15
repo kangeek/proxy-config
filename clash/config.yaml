@@ -100,15 +100,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  mitce: # https://mitce.net/clientarea.php
-    type: http
-    url: <proxy_provider_mitce_url>
-    interval: 3600
-    path: "./proxy_provider/mitce.yaml"
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
   lxy: # https://xn--9kqz23b19z.com/#/dashboard
     type: http
     url: <proxy_provider_lxy_url>
@@ -127,9 +118,9 @@ proxy-groups:
       - amy
   - name: TRAFFIC
     type: url-test
-    filter: "(美国|日本|台湾|新加坡|KR|SG|JP)"
+    filter: "(香港|日本|台湾|新加坡)高速"
     use:
-      - mitce
+      - lxy
   - name: NETSKOPE
     type: select
     filter: "1x"
@@ -159,10 +150,6 @@ proxy-groups:
     type: url-test
     use:
       - tag
-  - name: ⚡mitce
-    type: url-test
-    use:
-      - mitce
   - name: ⚡lxy
     type: url-test
     use:
@@ -217,8 +204,8 @@ rule-providers:
 # geosites: https://github.com/v2fly/domain-list-community/tree/master/data
 rules:
   # - GEOSITE,category-ads-all,REJECT
-  - RULE-SET,traffic,TRAFFIC
   - RULE-SET,cleanip,CLEANIP
+  - RULE-SET,traffic,TRAFFIC
   - RULE-SET,usa,USA
   - RULE-SET,gaming,GAMING
   - RULE-SET,netskope,NETSKOPE
