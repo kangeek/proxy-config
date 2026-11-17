@@ -1,3 +1,7 @@
 # macOS
 .DS_Store
 **/.DS_Store
+
+# clash secrets and rendered output (see scripts/render.sh)
+clash/secrets.yaml
+clash/config.*.yaml

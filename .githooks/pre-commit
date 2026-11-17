@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Block commits that contain secrets. Enable once per clone with:
+#   git config core.hooksPath .githooks
+set -uo pipefail
+
+root="$(git rev-parse --show-toplevel)"
+added="$(git diff --cached --no-color -U0 | grep -E '^\+[^+]' || true)"
+[[ -z "$added" ]] && exit 0
+
+fail=0
+report() { echo "pre-commit: $1" >&2; fail=1; }
+
+# 1. Any value (and any hosts node domain) from the local secrets file. Very
+#    short values are skipped. Needs yq; without it only the patterns below run.
+if [[ -f "$root/clash/secrets.yaml" ]]; then
+  if command -v yq >/dev/null; then
+    while IFS=$'\t' read -r key val; do
+      (( ${#val} < 6 )) && continue
+      if grep -qF -- "$val" <<< "$added"; then
+        report "staged changes contain a '$key' value from clash/secrets.yaml"
+      fi
+    done < <(yq -r '(.. | select(kind == "scalar") | [(path | .[0]), .] | @tsv),
+                    ((.hosts // {}) | keys | .[] | ["hosts", .] | @tsv)' \
+                 "$root/clash/secrets.yaml")
+  else
+    echo "pre-commit: yq not found, skipping the secrets.yaml value check" >&2
+  fi
+fi
+
+# 2. UUID-prefixed hostnames (per-account node domains), and DoH token paths.
+if grep -qE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.[a-z0-9-]+\.[a-z]+' <<< "$added"; then
+  report "staged changes contain a UUID-prefixed hostname (looks like a node domain)"
+fi
+if grep -qE 'dns-query/[0-9A-Za-z-]{8,}' <<< "$added"; then
+  report "staged changes contain a DoH URL with a token path"
+fi
+
+if (( fail )); then
+  echo "pre-commit: commit blocked. Use placeholders such as <amy_doh_token>." >&2
+  exit 1
+fi
