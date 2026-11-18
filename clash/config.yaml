@@ -174,13 +174,13 @@ proxy-groups:
     type: select
     filter: "(马来西亚家宽|台湾家宽|印尼-棉兰)"
     use: [tag]
-  - name: USA
+  - name: AMERICA
     type: select
     filter: "(美国)"
     use: [tag, amy]
   - name: GAMING
     type: select
-    filter: "香港(家宽|游戏)"
+    filter: "(香港|台湾)(家宽|游戏)"
     use: [tag]
   - name: DEFAULT-amy
     type: select
@@ -214,10 +214,10 @@ rule-providers:
     path: "./rule_provider/cleanip.yaml"
     behavior: classical
     interval: 86400
-  usa:
+  america:
     type: http
-    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/usa.yaml"
-    path: "./rule_provider/usa.yaml"
+    url: "https://raw.githubusercontent.com/kangeek/proxy-config/main/clash/rule_provider/america.yaml"
+    path: "./rule_provider/america.yaml"
     behavior: classical
     interval: 86400
   traffic:
@@ -251,7 +251,7 @@ rules:
   # - GEOSITE,category-ads-all,REJECT
   - RULE-SET,cleanip,CLEANIP
   - RULE-SET,traffic,TRAFFIC
-  - RULE-SET,usa,USA
+  - RULE-SET,america,AMERICA
   - RULE-SET,gaming,GAMING
   - RULE-SET,netskope,NETSKOPE
   - RULE-SET,default,DEFAULT
