@@ -10,7 +10,7 @@ Update [rule providers](clash/rule_provider/) for clash, and then generate rule 
 ./generate.sh
 ```
 
-To get a Clash config you can paste into OpenClash or ClashVerge, copy `clash/secrets.yaml.example` to `clash/secrets.yaml`, fill it in, and run the command below. It writes `clash/config.local.yaml` and `surge/default.local.conf` (Surge DoH token and node-domain `[Host]` entries) and copies the Clash one to the clipboard (needs `yq`):
+To get a Clash config you can paste into OpenClash or ClashVerge, copy `clash/secrets.yaml.example` to `clash/secrets.yaml`, fill it in, and run the command below. It writes `clash/config.local.yaml` and `surge/default.local.conf` (Surge node-domain `[Host]` entries) and copies the Clash one to the clipboard (needs `yq`):
 
 ```bash
 ./scripts/render.sh --copy

@@ -8,3 +8,5 @@ clash/config.*.yaml
 
 # surge rendered output (see scripts/render.sh)
 surge/default.local.conf
+
+archived

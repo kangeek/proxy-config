@@ -131,7 +131,7 @@ sniffer:
 proxy-providers:
   amy: # https://www.amytele.net/
     type: http
-    url: <proxy_provider_amy_url>
+    url: <proxy_provider_url_amy>
     interval: 3600
     path: "./proxy_provider/amy.yaml"
     health-check:
@@ -140,7 +140,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   tag: # https://tagxx.vip
     type: http
-    url: <proxy_provider_tag_url>
+    url: <proxy_provider_url_tag>&target=clashmeta
     interval: 3600
     path: "./proxy_provider/tag.yaml"
     health-check:
@@ -149,7 +149,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   lxy: # https://xn--9kqz23b19z.com/#/dashboard
     type: http
-    url: <proxy_provider_lxy_url>
+    url: <proxy_provider_url_lxy>
     interval: 3600
     path: "./proxy_provider/lxy.yaml"
     health-check:

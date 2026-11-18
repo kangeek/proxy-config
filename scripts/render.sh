@@ -4,9 +4,11 @@
 #   clash/config.yaml   -> clash/config.local.yaml
 #   surge/default.conf  -> surge/default.local.conf
 #   key: value            replaces every <key> placeholder
-#   hosts:                node-domain remapping; paste the `hosts:` section of
-#     <node>: <target>    a provider subscription as-is. Rendered at "# <hosts>"
-#                         ("node: target" for clash, "node = target" for surge).
+#   hosts_amy:            node-domain remapping; paste the `hosts:` section of
+#   hosts_tag:            the amy / tag subscription as-is under its own key.
+#     <node>: <target>    Rendered at "# <hosts>": clash gets both providers
+#                         ("node: target"), surge only tag ("node = target"),
+#                         because surge no longer uses amy.
 #
 # Usage: scripts/render.sh [--copy]
 #   --copy  also put the rendered clash config on the macOS clipboard (pbcopy)
@@ -34,30 +36,44 @@ fi
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 
-# Every top-level key except `hosts` becomes a "key=value" line (null -> empty).
-yq -r 'to_entries | .[] | select(.key != "hosts")
+if yq -e 'has("hosts")' "$secrets" >/dev/null 2>&1; then
+  echo "error: \`hosts\` was split into hosts_amy and hosts_tag in $secrets" >&2
+  exit 1
+fi
+
+# Every top-level key except the hosts_* maps becomes a "key=value" line
+# (null -> empty).
+yq -r 'to_entries | .[] | select(.key != "hosts_amy" and .key != "hosts_tag")
        | .key + "=" + ((.value // "") | tostring)' "$secrets" > "$tmp/scalars"
-
-# `hosts` entries as "<node domain> <target domain>" lines.
-yq -r '(.hosts // {}) | to_entries | .[]
-       | .key + " " + ((.value // "") | tostring)' "$secrets" > "$tmp/hosts.raw"
-
-# Exact duplicates are dropped; the same node domain with two different targets
-# is an error. Messages carry entry numbers only, never the domains.
-awk '
-  NF != 2 { printf "error: hosts entry %d is not \"<node>: <target>\"\n", NR > "/dev/stderr"; bad = 1; next }
-  ($1 in seen) && seen[$1] != $2 { printf "error: hosts entry %d reuses a node with a different target\n", NR > "/dev/stderr"; bad = 1; next }
-  !($1 in seen) { seen[$1] = $2; printf "  %s: %s\n", $1, $2 }
-  END { exit bad }
-' "$tmp/hosts.raw" > "$tmp/hosts.dedup" || exit 1
 
 if empty="$(grep -E '^[^=]+=$' "$tmp/scalars" | sed 's/=$//' | paste -sd, -)" && [[ -n "$empty" ]]; then
   echo "note: empty value for: $empty" >&2
 fi
 
-# "node = target" lines for surge's [Host] section.
+# dedup <out file> <key>... : merge the given hosts_* maps into "  node: target"
+# lines. Exact duplicates are dropped; the same node domain with two different
+# targets is an error. Messages carry entry numbers only, never the domains.
+dedup() {
+  local out="$1" key
+  shift
+  : > "$tmp/hosts.raw"
+  for key in "$@"; do
+    yq -r "(.$key // {}) | to_entries | .[]
+           | .key + \" \" + ((.value // \"\") | tostring)" "$secrets" >> "$tmp/hosts.raw"
+  done
+  awk '
+    NF != 2 { printf "error: hosts entry %d is not \"<node>: <target>\"\n", NR > "/dev/stderr"; bad = 1; next }
+    ($1 in seen) && seen[$1] != $2 { printf "error: hosts entry %d reuses a node with a different target\n", NR > "/dev/stderr"; bad = 1; next }
+    !($1 in seen) { seen[$1] = $2; printf "  %s: %s\n", $1, $2 }
+    END { exit bad }
+  ' "$tmp/hosts.raw" > "$out" || exit 1
+}
+
+# clash: amy + tag. surge: tag only, as "node = target" lines for [Host].
+dedup "$tmp/hosts.clash" hosts_amy hosts_tag
+dedup "$tmp/hosts.tag" hosts_tag
 awk '{ sub(/^ +/, ""); i = index($0, ": "); print substr($0, 1, i - 1) " = " substr($0, i + 2) }' \
-  "$tmp/hosts.dedup" > "$tmp/hosts.surge"
+  "$tmp/hosts.tag" > "$tmp/hosts.surge"
 
 # render <template> <output> <hosts file>
 # Replace <key> placeholders, and the "# <hosts>" line with the mappings. Plain
@@ -91,11 +107,12 @@ render() {
   fi
 }
 
-render "$clash/config.yaml" "$clash/config.local.yaml" "$tmp/hosts.dedup"
+render "$clash/config.yaml" "$clash/config.local.yaml" "$tmp/hosts.clash"
 render "$surge/default.conf" "$surge/default.local.conf" "$tmp/hosts.surge"
 
-n="$(wc -l < "$tmp/hosts.dedup" | tr -d ' ')"
-echo "wrote clash/config.local.yaml and surge/default.local.conf ($n hosts entries)"
+nc="$(wc -l < "$tmp/hosts.clash" | tr -d ' ')"
+ns="$(wc -l < "$tmp/hosts.surge" | tr -d ' ')"
+echo "wrote clash/config.local.yaml ($nc hosts entries) and surge/default.local.conf ($ns hosts entries)"
 
 if [[ "${1:-}" == "--copy" ]]; then
   pbcopy < "$clash/config.local.yaml"
