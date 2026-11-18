@@ -10,7 +10,7 @@ port: 7892
 redir-port: 7894
 tproxy-port: 7895
 external-controller: 0.0.0.0:9090
-# external-ui: /etc/mihomo/ui
+# external-ui: ui
 # external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 # secret: "<ui_password>"
 bind-address: "*"
@@ -67,11 +67,10 @@ dns:
     - "*.invalid"
     - "*.test"
     # specific sites
-    - "kang.zone"
-    - "*.kang.zone"
-    - "*.corp.maya.ph"
-    - "*voyagerapis.com"
-    - "*.goskope.com"
+    - "+.kang.zone"
+    - "+.corp.maya.ph"
+    - "+.voyagerapis.com"
+    - "+.goskope.com"
     # connectivity checks (captive portal / network status)
     - "+.msftncsi.com"
     - "www.msftconnecttest.com"
@@ -132,37 +131,35 @@ proxy-providers:
   amy: # https://www.amytele.net/
     type: http
     url: <proxy_provider_url_amy>
-    interval: 3600
+    interval: 0
     path: "./proxy_provider/amy.yaml"
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
   tag: # https://tagxx.vip
     type: http
     url: <proxy_provider_url_tag>&target=clashmeta
-    interval: 3600
+    interval: 0
     path: "./proxy_provider/tag.yaml"
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
   lxy: # https://xn--9kqz23b19z.com/#/dashboard
     type: http
     url: <proxy_provider_url_lxy>
-    interval: 3600
+    interval: 0
     path: "./proxy_provider/lxy.yaml"
     health-check:
       enable: true
       interval: 600
-      url: http://www.gstatic.com/generate_204
+      url: https://www.gstatic.com/generate_204
 
 proxy-groups:
   - name: DEFAULT
     type: fallback
     proxies: [DEFAULT-amy, DEFAULT-tag]
-    url: http://www.gstatic.com/generate_204
-    interval: 600
   - name: TRAFFIC
     type: url-test
     filter: "(香港|日本|台湾|新加坡)高速"
