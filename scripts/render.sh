@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
-# Render clash/config.yaml (template with <placeholders>) into
-# clash/config.local.yaml, filling in everything from clash/secrets.yaml:
+# Render the templates with <placeholders> into *.local.* files, filling in
+# everything from clash/secrets.yaml:
+#   clash/config.yaml   -> clash/config.local.yaml
+#   surge/default.conf  -> surge/default.local.conf
 #   key: value            replaces every <key> placeholder
 #   hosts:                node-domain remapping; paste the `hosts:` section of
-#     <node>: <target>    a provider subscription as-is. Rendered at "# <hosts>".
+#     <node>: <target>    a provider subscription as-is. Rendered at "# <hosts>"
+#                         ("node: target" for clash, "node = target" for surge).
 #
 # Usage: scripts/render.sh [--copy]
-#   --copy  also put the rendered config on the macOS clipboard (pbcopy)
+#   --copy  also put the rendered clash config on the macOS clipboard (pbcopy)
 # Requires yq v4 (mikefarah): brew install yq
 set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 clash="$root/clash"
-template="$clash/config.yaml"
+surge="$root/surge"
 secrets="$clash/secrets.yaml"
-output="$clash/config.local.yaml"
 
 if ! command -v yq >/dev/null; then
   echo "yq is required (brew install yq)" >&2
@@ -53,37 +55,49 @@ if empty="$(grep -E '^[^=]+=$' "$tmp/scalars" | sed 's/=$//' | paste -sd, -)" &&
   echo "note: empty value for: $empty" >&2
 fi
 
+# "node = target" lines for surge's [Host] section.
+awk '{ sub(/^ +/, ""); i = index($0, ": "); print substr($0, 1, i - 1) " = " substr($0, i + 2) }' \
+  "$tmp/hosts.dedup" > "$tmp/hosts.surge"
+
+# render <template> <output> <hosts file>
 # Replace <key> placeholders, and the "# <hosts>" line with the mappings. Plain
 # string replacement via index()/substr(), so values need no escaping.
-awk '
-  FILENAME == ARGV[1] {
-    i = index($0, "=")
-    if (i > 0) sec[substr($0, 1, i - 1)] = substr($0, i + 1)
-    next
-  }
-  FILENAME == ARGV[2] { hosts = hosts $0 "\n"; next }
-  {
-    if ($0 ~ /^[[:space:]]*# <hosts>[[:space:]]*$/) { printf "%s", hosts; next }
-    for (k in sec) {
-      ph = "<" k ">"; out = ""; s = $0
-      while ((p = index(s, ph)) > 0) { out = out substr(s, 1, p - 1) sec[k]; s = substr(s, p + length(ph)) }
-      $0 = out s
+render() {
+  local template="$1" output="$2" hostsfile="$3"
+  awk '
+    FILENAME == ARGV[1] {
+      i = index($0, "=")
+      if (i > 0) sec[substr($0, 1, i - 1)] = substr($0, i + 1)
+      next
     }
-    print
-  }
-' "$tmp/scalars" "$tmp/hosts.dedup" "$template" > "$output"
+    FILENAME == ARGV[2] { hosts = hosts $0 "\n"; next }
+    {
+      if ($0 ~ /^[[:space:]]*# <hosts>[[:space:]]*$/) { printf "%s", hosts; next }
+      for (k in sec) {
+        ph = "<" k ">"; out = ""; s = $0
+        while ((p = index(s, ph)) > 0) { out = out substr(s, 1, p - 1) sec[k]; s = substr(s, p + length(ph)) }
+        $0 = out s
+      }
+      print
+    }
+  ' "$tmp/scalars" "$hostsfile" "$template" > "$output"
 
-# Any placeholder left in a non-comment line means a value is missing.
-if left="$(grep -nE '^[[:space:]]*[^#[:space:]].*<[a-z0-9_]+>' "$output")"; then
-  echo "error: unresolved placeholders in $output:" >&2
-  echo "$left" | sed -E 's/^([0-9]+):.*(<[a-z0-9_]+>).*/  line \1: \2/' >&2
-  rm -f "$output"
-  exit 1
-fi
+  # Any placeholder left in a non-comment line means a value is missing.
+  if left="$(grep -nE '^[[:space:]]*[^#[:space:]].*<[a-z0-9_]+>' "$output")"; then
+    echo "error: unresolved placeholders in $output:" >&2
+    echo "$left" | sed -E 's/^([0-9]+):.*(<[a-z0-9_]+>).*/  line \1: \2/' >&2
+    rm -f "$output"
+    exit 1
+  fi
+}
 
-echo "wrote $output ($(wc -l < "$tmp/hosts.dedup" | tr -d ' ') hosts entries)"
+render "$clash/config.yaml" "$clash/config.local.yaml" "$tmp/hosts.dedup"
+render "$surge/default.conf" "$surge/default.local.conf" "$tmp/hosts.surge"
+
+n="$(wc -l < "$tmp/hosts.dedup" | tr -d ' ')"
+echo "wrote clash/config.local.yaml and surge/default.local.conf ($n hosts entries)"
 
 if [[ "${1:-}" == "--copy" ]]; then
-  pbcopy < "$output"
+  pbcopy < "$clash/config.local.yaml"
   echo "copied to clipboard"
 fi

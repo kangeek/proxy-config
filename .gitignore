@@ -5,3 +5,6 @@
 # clash secrets and rendered output (see scripts/render.sh)
 clash/secrets.yaml
 clash/config.*.yaml
+
+# surge rendered output (see scripts/render.sh)
+surge/default.local.conf
