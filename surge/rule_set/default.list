@@ -499,8 +499,8 @@ DOMAIN-SUFFIX,beatsbydre-sell.com
 DOMAIN-SUFFIX,beatsbydre-store.com
 DOMAIN-SUFFIX,beatsbydre-studio.com
 DOMAIN-SUFFIX,beatsbydre-us.com
-DOMAIN-SUFFIX,beatsbydre.com
 DOMAIN-SUFFIX,beatsbydre.com.cn
+DOMAIN-SUFFIX,beatsbydre.com
 DOMAIN-SUFFIX,beatsbydre.jp
 DOMAIN-SUFFIX,beatsbydre2081.com
 DOMAIN-SUFFIX,beatsbydre411.com
@@ -729,6 +729,7 @@ DOMAIN-SUFFIX,calendarserver.org
 DOMAIN-SUFFIX,camelphat.com
 DOMAIN-SUFFIX,camelspaceeffect.com
 DOMAIN-SUFFIX,canada-beatsbydre.com
+DOMAIN-SUFFIX,captive.apple.com
 DOMAIN-SUFFIX,carbon.com
 DOMAIN-SUFFIX,carekit.org
 DOMAIN-SUFFIX,casque-fr.com
@@ -998,7 +999,6 @@ DOMAIN-SUFFIX,icloud-content.com.cn
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
-DOMAIN-SUFFIX,icloud.cn
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.de
@@ -1546,8 +1546,8 @@ DOMAIN,a2.mzstatic.com
 DOMAIN,a3.mzstatic.com
 DOMAIN,a4.mzstatic.com
 DOMAIN,a5.mzstatic.com
-DOMAIN,adcdownload.apple.com
 DOMAIN,adcdownload.apple.com.akadns.net
+DOMAIN,adcdownload.apple.com
 DOMAIN,amp-api-edge-lb-cn.itunes-apple.com.akadns.net
 DOMAIN,amp-api-edge-lb.itunes-apple.com.akadns.net
 DOMAIN,amp-api-edge.apps.apple.com
@@ -1585,8 +1585,8 @@ DOMAIN,cdn2.apple-mapkit.com
 DOMAIN,cdn3.apple-mapkit.com
 DOMAIN,cdn4.apple-mapkit.com
 DOMAIN,cds-cdn.v.aaplimg.com
-DOMAIN,cds.apple.com
 DOMAIN,cds.apple.com.akadns.net
+DOMAIN,cds.apple.com
 DOMAIN,cdsassets.apple.com
 DOMAIN,certs-lb.apple.com.akadns.net
 DOMAIN,certs.apple.com
@@ -1594,8 +1594,8 @@ DOMAIN,cl1-cdn.origin-apple.com.akadns.net
 DOMAIN,cl1.apple.com
 DOMAIN,cl2-cdn.origin-apple.com.akadns.net
 DOMAIN,cl2-cn.apple.com
-DOMAIN,cl2.apple.com
 DOMAIN,cl2.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,cl2.apple.com
 DOMAIN,cl3-cdn.origin-apple.com.akadns.net
 DOMAIN,cl3.apple.com
 DOMAIN,cl4-cdn.origin-apple.com.akadns.net
@@ -1604,14 +1604,15 @@ DOMAIN,cl4.apple.com
 DOMAIN,cl5-cdn.origin-apple.com.akadns.net
 DOMAIN,cl5.apple.com
 DOMAIN,client-api.itunes.apple.com
-DOMAIN,clientflow.apple.com
 DOMAIN,clientflow.apple.com.akadns.net
+DOMAIN,clientflow.apple.com
 DOMAIN,cma.itunes.apple.com
 DOMAIN,cn-smp-paymentservices.apple.com
 DOMAIN,communities.apple.com
 DOMAIN,configuration-lb.ls-apple.com.akadns.net
-DOMAIN,configuration.apple.com
 DOMAIN,configuration.apple.com.akadns.net
+DOMAIN,configuration.apple.com
+DOMAIN,configuration.ls.apple.com
 DOMAIN,crl-lb.apple.com.akadns.net
 DOMAIN,crl.apple.com
 DOMAIN,cstat.apple.com
@@ -1633,8 +1634,8 @@ DOMAIN,gsp10-ssl-cn.ls.apple.com
 DOMAIN,gsp11-cn.ls.apple.com
 DOMAIN,gsp12-cn.ls.apple.com
 DOMAIN,gsp13-cn.ls.apple.com
-DOMAIN,gsp4-cn.ls.apple.com
 DOMAIN,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,gsp4-cn.ls.apple.com
 DOMAIN,gsp5-cn.ls.apple.com
 DOMAIN,gsp85-cn-ssl.ls.apple.com
 DOMAIN,gspe11-2-cn-ssl.ls.apple.com
@@ -1695,9 +1696,11 @@ DOMAIN,mesu.apple.com
 DOMAIN,misc-assets.itunes.apple.com
 DOMAIN,ml.cdn-apple.com
 DOMAIN,music.apple.com
+DOMAIN,musicstatus.itunes.apple.com
 DOMAIN,musicstatus.music.apple.com
 DOMAIN,mvod.itunes.apple.com
 DOMAIN,myapp.itunes.apple.com
+DOMAIN,mzstorekit.itunes.apple.com
 DOMAIN,notary-submissions-prod.s3-accelerate.amazonaws.com
 DOMAIN,notary-submissions-prod.s3.us-west-2.amazonaws.com
 DOMAIN,np-edge.itunes.apple.com
@@ -1721,6 +1724,7 @@ DOMAIN,probe.siri.apple.com
 DOMAIN,prod-support.apple-support.akadns.net
 DOMAIN,publicassets.cdn-apple.com
 DOMAIN,push-apple.com.akadns.net
+DOMAIN,radio.itunes.apple.com
 DOMAIN,s.mzstatic.com
 DOMAIN,s1.mzstatic.com
 DOMAIN,s2.mzstatic.com
@@ -1735,7 +1739,9 @@ DOMAIN,seed-swallow.siri.apple.com
 DOMAIN,seed.siri.apple.com
 DOMAIN,sequoia.apple.com
 DOMAIN,sf-api-token-service.itunes.apple.com
+DOMAIN,sh-pod1-smp-device.apple.com
 DOMAIN,sh-pod2-smp-device.apple.com
+DOMAIN,sh-pod3-smp-device.apple.com
 DOMAIN,shazam-insights.cdn-apple.com
 DOMAIN,smp-device-content.apple.com
 DOMAIN,sp.itunes.apple.com
@@ -1743,9 +1749,9 @@ DOMAIN,speedysub.music.apple.com
 DOMAIN,static.gc.apple.com
 DOMAIN,stocks-sparkline-lb.apple.com.akadns.net
 DOMAIN,stocks-sparkline.apple.com
-DOMAIN,store.apple.com
-DOMAIN,store.apple.com.edgekey.net
 DOMAIN,store.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,store.apple.com.edgekey.net
+DOMAIN,store.apple.com
 DOMAIN,store.storeimages.apple.com.akadns.net
 DOMAIN,store.storeimages.cdn-apple.com
 DOMAIN,streamingaudio.itunes.apple.com
@@ -1758,8 +1764,8 @@ DOMAIN,swcatalog-cdn.apple.com.akadns.net
 DOMAIN,swcatalog.apple.com
 DOMAIN,swcdn.apple.com
 DOMAIN,swcdn.g.aaplimg.com
-DOMAIN,swdist.apple.com
 DOMAIN,swdist.apple.com.akadns.net
+DOMAIN,swdist.apple.com
 DOMAIN,swscan-cdn.apple.com.akadns.net
 DOMAIN,swscan.apple.com
 DOMAIN,sylvan.apple.com
@@ -1769,20 +1775,20 @@ DOMAIN,tj-pod1-smp-device.apple.com
 DOMAIN,tj-pod2-smp-device.apple.com
 DOMAIN,tj-pod3-smp-device.apple.com
 DOMAIN,universal-activity-service.itunes.apple.com
-DOMAIN,updates-http.cdn-apple.com
 DOMAIN,updates-http.cdn-apple.com.akadns.net
+DOMAIN,updates-http.cdn-apple.com
 DOMAIN,updates.cdn-apple.com
 DOMAIN,upp.itunes.apple.com
 DOMAIN,valid.apple.com
 DOMAIN,valid.origin-apple.com.akadns.net
-DOMAIN,weather-data.apple.com
 DOMAIN,weather-data.apple.com.akadns.net
+DOMAIN,weather-data.apple.com
 DOMAIN,weather-map.apple.com
 DOMAIN,weather-map2.apple.com
 DOMAIN,weatherkit.apple.com
 DOMAIN,www-cdn.icloud.com.akadns.net
-DOMAIN,www.apple.com
 DOMAIN,www.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN,www.apple.com
 DOMAIN,www.support.apple.com
 DOMAIN,xp.apple.com
 ##############################
@@ -1999,6 +2005,7 @@ DOMAIN-SUFFIX,primevideo.com
 DOMAIN-SUFFIX,primevideo.info
 DOMAIN-SUFFIX,primevideo.org
 DOMAIN-SUFFIX,primevideo.tv
+DOMAIN-SUFFIX,pv-cdn.net
 DOMAIN-SUFFIX,route53.cn
 DOMAIN-SUFFIX,sagemaker.com.cn
 DOMAIN-SUFFIX,seattlespheres.com
@@ -2055,6 +2062,7 @@ DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
 DOMAIN-SUFFIX,bingparachute.com
 DOMAIN-SUFFIX,bingsandbox.com
+DOMAIN-SUFFIX,bingstatic.com
 DOMAIN-SUFFIX,bingvisualsearch.com
 DOMAIN-SUFFIX,bingworld.com
 DOMAIN-SUFFIX,bluehatnights.com
@@ -2405,6 +2413,7 @@ DOMAIN-SUFFIX,feedburner.com
 DOMAIN-SUFFIX,fflick.com
 DOMAIN-SUFFIX,financeleadsonline.com
 DOMAIN-SUFFIX,firebase.com
+DOMAIN-SUFFIX,firebase.dev
 DOMAIN-SUFFIX,firebase.io
 DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebaseio.com
@@ -3099,6 +3108,8 @@ DOMAIN,doubleclick.net
 DOMAIN,download.mlcc.google.com
 DOMAIN,download.tensorflow.google.com
 DOMAIN,firebase-settings.crashlytics.com
+DOMAIN,firebaselogging-pa.googleapis.com
+DOMAIN,firebaselogging.googleapis.com
 DOMAIN,fontfiles.googleapis.com
 DOMAIN,fonts.googleapis.com
 DOMAIN,fonts.gstatic.com
@@ -3562,6 +3573,7 @@ DOMAIN-SUFFIX,sportsfacebook.com
 DOMAIN-SUFFIX,sportstream.com
 DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,terragraph.com
+DOMAIN-SUFFIX,tfbnw.net
 DOMAIN-SUFFIX,thefacebook.com
 DOMAIN-SUFFIX,thefacebook.net
 DOMAIN-SUFFIX,thefind.com
@@ -3582,6 +3594,7 @@ DOMAIN,fbcdn-a.akamaihd.net
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/github
 DOMAIN-SUFFIX,atom.io
+DOMAIN-SUFFIX,cafe.github.com
 DOMAIN-SUFFIX,collector.github.com
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,gh.io
@@ -3623,6 +3636,7 @@ DOMAIN,github-production-repository-file-5c1aeb.s3.amazonaws.com
 DOMAIN,github-production-repository-image-32fea6.s3.amazonaws.com
 DOMAIN,github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
 DOMAIN,github-production-user-asset-6210df.s3.amazonaws.com
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN,productionresultssa0.blob.core.windows.net
 DOMAIN,productionresultssa1.blob.core.windows.net
 DOMAIN,productionresultssa10.blob.core.windows.net
@@ -3678,7 +3692,6 @@ DOMAIN-SUFFIX,applicationinsights.io
 DOMAIN-SUFFIX,applicationinsights.net
 DOMAIN-SUFFIX,appserviceenvironment.cn
 DOMAIN-SUFFIX,aria.ms
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,asp.net
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,atom.io
@@ -3793,6 +3806,7 @@ DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
 DOMAIN-SUFFIX,bingparachute.com
 DOMAIN-SUFFIX,bingsandbox.com
+DOMAIN-SUFFIX,bingstatic.com
 DOMAIN-SUFFIX,bingvisualsearch.com
 DOMAIN-SUFFIX,bingworld.com
 DOMAIN-SUFFIX,blazor.net
@@ -3807,6 +3821,7 @@ DOMAIN-SUFFIX,breakdown.me
 DOMAIN-SUFFIX,browser.events.data.msn.cn
 DOMAIN-SUFFIX,browser.events.data.msn.com
 DOMAIN-SUFFIX,c-msedge.net
+DOMAIN-SUFFIX,cafe.github.com
 DOMAIN-SUFFIX,callersbane.com
 DOMAIN-SUFFIX,cegid-cloud.cn
 DOMAIN-SUFFIX,centralvalidation.com
@@ -3833,6 +3848,7 @@ DOMAIN-SUFFIX,cosmosdb.net
 DOMAIN-SUFFIX,crmdynint-gcc.com
 DOMAIN-SUFFIX,crmdynint.com
 DOMAIN-SUFFIX,crossborderexpansion.com
+DOMAIN-SUFFIX,data.microsoft.com
 DOMAIN-SUFFIX,dcg.microsoft.com
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,devopsassessment.net
@@ -3852,7 +3868,6 @@ DOMAIN-SUFFIX,engkoo.com
 DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,fasttrackreadysupport.com
 DOMAIN-SUFFIX,femalefounderscomp.com
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,flipwithsurface.com
 DOMAIN-SUFFIX,fluidpreview.com
 DOMAIN-SUFFIX,footprintdns.com
@@ -3905,6 +3920,7 @@ DOMAIN-SUFFIX,ie11.com
 DOMAIN-SUFFIX,ie8.co
 DOMAIN-SUFFIX,ie9.com
 DOMAIN-SUFFIX,imaginecup.pl
+DOMAIN-SUFFIX,in.applicationinsights.azure.com
 DOMAIN-SUFFIX,ingads.com
 DOMAIN-SUFFIX,insiderdevtour.com
 DOMAIN-SUFFIX,internetexplorer.co
@@ -4092,6 +4108,7 @@ DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,msftnet.org
+DOMAIN-SUFFIX,msftstatic.com
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msgamestudios.com
 DOMAIN-SUFFIX,mshome.net
@@ -4220,6 +4237,7 @@ DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,t-msedge.net
 DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,techhub.ms
+DOMAIN-SUFFIX,telemetry.microsoft.com
 DOMAIN-SUFFIX,tellmewhygame.com
 DOMAIN-SUFFIX,tfsallin.net
 DOMAIN-SUFFIX,th.bing.com
@@ -4307,6 +4325,8 @@ DOMAIN,collaborateppe.download.prss.microsoft.com
 DOMAIN,copilot-telemetry-service.githubusercontent.com
 DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN,ctldl.windowsupdate.com
+DOMAIN,dc.applicationinsights.azure.com
+DOMAIN,dc.services.visualstudio.com
 DOMAIN,developer.microsoft.com
 DOMAIN,download.microsoft.com
 DOMAIN,download.visualstudio.microsoft.com
@@ -4326,6 +4346,7 @@ DOMAIN,itacademy.download.prss.microsoft.com
 DOMAIN,itacademyuat.download.prss.microsoft.com
 DOMAIN,lex.download.prss.microsoft.com
 DOMAIN,lexuat.download.prss.microsoft.com
+DOMAIN,live.applicationinsights.azure.com
 DOMAIN,mbs.download.prss.microsoft.com
 DOMAIN,mpnbenefits.download.prss.microsoft.com
 DOMAIN,mpnbenefitsrtl.download.prss.microsoft.com
@@ -4344,6 +4365,7 @@ DOMAIN,officemktuat.download.prss.microsoft.com
 DOMAIN,osrelease.download.prss.microsoft.com
 DOMAIN,rink.hockeyapp.net
 DOMAIN,rsm.download.prss.microsoft.com
+DOMAIN,rt.services.visualstudio.com
 DOMAIN,sdx.microsoft.com
 DOMAIN,shell.cdn.office.net
 DOMAIN,software.download.prss.microsoft.com
@@ -4595,22 +4617,25 @@ DOMAIN-SUFFIX,tiktok-minis.com
 DOMAIN-SUFFIX,tiktok-row.net
 DOMAIN-SUFFIX,tiktok.com
 DOMAIN-SUFFIX,tiktokcdn-eu.com
-DOMAIN-SUFFIX,tiktokcdn-us.com
 DOMAIN-SUFFIX,tiktokcdn-us.com.edgesuite.net
-DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
 DOMAIN-SUFFIX,tiktokcdn.com.akamaized.net
 DOMAIN-SUFFIX,tiktokcdn.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokd.net
 DOMAIN-SUFFIX,tiktokd.org
 DOMAIN-SUFFIX,tiktokeu-cdn.com
 DOMAIN-SUFFIX,tiktokglobalshopv.com
 DOMAIN-SUFFIX,tiktokminis.us
 DOMAIN-SUFFIX,tiktokrow-cdn.com
-DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokshop.com
+DOMAIN-SUFFIX,tiktokstaticb.com
 DOMAIN-SUFFIX,tiktokv.com.edgekey.net
 DOMAIN-SUFFIX,tiktokv.com.edgesuite.net
+DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.eu
 DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokvapp.com
 DOMAIN-SUFFIX,tiktokw.eu
 DOMAIN-SUFFIX,tiktokw.us
 DOMAIN-SUFFIX,ttcdn-us.com
@@ -4852,22 +4877,3 @@ DOMAIN-SUFFIX,dynatrace.com
 DOMAIN-SUFFIX,ultramobile.com
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,open.xiaojingai.com
-DOMAIN-SUFFIX,account.battle.net
-DOMAIN,login.battle.net
-DOMAIN,oauth.battle.net
-DOMAIN,content-ui.battle.net
-DOMAIN,rum.battle.net
-DOMAIN-SUFFIX,shop.battle.net
-DOMAIN,telemetry-in.battle.net
-DOMAIN-SUFFIX,geo.battle.net
-DOMAIN,www.battle.net
-DOMAIN-SUFFIX,tw.battle.net
-DOMAIN,us.battle.net
-DOMAIN,eu.battle.net
-DOMAIN-SUFFIX,blizzard.com
-DOMAIN-SUFFIX,worldofwarcraft.com
-DOMAIN-SUFFIX,blz-contentstack.com
-DOMAIN,bnetcmsus-a.akamaihd.net
-DOMAIN,bnetproduct-a.akamaihd.net
-DOMAIN,bnetshopus.akamaized.net
-DOMAIN,blznav.akamaized.net

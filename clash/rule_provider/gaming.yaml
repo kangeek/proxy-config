@@ -6,8 +6,53 @@ payload:
   # - DOMAIN-SUFFIX,capycraft.io
   - AND,((DOMAIN-SUFFIX,apac.capycraft.io),(DST-PORT,3724))
   - AND,((IP-CIDR,178.249.208.0/24,no-resolve),(DST-PORT,8085))
-  # Blizzard Battle.net - real-time game endpoints
+
+  # Blizzard Battle.net Asia (kr)
   - DOMAIN,prod.actual.battle.net
   - DOMAIN,test.actual.battle.net
-  - DOMAIN,us.actual.battle.net
   - DOMAIN,kr.actual.battle.net
+  - DOMAIN,kr.version.battle.net # 版本检查及补丁清单
+  - DOMAIN,kr.api.blizzard.com # 亚服 API
+  - DOMAIN,kr.shop.battle.net # 亚服商店
+
+  # ============================================================
+  # Blizzard Battle.net 各区共用域名（挪动指南）
+  # 目前主要玩国服和亚服，所以这些都放在 GAMING，让亚服账号的认证和游戏连接出口一致。
+  # 如果主要玩美服，把 A 组挪到 usa.yaml 即可；
+  # B 组只在亚服抓包里出现过，C 组没抓到过，遇到问题再看日志决定。
+  # 偶尔登录美服时，us.* 走 USA、共用域名走 GAMING，出口会不一致；
+  # 若遇到安全验证，可临时把 login/oauth/account 挪到 usa.yaml。
+  # 注意：Clash 里 usa 排在 gaming 前面，shop 等区域域名请保持 DOMAIN 精确匹配。
+  # ============================================================
+
+  # --- A 组：亚服和美服抓包中都出现过，确认各区共用 ---
+  - DOMAIN,oauth.battle.net # OAuth 授权
+  - DOMAIN,api.blizzard.com # 暴雪 API
+  - DOMAIN,ingest.gdp.blizzard.com # 数据上报
+  - DOMAIN,breaking-news.support.blizzard.com # 客户端公告
+  - DOMAIN,distribution.version.battle.net # 版本分发
+  - DOMAIN,content-ui.battle.net # 启动器界面内容
+  - DOMAIN,rum.battle.net # 启动器性能监测
+  - DOMAIN,blzprofile.akamaized.net # 战网个人资料资源
+  - DOMAIN,forge.akamaized.net # 战网界面资源
+  - DOMAIN,bnetcmsus-a.akamaihd.net # 战网 CMS 内容
+
+  # --- B 组：只在亚服的 Battle.net Helper 抓到，推测各区共用，未验证 ---
+  - DOMAIN,account.battle.net # 账号管理
+  - DOMAIN,navbar.blizzard.com # 战网顶部导航栏
+  - DOMAIN,blz-contentstack-images.akamaized.net # 暴雪 CMS 图片
+  - DOMAIN,catalog.blzstatic.com # 启动器游戏目录
+
+  # --- C 组：沿用旧规则，本次抓包未出现，是否共用未验证 ---
+  - DOMAIN,login.battle.net # 登录验证
+  - DOMAIN,telemetry-in.battle.net # 遥测上报
+  - DOMAIN,shop.battle.net # 商店（区域端点见 kr.shop / us.shop）
+  - DOMAIN-SUFFIX,geo.battle.net # 区域定位
+  - DOMAIN,www.battle.net # 战网官网
+  - DOMAIN-SUFFIX,tw.battle.net # 台湾地区战网页面
+  - DOMAIN,eu.battle.net # 欧服页面
+  - DOMAIN-SUFFIX,worldofwarcraft.com # 魔兽世界官网
+  - DOMAIN-SUFFIX,blz-contentstack.com # 暴雪 CMS 内容
+  - DOMAIN,bnetproduct-a.akamaihd.net # 启动器产品信息
+  - DOMAIN,bnetshopus.akamaized.net # 战网商店资源（名字带 us，可能是美区专属）
+  - DOMAIN,blznav.akamaized.net # 战网导航资源

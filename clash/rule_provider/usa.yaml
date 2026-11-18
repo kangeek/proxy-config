@@ -2,3 +2,13 @@ payload:
   # General sites
   - GEOSITE,paypal
   - GEOSITE,telegram
+
+  # Blizzard Battle.net US
+  - DOMAIN,us.actual.battle.net # 大厅长连接 1119
+  - DOMAIN,us.version.battle.net # 版本检查及补丁清单
+  - DOMAIN,us.api.blizzard.com # 美服 API
+  - DOMAIN,us.battle.net # 美服页面
+  - DOMAIN,us.shop.battle.net # 美服商店（按 kr.shop 类推，未抓到）
+
+  # 各区共用的暴雪域名目前放在 gaming.yaml（主玩国服和亚服）。
+  # 如果主要玩美服，把 gaming.yaml 里的 A 组挪到这里。

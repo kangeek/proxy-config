@@ -1,24 +1,29 @@
 DOMAIN-SUFFIX,ping0.cc
-DOMAIN-SUFFIX,diabrowser.com
-DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN,ip.net.coffee
 DOMAIN-SUFFIX,warp.dev
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/anthropic
+DOMAIN-SUFFIX,ant.dev
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.team
+DOMAIN-SUFFIX,antspace.dev
+DOMAIN-SUFFIX,chatbotclaude.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
 DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,o1158394.ingest.us.sentry.io
 DOMAIN,servd-anthropic-website.b-cdn.net
-##############################
-##############################
-# RuleSet: https://surge.bojin.co/geosite/cursor
-DOMAIN-SUFFIX,cursor-cdn.com
-DOMAIN-SUFFIX,cursor.com
-DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/openai
@@ -33,10 +38,12 @@ DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,o33249.ingest.sentry.io
+DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN,openai.qualtrics.com
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaiassets.blob.core.windows.net
@@ -44,6 +51,14 @@ DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicom.imgix.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
+##############################
+##############################
+# RuleSet: https://surge.bojin.co/geosite/cursor
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/notion

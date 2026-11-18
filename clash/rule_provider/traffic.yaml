@@ -61,8 +61,9 @@ payload:
   - DOMAIN-SUFFIX,cdn.blizzard.com # Blizzard CDN
   - DOMAIN-SUFFIX,blzddist.battle.net # 补丁分发
   - DOMAIN-SUFFIX,depot.battle.net # 内容仓库、更新及校验
-  - DOMAIN-SUFFIX,version.battle.net # 版本检查及补丁清单
+  # - DOMAIN-SUFFIX,version.battle.net # 版本检查及补丁清单
   - DOMAIN,blizzard.nefficient.co.kr # 韩国 CDN
+  - DOMAIN,blizzard.gcdn.cloudn.co.kr # 韩国 CDN
   - DOMAIN,blzddist1-a.akamaihd.net # 全球补丁 CDN
   - DOMAIN,blzddistkr1-a.akamaihd.net # 韩国补丁 CDN
   - DOMAIN,blzmedia-a.akamaihd.net # 暴雪媒体 CDN

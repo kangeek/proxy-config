@@ -63,6 +63,7 @@ DOMAIN,production.cloudflare.docker.com
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.com.edgesuite.net
 DOMAIN-SUFFIX,netflix.net
 DOMAIN-SUFFIX,netflixdnstest0.com
 DOMAIN-SUFFIX,netflixdnstest1.com
@@ -83,7 +84,6 @@ DOMAIN-SUFFIX,nflximg.net
 DOMAIN-SUFFIX,nflxsearch.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-DOMAIN,netflix.com.edgesuite.net
 ##############################
 ##############################
 # RuleSet: https://surge.bojin.co/geosite/disney
@@ -378,8 +378,8 @@ DOMAIN-SUFFIX,patch.battle.net
 DOMAIN-SUFFIX,cdn.blizzard.com
 DOMAIN-SUFFIX,blzddist.battle.net
 DOMAIN-SUFFIX,depot.battle.net
-DOMAIN-SUFFIX,version.battle.net
 DOMAIN,blizzard.nefficient.co.kr
+DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,blzddistkr1-a.akamaihd.net
 DOMAIN,blzmedia-a.akamaihd.net

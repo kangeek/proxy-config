@@ -270,3 +270,8 @@ DOMAIN-SUFFIX,toncenter.com
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 ##############################
+DOMAIN,us.actual.battle.net
+DOMAIN,us.version.battle.net
+DOMAIN,us.api.blizzard.com
+DOMAIN,us.battle.net
+DOMAIN,us.shop.battle.net
